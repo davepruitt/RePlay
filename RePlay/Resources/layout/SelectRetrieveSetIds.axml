@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+	android:gravity="center_horizontal"
+	android:padding="20dp"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content">
+
+	<TextView
+		android:text="Select Set:"
+		android:textSize="28sp"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:id="@+id/selectSetTitle"
+		android:textColor="@color/txbdc_green"
+		android:layout_marginTop="15dp"
+		android:layout_marginBottom="50dp" />
+
+	<ListView
+		android:layout_height="300dp"
+		android:id="@+id/setIDs"
+		android:layout_width="300dp">
+	</ListView>
+
+	<Button
+		android:layout_width="@dimen/add_prescription_button_width"
+		android:layout_height="wrap_content"
+		android:id="@+id/confirmSet"
+		android:text="SELECT"
+		android:textSize="@dimen/button_text_size"
+		android:layout_marginTop="30dp"
+		android:textColor="@drawable/txbdc_button_foreground_selector"
+		android:background="@drawable/txbdc_button_background_selector"/>
+
+</LinearLayout>

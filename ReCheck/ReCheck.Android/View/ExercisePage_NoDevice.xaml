@@ -1,0 +1,194 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             mc:Ignorable="d"
+             x:Class="ReCheck.Droid.View.ExercisePage_NoDevice">
+    <ContentPage.Content>
+
+        <Grid BackgroundColor="White">
+
+            <Grid.RowDefinitions>
+                <RowDefinition Height="65" />
+                <RowDefinition Height="*" />
+            </Grid.RowDefinitions>
+
+            <Grid Grid.Row="0" BackgroundColor="{StaticResource Key=txbdc_offwhite}">
+                <Image Source="recheck.png" 
+                   HorizontalOptions="Start"
+                   Margin="10"
+                   />
+
+                <Button x:Name="QuitAssessmentButton"
+                        Text="Quit"
+                        Style="{StaticResource Key=TxBDC_Button_Style}"
+                        HorizontalOptions="End"
+                        WidthRequest="400"
+                        Margin="10"
+                        FontSize="18"
+                        Clicked="QuitAssessmentButton_Clicked"
+                        />
+
+                <BoxView Color="{StaticResource Key=txbdc_lightgrey}"
+                     VerticalOptions="End"
+                     HorizontalOptions="FillAndExpand"
+                     HeightRequest="2"
+                     />
+            </Grid>
+
+            <Grid Grid.Row="1">
+
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="Auto" />
+                    <RowDefinition Height="Auto" />
+                    <RowDefinition Height="*" />
+                </Grid.RowDefinitions>
+
+
+                <Label Text="{Binding Path=PrimaryText, FallbackValue=Please insert a module.}"
+                       FontSize="36"
+                       TextColor="{StaticResource Key=txbdc_green}"
+                       HorizontalOptions="Center"
+                       VerticalOptions="Start"
+                       Margin="100,15,100,0"
+                       Grid.Row="0"
+                       />
+
+                <Label Text="{Binding Path=SecondaryText, FallbackValue=Modules that you have already used during this session are highlighted in green below.}" 
+                       TextColor="{StaticResource Key=txbdc_green}"
+                       FontSize="18"
+                       Margin="0,3,0,0"
+                       HorizontalOptions="Center"
+                       Grid.Row="1"
+                        />
+
+                <Grid Grid.Row="2" Margin="100,10,100,0" ColumnDefinitions="*, *" RowDefinitions="Auto, Auto, *">
+
+                    <Grid Grid.Column="0" Grid.Row="0">
+                        <Button Style="{StaticResource Key=TxBDC_Button_Style_WhiteOnDisabled}" 
+                                Text="LEFT ARM" 
+                                FontSize="48"
+                                HorizontalOptions="Center" 
+                                VerticalOptions="Start" 
+                                HeightRequest="150" 
+                                WidthRequest="400" 
+                                IsEnabled="{Binding Path=IsLeftHandButtonVisible, FallbackValue=True}" 
+                                x:Name="LeftHandButton" 
+                                Clicked="LeftHandButton_Clicked" />
+                    </Grid>
+                    <Grid Grid.Column="1" Grid.Row="0">
+                        <Button Style="{StaticResource Key=TxBDC_Button_Style_WhiteOnDisabled}" 
+                                Text="RIGHT ARM" 
+                                FontSize="48" 
+                                HorizontalOptions="Center" 
+                                VerticalOptions="Start" 
+                                HeightRequest="150" 
+                                WidthRequest="400"
+                                IsEnabled="{Binding Path=IsRightHandButtonVisible, FallbackValue=True}" 
+                                x:Name="RightHandButton" 
+                                Clicked="RightHandButton_Clicked" />
+                    </Grid>
+                    <Grid Grid.Column="0" Grid.ColumnSpan="2" Grid.Row="1" HorizontalOptions="Center" Margin="0,5,0,0">
+                        <StackLayout Orientation="Horizontal">
+                            <Label Text="Stimulations received during this session: " 
+                               TextColor="{StaticResource Key=txbdc_green}"
+                               FontSize="24"
+                               />
+                            <Label Text="{Binding Path=TotalStimulationsReceived, FallbackValue=0}"
+                                   TextColor="{StaticResource Key=txbdc_green}"
+                                   FontSize="24"
+                                   FontAttributes="Bold"
+                                   />
+                        </StackLayout>
+                    </Grid>
+                    <Frame Grid.Column="0" Grid.Row="2" BorderColor="Transparent" HasShadow="False">
+                        <Grid ColumnDefinitions="*, Auto, Auto, *, Auto, Auto, *" RowDefinitions="Auto, Auto, Auto, Auto, Auto">
+                            <Label Text="Strength" TextColor="{StaticResource Key=txbdc_green}" FontSize="24" 
+                                   HorizontalTextAlignment="Center"
+                                   Grid.Row="0" Grid.Column="1" Grid.ColumnSpan="2" Margin="0,0,0,15" FontAttributes="Bold" />
+                            <Label Text="Motion" TextColor="{StaticResource Key=txbdc_green}" FontSize="24" 
+                                   HorizontalTextAlignment="Center"
+                                   Grid.Row="0" Grid.Column="4" Grid.ColumnSpan="2" Margin="0,0,0,15" FontAttributes="Bold" />
+
+                            <Image Source="green_check.png" Grid.Row="1" Grid.Column="1" HorizontalOptions="End" VerticalOptions="Center" WidthRequest="20" 
+                                IsVisible="{Binding Path=LSH_Visible, FallbackValue=True}" />
+                            <Image Source="green_check.png" Grid.Row="2" Grid.Column="1" HorizontalOptions="End" VerticalOptions="Center" WidthRequest="20" 
+                                IsVisible="{Binding Path=LSK_Visible, FallbackValue=True}" />
+                            <Image Source="green_check.png" Grid.Row="3" Grid.Column="1" HorizontalOptions="End" VerticalOptions="Center" WidthRequest="20" 
+                                IsVisible="{Binding Path=LSW_Visible, FallbackValue=True}" />
+                            <Image Source="green_check.png" Grid.Row="4" Grid.Column="1" HorizontalOptions="End" VerticalOptions="Center" WidthRequest="20" 
+                                IsVisible="{Binding Path=LSP_Visible, FallbackValue=True}" />
+                            <Image Source="green_check.png" Grid.Row="1" Grid.Column="4" HorizontalOptions="End" VerticalOptions="Center" WidthRequest="20" 
+                                IsVisible="{Binding Path=LMH_Visible, FallbackValue=True}" />
+                            <Image Source="green_check.png" Grid.Row="2" Grid.Column="4" HorizontalOptions="End" VerticalOptions="Center" WidthRequest="20" 
+                                IsVisible="{Binding Path=LMK_Visible, FallbackValue=True}" />
+                            <Image Source="green_check.png" Grid.Row="3" Grid.Column="4" HorizontalOptions="End" VerticalOptions="Center" WidthRequest="20" 
+                                IsVisible="{Binding Path=LMW_Visible, FallbackValue=True}" />
+
+                            <Label Text="Handle" TextColor="{Binding Path=LSH_Color, FallbackValue=LightGray}" FontSize="24" Grid.Row="1" Grid.Column="2" />
+                            <Label Text="Knob" TextColor="{Binding Path=LSK_Color, FallbackValue=LightGray}" FontSize="24" Grid.Row="2" Grid.Column="2" />
+                            <Label Text="Wrist" TextColor="{Binding Path=LSW_Color, FallbackValue=LightGray}" FontSize="24" Grid.Row="3" Grid.Column="2" />
+                            <Label Text="Pinch" TextColor="{Binding Path=LSP_Color, FallbackValue=LightGray}" FontSize="24" Grid.Row="4" Grid.Column="2" />
+                            <Label Text="Handle" TextColor="{Binding Path=LMH_Color, FallbackValue=LightGray}" FontSize="24" Grid.Row="1" Grid.Column="5" />
+                            <Label Text="Knob" TextColor="{Binding Path=LMK_Color, FallbackValue=LightGray}" FontSize="24" Grid.Row="2" Grid.Column="5" />
+                            <Label Text="Wrist" TextColor="{Binding Path=LMW_Color, FallbackValue=LightGray}" FontSize="24" Grid.Row="3" Grid.Column="5" />
+
+                            <Label Text="{Binding Path=LSH_Usage, FallbackValue=100 +/- 5g}" TextColor="{StaticResource Key=txbdc_green}" VerticalOptions="Center" HorizontalOptions="End" FontSize="12" Grid.Row="1" Grid.Column="0" />
+                            <Label Text="{Binding Path=LSK_Usage, FallbackValue=100 +/- 5g}" TextColor="{StaticResource Key=txbdc_green}" VerticalOptions="Center" HorizontalOptions="End" FontSize="12" Grid.Row="2" Grid.Column="0" />
+                            <Label Text="{Binding Path=LSW_Usage, FallbackValue=100 +/- 5g}" TextColor="{StaticResource Key=txbdc_green}" VerticalOptions="Center" HorizontalOptions="End" FontSize="12" Grid.Row="3" Grid.Column="0" />
+                            <Label Text="{Binding Path=LSP_Usage, FallbackValue=100 +/- 5g}" TextColor="{StaticResource Key=txbdc_green}" VerticalOptions="Center" HorizontalOptions="End" FontSize="12" Grid.Row="4" Grid.Column="0" />
+                            <Label Text="{Binding Path=LMH_Usage, FallbackValue=100 +/- 5g}" TextColor="{StaticResource Key=txbdc_green}" VerticalOptions="Center" HorizontalOptions="End" FontSize="12" Grid.Row="1" Grid.Column="3" />
+                            <Label Text="{Binding Path=LMK_Usage, FallbackValue=100 +/- 5g}" TextColor="{StaticResource Key=txbdc_green}" VerticalOptions="Center" HorizontalOptions="End" FontSize="12" Grid.Row="2" Grid.Column="3" />
+                            <Label Text="{Binding Path=LMW_Usage, FallbackValue=100 +/- 5g}" TextColor="{StaticResource Key=txbdc_green}" VerticalOptions="Center" HorizontalOptions="End" FontSize="12" Grid.Row="3" Grid.Column="3" />
+                        </Grid>
+                    </Frame>
+                    <Frame Grid.Column="1" Grid.Row="2" BorderColor="Transparent" HasShadow="False">
+                        <Grid ColumnDefinitions="*, Auto, Auto, *, Auto, Auto, *" RowDefinitions="Auto, Auto, Auto, Auto, Auto">
+                            <Label Text="Strength" TextColor="{StaticResource Key=txbdc_green}" FontSize="24" 
+                               Grid.Row="0" Grid.Column="1" Grid.ColumnSpan="2" Margin="0,0,0,15" FontAttributes="Bold" />
+                            <Label Text="Motion" TextColor="{StaticResource Key=txbdc_green}" FontSize="24" 
+                               Grid.Row="0" Grid.Column="4" Grid.ColumnSpan="2" Margin="0,0,0,15" FontAttributes="Bold" />
+
+                            <Image Source="green_check.png" Grid.Row="1" Grid.Column="1" HorizontalOptions="End" VerticalOptions="Center" WidthRequest="20" 
+                                IsVisible="{Binding Path=RSH_Visible, FallbackValue=True}" />
+                            <Image Source="green_check.png" Grid.Row="2" Grid.Column="1" HorizontalOptions="End" VerticalOptions="Center" WidthRequest="20" 
+                                IsVisible="{Binding Path=RSK_Visible, FallbackValue=True}" />
+                            <Image Source="green_check.png" Grid.Row="3" Grid.Column="1" HorizontalOptions="End" VerticalOptions="Center" WidthRequest="20" 
+                                IsVisible="{Binding Path=RSW_Visible, FallbackValue=True}" />
+                            <Image Source="green_check.png" Grid.Row="4" Grid.Column="1" HorizontalOptions="End" VerticalOptions="Center" WidthRequest="20" 
+                                IsVisible="{Binding Path=RSP_Visible, FallbackValue=True}" />
+                            <Image Source="green_check.png" Grid.Row="1" Grid.Column="4" HorizontalOptions="End" VerticalOptions="Center" WidthRequest="20" 
+                                IsVisible="{Binding Path=RMH_Visible, FallbackValue=True}" />
+                            <Image Source="green_check.png" Grid.Row="2" Grid.Column="4" HorizontalOptions="End" VerticalOptions="Center" WidthRequest="20" 
+                                IsVisible="{Binding Path=RMK_Visible, FallbackValue=True}" />
+                            <Image Source="green_check.png" Grid.Row="3" Grid.Column="4" HorizontalOptions="End" VerticalOptions="Center" WidthRequest="20" 
+                                IsVisible="{Binding Path=RMW_Visible, FallbackValue=True}" />
+
+                            <Label Text="Handle" TextColor="{Binding Path=RSH_Color, FallbackValue=LightGray}" FontSize="24" Grid.Row="1" Grid.Column="2"  />
+                            <Label Text="Knob" TextColor="{Binding Path=RSK_Color, FallbackValue=LightGray}" FontSize="24" Grid.Row="2" Grid.Column="2"  />
+                            <Label Text="Wrist" TextColor="{Binding Path=RSW_Color, FallbackValue=LightGray}" FontSize="24" Grid.Row="3" Grid.Column="2"  />
+                            <Label Text="Pinch" TextColor="{Binding Path=RSP_Color, FallbackValue=LightGray}" FontSize="24" Grid.Row="4" Grid.Column="2"  />
+                            <Label Text="Handle" TextColor="{Binding Path=RMH_Color, FallbackValue=LightGray}" FontSize="24" Grid.Row="1" Grid.Column="5"  />
+                            <Label Text="Knob" TextColor="{Binding Path=RMK_Color, FallbackValue=LightGray}" FontSize="24" Grid.Row="2" Grid.Column="5"  />
+                            <Label Text="Wrist" TextColor="{Binding Path=RMW_Color, FallbackValue=LightGray}" FontSize="24" Grid.Row="3" Grid.Column="5"  />
+
+                            <Label Text="{Binding Path=RSH_Usage, FallbackValue=100 +/- 5g}" TextColor="{StaticResource Key=txbdc_green}" VerticalOptions="Center" HorizontalOptions="End" FontSize="12" Grid.Row="1" Grid.Column="0" />
+                            <Label Text="{Binding Path=RSK_Usage, FallbackValue=100 +/- 5g}" TextColor="{StaticResource Key=txbdc_green}" VerticalOptions="Center" HorizontalOptions="End" FontSize="12" Grid.Row="2" Grid.Column="0" />
+                            <Label Text="{Binding Path=RSW_Usage, FallbackValue=100 +/- 5g}" TextColor="{StaticResource Key=txbdc_green}" VerticalOptions="Center" HorizontalOptions="End" FontSize="12" Grid.Row="3" Grid.Column="0" />
+                            <Label Text="{Binding Path=RSP_Usage, FallbackValue=100 +/- 5g}" TextColor="{StaticResource Key=txbdc_green}" VerticalOptions="Center" HorizontalOptions="End" FontSize="12" Grid.Row="4" Grid.Column="0" />
+                            <Label Text="{Binding Path=RMH_Usage, FallbackValue=100 +/- 5g}" TextColor="{StaticResource Key=txbdc_green}" VerticalOptions="Center" HorizontalOptions="End" FontSize="12" Grid.Row="1" Grid.Column="3" />
+                            <Label Text="{Binding Path=RMK_Usage, FallbackValue=100 +/- 5g}" TextColor="{StaticResource Key=txbdc_green}" VerticalOptions="Center" HorizontalOptions="End" FontSize="12" Grid.Row="2" Grid.Column="3" />
+                            <Label Text="{Binding Path=RMW_Usage, FallbackValue=100 +/- 5g}" TextColor="{StaticResource Key=txbdc_green}" VerticalOptions="Center" HorizontalOptions="End" FontSize="12" Grid.Row="3" Grid.Column="3" />
+
+                        </Grid>
+                    </Frame>
+
+                </Grid>
+
+            </Grid>
+
+        </Grid>
+        
+    </ContentPage.Content>
+</ContentPage>

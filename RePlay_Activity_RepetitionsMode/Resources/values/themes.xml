@@ -1,0 +1,13 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<resources>
+    <!-- the theme applied to the application or activity -->
+    <style name="TxBDC_ActionBar_Theme" parent="@android:style/Theme.Holo.Light.DarkActionBar">
+        <item name="android:actionBarStyle">@style/TxBDC_ActionBar</item>
+    </style>
+
+    <!-- ActionBar styles -->
+    <style name="TxBDC_ActionBar" parent="@android:style/Widget.Holo.Light.ActionBar.Solid.Inverse">
+        <item name="android:background">@drawable/green_bar_lg</item>
+        <item name="android:logo">@android:color/transparent</item>
+    </style>
+</resources>

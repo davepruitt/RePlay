@@ -1,0 +1,70 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<!-- MDPI Devices -->
+<resources>
+  <!-- Shared -->
+  <dimen name="navigation_height">75dp</dimen>
+  <dimen name="footer_height">35dp</dimen>
+  <dimen name="card_elevation">3dp</dimen>
+  <dimen name="button_text_size">14dp</dimen>
+  <dimen name="button_width">150dp</dimen>
+  <dimen name="text_size">40dp</dimen>
+  <dimen name="text_size_normal">20dp</dimen>  
+  <dimen name="spinner_width">250dp</dimen>
+  <dimen name="spinner_height">32dp</dimen>
+  <dimen name="arrow">60dp</dimen>
+  <dimen name="card_width">250dp</dimen>
+  
+  <!-- AddPrescriptionCard -->
+  <dimen name="add_button_card_margin">60dp</dimen>
+
+  <!-- AddPrescriptionFragment -->
+  <dimen name="add_prescription_spinner_marginTop">10dp</dimen>
+  <dimen name="add_prescription_textview_marginBottom">15dp</dimen>
+  <dimen name="add_prescription_button_width">80dp</dimen>
+  <dimen name="add_prescription_button_height">30dp</dimen>
+
+  <!-- MainActivity -->
+  <dimen name="main_image_height">350dp</dimen>
+  <dimen name="main_image_margin">100dp</dimen>
+  
+  <!-- Navigation -->
+  <dimen name="nav_button">60dp</dimen>
+  <dimen name="nav_margin">15dp</dimen>
+  <dimen name="nav_logo_width">400dp</dimen>
+  <dimen name="nav_logo_height">70dp</dimen>
+
+  <!-- Settings -->
+  <dimen name="settings_banner">130dp</dimen>
+  <dimen name="settings_img">110dp</dimen>
+  <dimen name="settings_text">28dp</dimen>
+  <dimen name="settings_settings_button">250dp</dimen>
+  <dimen name="settings_assigned_text_height">60dp</dimen>
+  <dimen name="settings_assigned">280dp</dimen>
+  <dimen name="settings_saved_text_height">40dp</dimen>
+
+  <!-- SettingsLogin -->
+  <dimen name="settings_login_editext">350dp</dimen>
+  <dimen name="settings_login_button">150dp</dimen>
+  <dimen name="saved_card_width">280dp</dimen>
+  
+  <!-- GameCard -->
+  <dimen name="game_card">325dp</dimen>
+  <dimen name="game_card_image">185dp</dimen>
+  <dimen name="grid_top_padding">15dp</dimen>
+  <dimen name="grid_margin">10dp</dimen>
+  <dimen name="grid_text_margin">30dp</dimen>
+  
+  <!-- Prompt -->
+  <dimen name="prompt_box">270dp</dimen>
+  <dimen name="prompt_images">287dp</dimen>
+
+  <!-- Assigned Prescription -->
+  <dimen name="prescription_image">135dp</dimen>
+  <dimen name="prescription_button">25dp</dimen>
+  <dimen name="prescription_text">24dp</dimen>
+  <dimen name="prescription_button2">18dp</dimen>
+  <dimen name="prescription_text2">16dp</dimen>
+  <dimen name="prescription_text3">12dp</dimen>
+  <dimen name="saved_grid_padding">5dp</dimen>
+  
+</resources>

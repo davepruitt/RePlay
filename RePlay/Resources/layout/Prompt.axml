@@ -1,0 +1,245 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/txbdc_white">
+
+    <fragment
+        android:name="RePlay.Fragments.NavigationFragment"
+        android:id="@+id/navigation_fragment"
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/navigation_height"
+        android:layout_alignParentTop="true" />
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/navigation_fragment"
+        android:layout_above="@id/footer_fragment"
+		android:gravity="center"
+        android:minWidth="25px"
+        android:minHeight="25px"
+        android:background="@color/txbdc_white">
+
+		<Button
+			android:id="@+id/exercise_tutorial"
+			android:layout_width="250dp"
+			android:layout_height="wrap_content"
+			android:layout_marginBottom="5dp"
+			android:text="PLAY TUTORIAL"
+			android:textSize="24dp"
+			android:layout_centerHorizontal="true"
+			android:layout_marginTop="15dp"
+			android:textColor="@drawable/txbdc_button_foreground_selector"
+			android:background="@drawable/txbdc_button_background_selector"
+		/>
+
+		<Button
+			android:id="@+id/prescription_rewind"
+			android:layout_width="120dp"
+			android:layout_height="wrap_content"
+			android:layout_marginBottom="5dp"
+			android:text="BACK"
+			android:textSize="24dp"
+			android:layout_alignParentLeft="true"
+			android:layout_marginLeft="50dp"
+			android:layout_marginTop="15dp"
+			android:textColor="@drawable/txbdc_button_foreground_selector"
+			android:background="@drawable/txbdc_button_background_selector"
+		/>
+
+		<Button
+			android:id="@+id/prescription_forward"
+			android:layout_width="120dp"
+			android:layout_height="wrap_content"
+			android:layout_marginBottom="5dp"
+			android:text="SKIP"
+			android:textSize="24dp"
+			android:layout_alignParentRight="true"
+			android:layout_marginRight="50dp"
+			android:layout_marginTop="15dp"
+			android:textColor="@drawable/txbdc_button_foreground_selector"
+			android:background="@drawable/txbdc_button_background_selector"
+		/>
+
+		<TextView android:text="Activity 1 of 1" 
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:layout_alignRight="@+id/prescription_forward"
+			android:layout_below="@+id/prescription_forward"
+			android:id="@+id/activityindextextview"
+			android:textColor="@color/txbdc_black"
+			android:textSize="18sp"		
+		/>
+
+		<TextView android:text="Participant ID: Unknown" 
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:layout_alignParentRight="true"
+			android:layout_alignParentBottom="true"
+			android:layout_marginTop="5dp"
+			android:layout_marginRight="10dp"
+			android:id="@+id/participantidtextview"
+			android:textColor="@color/txbdc_black"
+		/>
+
+		<RelativeLayout
+			android:id="@+id/prompt_wrapper"
+			android:layout_width="fill_parent"
+			android:layout_height="wrap_content"
+			android:layout_below="@id/exercise_tutorial"
+			android:gravity="center_horizontal"
+			android:layout_marginTop="25dp">
+
+			<LinearLayout
+				android:id="@+id/prompt_device"
+				android:layout_width="wrap_content"
+				android:layout_height="@dimen/prompt_box"
+				android:orientation="vertical"
+				>
+            
+				<TextView
+					android:id="@+id/prompt_device_text"
+					android:text="FitMi"
+					android:textColor="@color/txbdc_black"
+					android:textSize="25dp"
+					android:layout_height="wrap_content"
+					android:layout_width="fill_parent"
+					android:layout_marginTop="10dp"
+					android:layout_marginBottom="10dp"
+					android:gravity="center_horizontal"/>
+
+				<TextView
+					android:id="@+id/prompt_device_instruction"
+					android:text="Grab the blue puck only"
+					android:textColor="@color/txbdc_black"
+					android:textSize="18dp"
+					android:layout_height="wrap_content"
+					android:layout_width="fill_parent"
+					android:layout_marginBottom="15dp"
+					android:gravity="center_horizontal"/>
+
+				<ImageView
+					android:id="@+id/prompt_device_image"
+					android:src="@drawable/fitmi"
+					android:layout_height="wrap_content"
+					android:layout_width="@dimen/prompt_images"
+					android:scaleType="centerInside"
+					android:padding="20dp"
+					/>
+            
+			</LinearLayout>
+
+			<LinearLayout
+				android:id="@+id/prompt_exercise"
+				android:layout_width="wrap_content"
+				android:layout_height="@dimen/prompt_box"
+				android:layout_marginLeft="30dp"
+				android:layout_marginRight="30dp"
+				android:layout_alignTop="@id/prompt_device"
+				android:layout_toRightOf="@id/prompt_device"
+				android:orientation="vertical"
+				 >
+				<TextView
+					android:id="@+id/prompt_exercise_text"
+					android:text="Reach Across"
+					android:textColor="@color/txbdc_black"
+					android:textSize="25dp"
+					android:layout_height="wrap_content"
+					android:layout_width="fill_parent"
+					android:layout_marginTop="10dp"
+					android:layout_marginBottom="5dp"
+					android:gravity="center_horizontal"/>
+				
+				<TextView
+					android:id="@+id/prompt_exercise_span"
+					android:textStyle="italic"
+					android:text=""
+					android:textColor="@color/txbdc_black"
+					android:textSize="18dp"
+					android:layout_height="wrap_content"
+					android:layout_width="fill_parent"
+					android:layout_marginBottom="15dp"
+					android:gravity="center_horizontal"/>
+
+				<ImageView
+					android:id="@+id/prompt_exercise_image"
+					android:src="@drawable/reachacross0"
+					android:layout_height="wrap_content"
+					android:layout_width="@dimen/prompt_images"
+					android:scaleType="centerInside"
+					android:adjustViewBounds="false"
+					android:padding="20dp"
+					 />
+			</LinearLayout>
+
+			<LinearLayout
+				android:id="@+id/prompt_game"
+				android:layout_width="wrap_content"
+				android:layout_height="@dimen/prompt_box"
+				android:layout_toRightOf="@id/prompt_exercise"
+				android:orientation="vertical"
+				>
+
+				<TextView
+					android:id="@+id/prompt_game_text"
+					android:text="Traffic Racer"
+					android:textColor="@color/txbdc_black"
+					android:textSize="25dp"
+					android:layout_height="wrap_content"
+					android:layout_width="fill_parent"
+					android:layout_marginTop="10dp"
+					android:layout_marginBottom="10dp"
+					android:gravity="center_horizontal"/>
+
+				<TextView
+					android:id="@+id/prompt_duration_text"
+					android:text="5 reps"
+					android:textColor="@color/txbdc_black"
+					android:textSize="18dp"
+					android:layout_height="wrap_content"
+					android:layout_width="fill_parent"
+					android:layout_marginBottom="15dp"
+					android:gravity="center_horizontal"
+					/>
+
+				<ImageView
+					android:id="@+id/prompt_game_image"
+					android:src="@drawable/trracer"
+					android:layout_height="wrap_content"
+					android:layout_width="@dimen/prompt_images"
+					android:scaleType="centerInside"
+					android:padding="20dp"
+					android:adjustViewBounds="false"
+					 />
+			</LinearLayout>
+			
+			<Button android:id="@+id/next" 
+				android:layout_below="@id/prompt_exercise"
+				android:scaleType="centerInside"
+				android:layout_width="wrap_content"
+				android:layout_height="75dp"
+				android:adjustViewBounds="true"
+				android:layout_marginTop="30dp"
+				android:layout_toEndOf="@id/prompt_device"
+				android:layout_toStartOf="@id/prompt_game"
+				android:text="BEGIN"
+				android:textSize="25dp"
+				android:textColor="@drawable/txbdc_button_foreground_selector"
+				android:background="@drawable/txbdc_button_background_selector"
+			/>
+		
+		</RelativeLayout>
+
+    </RelativeLayout>
+
+    <fragment
+        android:name="RePlay.Fragments.FooterFragment"
+        android:id="@+id/footer_fragment"
+        android:layout_width="fill_parent"
+        android:layout_alignParentBottom="true"
+        android:layout_height="@dimen/footer_height" />
+
+</RelativeLayout>

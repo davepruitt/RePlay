@@ -1,0 +1,262 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android" 
+	android:layout_width="wrap_content" 
+	android:layout_height="wrap_content">
+
+    <RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:background="@color/txbdc_white"
+	android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+	android:paddingRight="30dp"
+	android:paddingBottom="30dp">
+
+		<TextView
+			android:text="ADD AN ITEM TO THE ASSIGNMENT"
+			android:textAppearance="?android:attr/textAppearanceLarge"
+			android:layout_width="wrap_content"
+			android:layout_height="50dp"
+			android:gravity="center"
+			android:id="@+id/addExerciseText"
+			android:textColor="@color/txbdc_green"
+			android:layout_marginLeft="50dp"
+			android:layout_marginTop="10dp"
+			android:layout_marginBottom="25dp" />
+
+		<TextView
+			android:text="Game:"
+			android:textAppearance="?android:attr/textAppearanceLarge"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:layout_below="@id/addExerciseText"
+			android:id="@+id/gameText"
+			android:textStyle="bold"
+			android:layout_marginRight="40dp"
+			android:layout_marginLeft="50dp"
+			android:layout_marginBottom="@dimen/add_prescription_textview_marginBottom"
+			android:layout_marginTop="@dimen/add_prescription_spinner_marginTop" />
+		<Spinner
+			android:layout_width="@dimen/spinner_width"
+			android:layout_height="@dimen/spinner_height"
+			android:layout_below="@id/addExerciseText"
+			android:layout_toRightOf="@id/gameText"
+			android:id="@+id/gameSpinner"
+			android:background="@drawable/customspinner"
+			android:layout_alignLeft="@id/deviceSpinner"
+			android:spinnerMode="dropdown"
+			android:padding="5dp"
+			android:layout_marginTop="@dimen/add_prescription_spinner_marginTop"/>
+
+		<TextView
+			android:text="Device:"
+			android:textAppearance="?android:attr/textAppearanceLarge"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:layout_below="@id/gameText"
+			android:id="@+id/deviceText"
+			android:textStyle="bold"
+			android:layout_marginRight="40dp"
+			android:layout_marginLeft="50dp"
+			android:layout_marginBottom="@dimen/add_prescription_textview_marginBottom"
+		/>
+		<Spinner
+			android:layout_width="@dimen/spinner_width"
+			android:layout_height="@dimen/spinner_height"
+			android:layout_below="@id/gameText"
+			android:layout_toRightOf="@id/deviceText"
+			android:id="@+id/deviceSpinner"
+			android:clipChildren="false"
+			android:background="@drawable/customspinner"
+			android:spinnerMode="dropdown"
+			android:padding="5dp"/>
+
+		
+
+		<TextView
+			android:text="Exercise:"
+			android:textAppearance="?android:attr/textAppearanceLarge"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:layout_below="@id/deviceText"
+			android:id="@+id/exerciseText"
+			android:textStyle="bold"
+			android:layout_marginRight="20dp"
+			android:layout_marginBottom="@dimen/add_prescription_textview_marginBottom"
+			android:layout_marginTop="@dimen/add_prescription_spinner_marginTop"
+			android:layout_alignLeft="@id/deviceText"/>
+		<Spinner
+			android:layout_width="@dimen/spinner_width"
+			android:layout_height="@dimen/spinner_height"
+			android:layout_below="@id/deviceText"
+			android:layout_toRightOf="@id/exerciseText"
+			android:id="@+id/exerciseSpinner"
+			android:clipChildren="false"
+			android:background="@drawable/customspinner"
+			android:layout_alignLeft="@id/deviceSpinner"
+			android:spinnerMode="dropdown"
+			android:padding="5dp"
+			android:layout_marginTop="@dimen/add_prescription_spinner_marginTop" />
+		
+		<TextView
+			android:text="Difficulty:"
+			android:textAppearance="?android:attr/textAppearanceLarge"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:layout_below="@id/exerciseText"
+			android:id="@+id/difficultyText"
+			android:textStyle="bold"
+			android:layout_marginRight="20dp"
+			android:layout_marginBottom="@dimen/add_prescription_textview_marginBottom"
+			android:layout_marginTop="@dimen/add_prescription_spinner_marginTop"
+			android:layout_alignLeft="@id/deviceText"/>
+		<Spinner
+			android:layout_width="@dimen/spinner_width"
+			android:layout_height="@dimen/spinner_height"
+			android:layout_below="@id/exerciseText"
+			android:layout_toRightOf="@id/difficultyText"
+			android:id="@+id/diffSpinner"
+			android:clipChildren="false"
+			android:background="@drawable/customspinner"
+			android:layout_alignLeft="@id/deviceSpinner"
+			android:spinnerMode="dropdown"
+			android:padding="5dp"
+			android:layout_marginTop="@dimen/add_prescription_spinner_marginTop"
+		/>
+
+		<TextView
+			android:text="Set:"
+			android:textAppearance="?android:attr/textAppearanceLarge"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:layout_below="@id/difficultyText"
+			android:id="@+id/setText"
+			android:textStyle="bold"
+			android:visibility="gone"
+			android:layout_marginBottom="@dimen/add_prescription_textview_marginBottom"
+			android:layout_alignLeft="@id/exerciseText"
+			android:layout_marginTop="@dimen/add_prescription_spinner_marginTop" />
+
+		<Button
+			android:layout_width="@dimen/spinner_width"
+			android:layout_height="@dimen/spinner_height"
+			android:visibility="gone"
+			android:layout_below="@id/difficultyText"
+			android:id="@+id/selectSetButton"
+			android:text="Select Set"
+			android:layout_toRightOf="@id/setText"
+			android:layout_marginTop="@dimen/add_prescription_spinner_marginTop"
+			android:textSize="@dimen/button_text_size"
+			android:layout_alignLeft="@id/exerciseSpinner"
+			android:textColor="@drawable/txbdc_button_foreground_selector"
+			android:background="@drawable/txbdc_button_background_selector"/>
+
+
+		<TextView
+			android:text="Time:"
+			android:textAppearance="?android:attr/textAppearanceLarge"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:layout_below="@id/setText"
+			android:id="@+id/timeText"
+			android:textStyle="bold"
+			android:layout_alignWithParentIfMissing="true"
+			android:layout_marginBottom="@dimen/add_prescription_textview_marginBottom"
+			android:layout_alignLeft="@id/exerciseText"
+			android:layout_marginTop="@dimen/add_prescription_spinner_marginTop" />
+
+		<LinearLayout
+			android:id="@+id/number_wheel_wrapper"
+			android:layout_width="wrap_content"
+			android:layout_height="100dp"
+			android:orientation="horizontal"
+			android:gravity="center"
+			android:layout_below="@id/setText"
+			android:layout_alignWithParentIfMissing="true"
+			android:layout_toRightOf="@id/timeText"
+			android:layout_alignLeft="@id/exerciseSpinner"
+			android:layout_marginTop="@dimen/add_prescription_spinner_marginTop">
+
+			<NumberPicker
+				android:layout_width="wrap_content"
+				android:layout_height="fill_parent"
+				android:id="@+id/timeNumberPicker"
+				android:colorControlNormal="@color/txbdc_green"
+				android:descendantFocusability="blocksDescendants"
+				android:orientation="horizontal"
+				/>
+
+			<TextView
+				android:id="@+id/timeTextUnits"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:text="minute(s)"
+				android:textColor="@color/txbdc_black"
+				android:textAppearance="?android:attr/textAppearanceMedium"
+				android:layout_marginLeft="20dp"
+				android:layout_marginRight="20dp"
+				android:layout_marginTop="@dimen/add_prescription_spinner_marginTop"
+				/>
+
+		</LinearLayout>
+
+		<TextView
+			android:text="Gain:"
+			android:textAppearance="?android:attr/textAppearanceLarge"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:layout_below="@id/number_wheel_wrapper"
+			android:id="@+id/gainText"
+			android:textStyle="bold"
+			android:layout_alignWithParentIfMissing="true"
+			android:layout_marginBottom="@dimen/add_prescription_textview_marginBottom"
+			android:layout_marginTop="@dimen/add_prescription_spinner_marginTop"
+			android:layout_alignLeft="@id/exerciseText"
+			 />
+
+		<EditText 
+			android:id="@+id/gainEditText" 
+			android:textAppearance="?android:attr/textAppearanceLarge"
+			android:layout_width="@dimen/spinner_width"
+			android:layout_height="@dimen/spinner_height"
+			android:layout_toRightOf="@+id/gainText"
+			android:layout_below="@+id/number_wheel_wrapper"
+			android:text=""
+		    android:hint="Enter a gain"
+			android:padding="5dp"
+			android:layout_marginTop="@dimen/add_prescription_spinner_marginTop"
+			android:layout_alignLeft="@id/deviceSpinner"
+		    android:singleLine="true"
+		    android:inputType="numberDecimal"
+		/>
+
+		<Button
+			android:layout_width="@dimen/add_prescription_button_width"
+			android:layout_height="wrap_content"
+			android:layout_below="@id/number_wheel_wrapper"
+			android:id="@+id/cancelButton"
+			android:text="CANCEL"
+			android:textSize="@dimen/button_text_size"
+			android:layout_alignLeft="@id/addExerciseText"
+			android:layout_marginTop="50dp"
+			android:layout_marginLeft="10dp"
+			android:textColor="@drawable/txbdc_button_foreground_selector"
+			android:background="@drawable/txbdc_button_background_selector"/>
+
+		<Button
+			android:layout_width="@dimen/add_prescription_button_width"
+			android:layout_height="wrap_content"
+			android:layout_below="@id/number_wheel_wrapper"
+			android:id="@+id/addButton"
+			android:text="ADD"
+			android:textSize="@dimen/button_text_size"
+			android:padding="5dp"
+			android:layout_alignRight="@id/deviceSpinner"
+			android:layout_marginTop="50dp"
+			android:layout_marginRight="10dp"
+			android:textColor="@drawable/txbdc_button_foreground_selector"
+			android:background="@drawable/txbdc_button_background_selector"/>
+
+	</RelativeLayout>
+
+</ScrollView>

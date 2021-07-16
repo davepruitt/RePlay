@@ -1,0 +1,1315 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="packages\Xamarin.Build.Download.0.4.9\build\Xamarin.Build.Download.props" Condition="Exists('packages\Xamarin.Build.Download.0.4.9\build\Xamarin.Build.Download.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{711A608D-7D82-4F0C-8574-553FD37552E0}</ProjectGuid>
+    <ProjectTypeGuids>{EFBA0AD7-5A72-4C68-AF49-83D382785DCF};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>RePlay</RootNamespace>
+    <AssemblyName>RePlay</AssemblyName>
+    <FileAlignment>512</FileAlignment>
+    <Deterministic>True</Deterministic>
+    <GenerateSerializationAssemblies>Off</GenerateSerializationAssemblies>
+    <AndroidEnableSGenConcurrent>true</AndroidEnableSGenConcurrent>
+    <AndroidUseAapt2>true</AndroidUseAapt2>
+    <AndroidHttpClientHandlerType>Xamarin.Android.Net.AndroidClientHandler</AndroidHttpClientHandlerType>
+    <TargetFrameworkVersion>v10.0</TargetFrameworkVersion>
+    <AndroidApplication>True</AndroidApplication>
+    <AndroidResgenFile>Resources\Resource.designer.cs</AndroidResgenFile>
+    <AndroidResgenClass>Resource</AndroidResgenClass>
+    <AndroidManifest>Properties\AndroidManifest.xml</AndroidManifest>
+    <MonoAndroidResourcePrefix>Resources</MonoAndroidResourcePrefix>
+    <MonoAndroidAssetsPrefix>Assets</MonoAndroidAssetsPrefix>
+    <AndroidUseLatestPlatformSdk>false</AndroidUseLatestPlatformSdk>
+    <AndroidUseSharedRuntime>false</AndroidUseSharedRuntime>
+    <NuGetPackageImportStamp>
+    </NuGetPackageImportStamp>
+    <AndroidKeyStore>false</AndroidKeyStore>
+    <AndroidSigningKeyStore>C:\Users\cxr150130\AppData\Local\Xamarin\Mono for Android\Keystore\replay\replay.keystore</AndroidSigningKeyStore>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <AndroidLinkMode>SdkOnly</AndroidLinkMode>
+    <AndroidUseSharedRuntime>true</AndroidUseSharedRuntime>
+    <AndroidSupportedAbis>armeabi-v7a;x86;x86_64;arm64-v8a</AndroidSupportedAbis>
+    <AotAssemblies>false</AotAssemblies>
+    <EnableLLVM>false</EnableLLVM>
+    <BundleAssemblies>false</BundleAssemblies>
+    <EmbedAssembliesIntoApk>false</EmbedAssembliesIntoApk>
+    <AndroidEnableProfiledAot>false</AndroidEnableProfiledAot>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release</OutputPath>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <AndroidManagedSymbols>true</AndroidManagedSymbols>
+    <AndroidHttpClientHandlerType>Xamarin.Android.Net.AndroidClientHandler</AndroidHttpClientHandlerType>
+    <EnableProguard>false</EnableProguard>
+    <AotAssemblies>false</AotAssemblies>
+    <EnableLLVM>false</EnableLLVM>
+    <BundleAssemblies>false</BundleAssemblies>
+    <AndroidEnableProfiledAot>false</AndroidEnableProfiledAot>
+    <AndroidKeyStore>false</AndroidKeyStore>
+    <AndroidSigningKeyStore>C:\Users\PTSD\Desktop\keystore.jks</AndroidSigningKeyStore>
+    <AndroidSigningStorePass>
+    </AndroidSigningStorePass>
+    <AndroidSigningKeyAlias>
+    </AndroidSigningKeyAlias>
+    <AndroidSigningKeyPass>
+    </AndroidSigningKeyPass>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Java.Interop" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="Mono.Android.Export" />
+    <Reference Include="System" />
+    <Reference Include="System.Numerics" />
+    <Reference Include="System.Numerics.Vectors" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Core" />
+    <Reference Include="Mono.Android" />
+    <Reference Include="System.Xml.Linq" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Activities\SettingsEditPageActivity.cs" />
+    <Compile Include="Activities\SettingsMenuPageActivity.cs" />
+    <Compile Include="CustomViews\CardTouchHelperAdapter.cs" />
+    <Compile Include="CustomViews\HintArrayAdapter.cs" />
+    <Compile Include="CustomViews\SavedPrescriptionViewAdapter.cs" />
+    <Compile Include="CustomViews\PrescriptionViewAdapter.cs" />
+    <Compile Include="CustomViews\CardTouchHelperCallback.cs" />
+    <Compile Include="Entity\Prescription.cs" />
+    <Compile Include="Fragments\AddNewPrescriptionItemFragment.cs" />
+    <Compile Include="Fragments\VideoTutorialFragment.cs" />
+    <Compile Include="Helpers\Json_ExerciseDeviceType_EnumStringConverter.cs" />
+    <Compile Include="Helpers\StringHelper.cs" />
+    <Compile Include="InitializationActivity.cs" />
+    <Compile Include="MainActivity.cs" />
+    <Compile Include="Manager\BuildInformationManager.cs" />
+    <Compile Include="Manager\DeviceManager.cs" />
+    <Compile Include="Manager\GameLaunchManager.cs" />
+    <Compile Include="Manager\GoogleConnectionManager.cs" />
+    <Compile Include="Manager\PCMConnectionManager.cs" />
+    <Compile Include="Manager\PreferencesManager.cs" />
+    <Compile Include="Manager\ProjectListManager.cs" />
+    <Compile Include="Manager\StupidityManager.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Activities\GamesListActivity.cs" />
+    <Compile Include="Activities\PrescriptionDoneActivity.cs" />
+    <Compile Include="Activities\PromptActivity.cs" />
+    <Compile Include="Activities\SettingsAssignmentPageActivity.cs" />
+    <Compile Include="Activities\SettingsLoginActivity.cs" />
+    <Compile Include="CustomViews\CustomGameCardView.cs" />
+    <Compile Include="Entity\PrescriptionItem.cs" />
+    <Compile Include="Entity\RePlayGame.cs" />
+    <Compile Include="Fragments\FooterFragment.cs" />
+    <Compile Include="Fragments\NavigationFragment.cs" />
+    <Compile Include="Fragments\PatientFragment.cs" />
+    <Compile Include="Manager\ExerciseManager.cs" />
+    <Compile Include="Manager\GameManager.cs" />
+    <Compile Include="Manager\Paginator.cs" />
+    <Compile Include="Manager\PrescriptionManager.cs" />
+    <Compile Include="Manager\StateManager.cs" />
+    <Compile Include="DataClasses\EditPrescriptionEventArgs.cs" />
+    <Compile Include="Entity\Participant.cs" />
+    <Compile Include="Manager\PatientLoader.cs" />
+    <Compile Include="Manager\SavedPrescriptionManager.cs" />
+    <Compile Include="Resources\Resource.designer.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\Breakout\ball.xnb" />
+    <AndroidAsset Include="Assets\Breakout\BlueBlockFracturedFX.xnb" />
+    <AndroidAsset Include="Assets\Breakout\BlueBlockFX.xnb" />
+    <AndroidAsset Include="Assets\Breakout\BlueBlockShatteringFX.xnb" />
+    <AndroidAsset Include="Assets\Breakout\countdown.xnb" />
+    <AndroidAsset Include="Assets\Breakout\fireball.xnb" />
+    <AndroidAsset Include="Assets\Breakout\fireball_powerUp.xnb" />
+    <AndroidAsset Include="Assets\Breakout\fireball_sound.xnb" />
+    <AndroidAsset Include="Assets\Breakout\GrayBlockFracturedFX.xnb" />
+    <AndroidAsset Include="Assets\Breakout\GrayBlockFX.xnb" />
+    <AndroidAsset Include="Assets\Breakout\GrayBlockShatteringFX.xnb" />
+    <AndroidAsset Include="Assets\Breakout\GreenBlockFracturedFX.xnb" />
+    <AndroidAsset Include="Assets\Breakout\GreenBlockFX.xnb" />
+    <AndroidAsset Include="Assets\Breakout\GreenBlockShatteringFX.xnb" />
+    <AndroidAsset Include="Assets\Breakout\high_beep.xnb" />
+    <AndroidAsset Include="Assets\Breakout\IcyBlueBlockFractured.xnb" />
+    <AndroidAsset Include="Assets\Breakout\IcyBlueBlockFX.xnb" />
+    <AndroidAsset Include="Assets\Breakout\long_paddle.xnb" />
+    <AndroidAsset Include="Assets\Breakout\low_beep.xnb" />
+    <AndroidAsset Include="Assets\Breakout\mid_beep.xnb" />
+    <AndroidAsset Include="Assets\Breakout\multi_ball_powerUp.xnb" />
+    <AndroidAsset Include="Assets\Breakout\OrangeBlockFracturedFX.xnb" />
+    <AndroidAsset Include="Assets\Breakout\OrangeBlockFX.xnb" />
+    <AndroidAsset Include="Assets\Breakout\OrangeBlockShatteringFX.xnb" />
+    <AndroidAsset Include="Assets\Breakout\paddle.xnb" />
+    <AndroidAsset Include="Assets\Breakout\paddle_2nd_smallest.xnb" />
+    <AndroidAsset Include="Assets\Breakout\paddle_smallest.xnb" />
+    <AndroidAsset Include="Assets\Breakout\PinkBlockFracturedFX.xnb" />
+    <AndroidAsset Include="Assets\Breakout\PinkBlockFX.xnb" />
+    <AndroidAsset Include="Assets\Breakout\PinkBlockShatteringFX.xnb" />
+    <AndroidAsset Include="Assets\Breakout\powerup.xnb" />
+    <AndroidAsset Include="Assets\Breakout\PurpleBlockFracturedFX.xnb" />
+    <AndroidAsset Include="Assets\Breakout\PurpleBlockFX.xnb" />
+    <AndroidAsset Include="Assets\Breakout\RainbowBlockFX.xnb" />
+    <AndroidAsset Include="Assets\Breakout\RedBlockFracturedFX.xnb" />
+    <AndroidAsset Include="Assets\Breakout\RedBlockFX.xnb" />
+    <AndroidAsset Include="Assets\Breakout\RedBlockShatteringFX.xnb" />
+    <AndroidAsset Include="Assets\Breakout\Score.xnb" />
+    <AndroidAsset Include="Assets\Breakout\sky_background.xnb" />
+    <AndroidAsset Include="Assets\Breakout\space_background.xnb" />
+    <AndroidAsset Include="Assets\Breakout\underwater_background.xnb" />
+    <AndroidAsset Include="Assets\Breakout\wide_paddle_powerUp.xnb" />
+    <AndroidAsset Include="Assets\Breakout\YellowBlockFracturedFX.xnb" />
+    <AndroidAsset Include="Assets\Breakout\YellowBlockFX.xnb" />
+    <AndroidAsset Include="Assets\Breakout\YellowBlockShatteringFX.xnb" />
+    <AndroidAsset Include="Assets\TrafficRacer\bigsign.xnb" />
+    <AndroidAsset Include="Assets\TrafficRacer\coin.xnb" />
+    <AndroidAsset Include="Assets\TrafficRacer\CoinTex.xnb" />
+    <AndroidAsset Include="Assets\TrafficRacer\CoinTex_0.xnb" />
+    <AndroidAsset Include="Assets\TrafficRacer\desaturate.xnb" />
+    <AndroidAsset Include="Assets\TrafficRacer\DiagnosticsFont.xnb" />
+    <AndroidAsset Include="Assets\TrafficRacer\effect.xnb" />
+    <AndroidAsset Include="Assets\TrafficRacer\GameFont.xnb" />
+    <AndroidAsset Include="Assets\TrafficRacer\ground.xnb" />
+    <AndroidAsset Include="Assets\TrafficRacer\GroundTex.xnb" />
+    <AndroidAsset Include="Assets\TrafficRacer\GroundTex_0.xnb" />
+    <AndroidAsset Include="Assets\TrafficRacer\highlight.xnb" />
+    <AndroidAsset Include="Assets\TrafficRacer\HighlightTex.xnb" />
+    <AndroidAsset Include="Assets\TrafficRacer\HighlightTex_0.xnb" />
+    <AndroidAsset Include="Assets\TrafficRacer\OrangeSignTex_0.xnb" />
+    <AndroidAsset Include="Assets\TrafficRacer\ouch.xnb" />
+    <AndroidAsset Include="Assets\TrafficRacer\racer.xnb" />
+    <AndroidAsset Include="Assets\TrafficRacer\rail2.xnb" />
+    <AndroidAsset Include="Assets\TrafficRacer\RailTex.xnb" />
+    <AndroidAsset Include="Assets\TrafficRacer\RailTex_0.xnb" />
+    <AndroidAsset Include="Assets\TrafficRacer\retry.xnb" />
+    <AndroidAsset Include="Assets\TrafficRacer\road.xnb" />
+    <AndroidAsset Include="Assets\TrafficRacer\road_0.xnb" />
+    <AndroidAsset Include="Assets\TrafficRacer\road_model.xnb" />
+    <AndroidAsset Include="Assets\TrafficRacer\traffic.xnb" />
+    <AndroidAsset Include="Assets\TrafficRacer\new_cars\car1.xnb" />
+    <AndroidAsset Include="Assets\TrafficRacer\new_cars\car2.xnb" />
+    <AndroidAsset Include="Assets\TrafficRacer\new_cars\pickup.xnb" />
+    <AndroidAsset Include="Assets\TrafficRacer\new_cars\pickup2.xnb" />
+    <AndroidAsset Include="Assets\TrafficRacer\new_cars\pickup2_0.xnb" />
+    <AndroidAsset Include="Assets\TrafficRacer\new_cars\semi.xnb" />
+    <AndroidAsset Include="Assets\TrafficRacer\new_cars\sport.xnb" />
+    <AndroidAsset Include="Assets\TrafficRacer\new_cars\texture\car1.xnb" />
+    <AndroidAsset Include="Assets\TrafficRacer\new_cars\texture\car1_0.xnb" />
+    <AndroidAsset Include="Assets\TrafficRacer\new_cars\texture\car2.xnb" />
+    <AndroidAsset Include="Assets\TrafficRacer\new_cars\texture\car2_0.xnb" />
+    <AndroidAsset Include="Assets\TrafficRacer\new_cars\texture\pickup.xnb" />
+    <AndroidAsset Include="Assets\TrafficRacer\new_cars\texture\pickup_0.xnb" />
+    <AndroidAsset Include="Assets\TrafficRacer\new_cars\texture\pickup2.xnb" />
+    <AndroidAsset Include="Assets\TrafficRacer\new_cars\texture\semi.xnb" />
+    <AndroidAsset Include="Assets\TrafficRacer\new_cars\texture\semi_0.xnb" />
+    <AndroidAsset Include="Assets\TrafficRacer\new_cars\texture\sport.xnb" />
+    <AndroidAsset Include="Assets\TrafficRacer\new_cars\texture\sport_0.xnb" />
+    <AndroidAsset Include="Assets\TrafficRacer\new_cars\texture\sport_rims.xnb" />
+    <AndroidAsset Include="Assets\TrafficRacer\orange_signs\buckleup.xnb" />
+    <AndroidAsset Include="Assets\TrafficRacer\orange_signs\car.xnb" />
+    <AndroidAsset Include="Assets\TrafficRacer\orange_signs\comet.xnb" />
+    <AndroidAsset Include="Assets\TrafficRacer\orange_signs\doinggreat.xnb" />
+    <AndroidAsset Include="Assets\TrafficRacer\orange_signs\gameanddrive.xnb" />
+    <AndroidAsset Include="Assets\TrafficRacer\orange_signs\goodjob.xnb" />
+    <AndroidAsset Include="Assets\TrafficRacer\orange_signs\nice.xnb" />
+    <AndroidAsset Include="Assets\TrafficRacer\orange_signs\slowdown.xnb" />
+    <AndroidAsset Include="Assets\TrafficRacer\orange_signs\txbdc.xnb" />
+    <AndroidAsset Include="Assets\TrafficRacer\orange_signs\vroom.xnb" />
+    <AndroidAsset Include="Assets\TrafficRacer\orange_signs\watchout.xnb" />
+    <AndroidAsset Include="Assets\TrafficRacer\orange_signs\wow.xnb" />
+    <AndroidAsset Include="Assets\TrafficRacer\RestartFont.xnb" />
+    <AndroidAsset Include="Assets\FruitArchery\background.xnb" />
+    <AndroidAsset Include="Assets\FruitArchery\DiagnosticsFont.xnb" />
+    <AndroidAsset Include="Assets\FruitArchery\Font.xnb" />
+    <AndroidAsset Include="Assets\FruitArchery\fruit_apple.xnb" />
+    <AndroidAsset Include="Assets\FruitArchery\fruit_cherry.xnb" />
+    <AndroidAsset Include="Assets\FruitArchery\fruit_grape.xnb" />
+    <AndroidAsset Include="Assets\FruitArchery\fruit_lemon.xnb" />
+    <AndroidAsset Include="Assets\FruitArchery\fruit_orange.xnb" />
+    <AndroidAsset Include="Assets\FruitArchery\fruit_pear.xnb" />
+    <AndroidAsset Include="Assets\FruitArchery\fruit_pineapple.xnb" />
+    <AndroidAsset Include="Assets\FruitArchery\fruit_strawberry.xnb" />
+    <AndroidAsset Include="Assets\FruitArchery\Score.xnb" />
+    <AndroidAsset Include="Assets\FruitArchery\weapon_arrow.xnb" />
+    <AndroidAsset Include="Assets\FruitArchery\weapon_bow.xnb" />
+    <AndroidAsset Include="Assets\FruitArchery\weapon_bow_sprite.xnb" />
+    <AndroidAsset Include="Assets\FruitNinja\banana.xnb" />
+    <AndroidAsset Include="Assets\FruitNinja\banana-1.xnb" />
+    <AndroidAsset Include="Assets\FruitNinja\banana-2.xnb" />
+    <AndroidAsset Include="Assets\FruitNinja\banana-splat.xnb" />
+    <AndroidAsset Include="Assets\FruitNinja\bomb.xnb" />
+    <AndroidAsset Include="Assets\FruitNinja\bomb-1.xnb" />
+    <AndroidAsset Include="Assets\FruitNinja\bomb-2.xnb" />
+    <AndroidAsset Include="Assets\FruitNinja\bomb-3.xnb" />
+    <AndroidAsset Include="Assets\FruitNinja\GameFont.xnb" />
+    <AndroidAsset Include="Assets\FruitNinja\menu.xnb" />
+    <AndroidAsset Include="Assets\FruitNinja\NotifFont.xnb" />
+    <AndroidAsset Include="Assets\FruitNinja\pause_button.xnb" />
+    <AndroidAsset Include="Assets\FruitNinja\peach.xnb" />
+    <AndroidAsset Include="Assets\FruitNinja\peach-1.xnb" />
+    <AndroidAsset Include="Assets\FruitNinja\peach-2.xnb" />
+    <AndroidAsset Include="Assets\FruitNinja\peach-splat.xnb" />
+    <AndroidAsset Include="Assets\FruitNinja\play_button.xnb" />
+    <AndroidAsset Include="Assets\FruitNinja\strawberry.xnb" />
+    <AndroidAsset Include="Assets\FruitNinja\strawberry-1.xnb" />
+    <AndroidAsset Include="Assets\FruitNinja\strawberry-2.xnb" />
+    <AndroidAsset Include="Assets\FruitNinja\strawberry-splat.xnb" />
+    <AndroidAsset Include="Assets\FruitNinja\watermelon.xnb" />
+    <AndroidAsset Include="Assets\FruitNinja\watermelon-1.xnb" />
+    <AndroidAsset Include="Assets\FruitNinja\watermelon-2.xnb" />
+    <AndroidAsset Include="Assets\FruitNinja\watermelon-splat.xnb" />
+    <AndroidAsset Include="Assets\FruitNinja\apple.xnb" />
+    <AndroidAsset Include="Assets\FruitNinja\apple-1.xnb" />
+    <AndroidAsset Include="Assets\FruitNinja\apple-2.xnb" />
+    <AndroidAsset Include="Assets\FruitNinja\apple-splat.xnb" />
+    <AndroidAsset Include="Assets\FruitNinja\background.xnb" />
+    <AndroidAsset Include="Assets\predators.json" />
+    <AndroidAsset Include="Assets\Breakout\ball_light.xnb" />
+    <AndroidAsset Include="Assets\Breakout\GameFont.xnb" />
+    <AndroidAsset Include="Assets\Breakout\pause_button.xnb" />
+    <AndroidAsset Include="Assets\Breakout\play_button.xnb" />
+    <AndroidAsset Include="Assets\FruitNinja\fruit_logo.xnb" />
+    <AndroidAsset Include="Assets\FruitNinja\ninja_logo.xnb" />
+    <AndroidAsset Include="Assets\SpaceRunner\laser_on\laser_on_1.xnb" />
+    <AndroidAsset Include="Assets\SpaceRunner\laser_on\laser_on_10.xnb" />
+    <AndroidAsset Include="Assets\SpaceRunner\laser_on\laser_on_11.xnb" />
+    <AndroidAsset Include="Assets\SpaceRunner\laser_on\laser_on_12.xnb" />
+    <AndroidAsset Include="Assets\SpaceRunner\laser_on\laser_on_13.xnb" />
+    <AndroidAsset Include="Assets\SpaceRunner\laser_on\laser_on_14.xnb" />
+    <AndroidAsset Include="Assets\SpaceRunner\laser_on\laser_on_15.xnb" />
+    <AndroidAsset Include="Assets\SpaceRunner\laser_on\laser_on_2.xnb" />
+    <AndroidAsset Include="Assets\SpaceRunner\laser_on\laser_on_3.xnb" />
+    <AndroidAsset Include="Assets\SpaceRunner\laser_on\laser_on_4.xnb" />
+    <AndroidAsset Include="Assets\SpaceRunner\laser_on\laser_on_5.xnb" />
+    <AndroidAsset Include="Assets\SpaceRunner\laser_on\laser_on_6.xnb" />
+    <AndroidAsset Include="Assets\SpaceRunner\laser_on\laser_on_7.xnb" />
+    <AndroidAsset Include="Assets\SpaceRunner\laser_on\laser_on_8.xnb" />
+    <AndroidAsset Include="Assets\SpaceRunner\laser_on\laser_on_9.xnb" />
+    <AndroidAsset Include="Assets\SpaceRunner\astro-fall.xnb" />
+    <AndroidAsset Include="Assets\SpaceRunner\astro-off.xnb" />
+    <AndroidAsset Include="Assets\SpaceRunner\astro-rocket.xnb" />
+    <AndroidAsset Include="Assets\SpaceRunner\boulder.xnb" />
+    <AndroidAsset Include="Assets\SpaceRunner\coin.xnb" />
+    <AndroidAsset Include="Assets\SpaceRunner\GameFont.xnb" />
+    <AndroidAsset Include="Assets\SpaceRunner\laser.xnb" />
+    <AndroidAsset Include="Assets\SpaceRunner\laser_gate.xnb" />
+    <AndroidAsset Include="Assets\SpaceRunner\laser_on.xnb" />
+    <AndroidAsset Include="Assets\SpaceRunner\laser_on_2.xnb" />
+    <AndroidAsset Include="Assets\SpaceRunner\menu.xnb" />
+    <AndroidAsset Include="Assets\SpaceRunner\NotifFont.xnb" />
+    <AndroidAsset Include="Assets\SpaceRunner\pause_button.xnb" />
+    <AndroidAsset Include="Assets\SpaceRunner\play_button.xnb" />
+    <AndroidAsset Include="Assets\SpaceRunner\rocket.xnb" />
+    <AndroidAsset Include="Assets\SpaceRunner\rocket_with_astronaut.xnb" />
+    <AndroidAsset Include="Assets\SpaceRunner\runner_logo.xnb" />
+    <AndroidAsset Include="Assets\SpaceRunner\space_1.xnb" />
+    <AndroidAsset Include="Assets\SpaceRunner\space_2.xnb" />
+    <AndroidAsset Include="Assets\SpaceRunner\space_logo.xnb" />
+    <AndroidAsset Include="Assets\SpaceRunner\space-2.xnb" />
+    <AndroidAsset Include="Assets\SpaceRunner\spaceship.xnb" />
+    <AndroidAsset Include="Assets\TyperShark\bubble1.xnb" />
+    <AndroidAsset Include="Assets\TyperShark\bubble2.xnb" />
+    <AndroidAsset Include="Assets\TyperShark\bubble3.xnb" />
+    <AndroidAsset Include="Assets\TyperShark\GameFont.xnb" />
+    <AndroidAsset Include="Assets\TyperShark\GameFontLarge.xnb" />
+    <AndroidAsset Include="Assets\TyperShark\mountain1.xnb" />
+    <AndroidAsset Include="Assets\TyperShark\mountain2.xnb" />
+    <AndroidAsset Include="Assets\TyperShark\mountain3.xnb" />
+    <AndroidAsset Include="Assets\TyperShark\oceanfloor.xnb" />
+    <AndroidAsset Include="Assets\TyperShark\pause_button.xnb" />
+    <AndroidAsset Include="Assets\TyperShark\play_button.xnb" />
+    <AndroidAsset Include="Assets\TyperShark\shark_zapper_ready_msg.xnb" />
+    <AndroidAsset Include="Assets\TyperShark\shark_zapper_ui.xnb" />
+    <AndroidAsset Include="Assets\TyperShark\top_background_clear.xnb" />
+    <AndroidAsset Include="Assets\TyperShark\top_background_iceberg.xnb" />
+    <AndroidAsset Include="Assets\TyperShark\top_background_lighthouse.xnb" />
+    <AndroidAsset Include="Assets\TyperShark\top_background_shipwreck.xnb" />
+    <AndroidAsset Include="Assets\TyperShark\top_background_storm.xnb" />
+    <AndroidAsset Include="Assets\TyperShark\top_background_volcano.xnb" />
+    <AndroidAsset Include="Assets\TyperShark\water.xnb" />
+    <AndroidAsset Include="Assets\TyperShark\water2.xnb" />
+    <AndroidAsset Include="Assets\TyperShark\Audio\cached_bad.xnb" />
+    <AndroidAsset Include="Assets\TyperShark\Audio\cached_buttonclick.xnb" />
+    <AndroidAsset Include="Assets\TyperShark\Audio\cached_divebell1.xnb" />
+    <AndroidAsset Include="Assets\TyperShark\Audio\cached_diverenters.xnb" />
+    <AndroidAsset Include="Assets\TyperShark\Audio\cached_eerie1.xnb" />
+    <AndroidAsset Include="Assets\TyperShark\Audio\cached_eerie3.xnb" />
+    <AndroidAsset Include="Assets\TyperShark\Audio\cached_emp.xnb" />
+    <AndroidAsset Include="Assets\TyperShark\Audio\cached_explosion.xnb" />
+    <AndroidAsset Include="Assets\TyperShark\Audio\cached_extralife.xnb" />
+    <AndroidAsset Include="Assets\TyperShark\Audio\cached_jellyfish.xnb" />
+    <AndroidAsset Include="Assets\TyperShark\Audio\cached_piranhadies1.xnb" />
+    <AndroidAsset Include="Assets\TyperShark\Audio\cached_playerdies.xnb" />
+    <AndroidAsset Include="Assets\TyperShark\Audio\cached_sharkdies.xnb" />
+    <AndroidAsset Include="Assets\TyperShark\Audio\cached_sharkhurt.xnb" />
+    <AndroidAsset Include="Assets\TyperShark\Audio\cached_shipmove.xnb" />
+    <AndroidAsset Include="Assets\TyperShark\Audio\cached_sonarping1.xnb" />
+    <AndroidAsset Include="Assets\TyperShark\Audio\cached_tone1.xnb" />
+    <AndroidAsset Include="Assets\TyperShark\Audio\cached_tone10.xnb" />
+    <AndroidAsset Include="Assets\TyperShark\Audio\cached_tone11.xnb" />
+    <AndroidAsset Include="Assets\TyperShark\Audio\cached_tone12.xnb" />
+    <AndroidAsset Include="Assets\TyperShark\Audio\cached_tone13.xnb" />
+    <AndroidAsset Include="Assets\TyperShark\Audio\cached_tone2.xnb" />
+    <AndroidAsset Include="Assets\TyperShark\Audio\cached_tone3.xnb" />
+    <AndroidAsset Include="Assets\TyperShark\Audio\cached_tone4.xnb" />
+    <AndroidAsset Include="Assets\TyperShark\Audio\cached_tone5.xnb" />
+    <AndroidAsset Include="Assets\TyperShark\Audio\cached_tone6.xnb" />
+    <AndroidAsset Include="Assets\TyperShark\Audio\cached_tone7.xnb" />
+    <AndroidAsset Include="Assets\TyperShark\Audio\cached_tone8.xnb" />
+    <AndroidAsset Include="Assets\TyperShark\Audio\cached_tone9.xnb" />
+    <AndroidAsset Include="Assets\TyperShark\Audio\cached_torpedolaunch.xnb" />
+    <AndroidAsset Include="Assets\TyperShark\Audio\cached_treasure.xnb" />
+    <AndroidAsset Include="Assets\TyperShark\Audio\cached_type.xnb" />
+    <AndroidAsset Include="Assets\TyperShark\Audio\cached_type2.xnb" />
+    <AndroidAsset Include="Assets\TyperShark\Audio\cached_type3.xnb" />
+    <AndroidAsset Include="Assets\TyperShark\Audio\cached_underwaterloop.xnb" />
+    <AndroidAsset Include="Assets\TyperShark\Audio\cached_wave_bonus.xnb" />
+    <AndroidAsset Include="Assets\TyperShark\Audio\cached_wave_bonus2.xnb" />
+    <AndroidAsset Include="Assets\TyperShark\Audio\cached_wave_bonus3.xnb" />
+    <AndroidAsset Include="Assets\TyperShark\Audio\cached_wingem.xnb" />
+    <AndroidAsset Include="Assets\TyperShark\Audio\cached_wrong.xnb" />
+    <AndroidAsset Include="Assets\TyperShark\Predators\0063cd9f7368453fe17e8df47436843d.xnb" />
+    <AndroidAsset Include="Assets\TyperShark\Predators\02f86455b77bc9407d9513a504008d29.xnb" />
+    <AndroidAsset Include="Assets\TyperShark\Predators\03823140e3e951ddafc6bbc9f7061153.xnb" />
+    <AndroidAsset Include="Assets\TyperShark\Predators\052dc44e6bfd6596b5e8504e15c3df05.xnb" />
+    <AndroidAsset Include="Assets\TyperShark\Predators\0588db333912ea5ed77def9b183969cd.xnb" />
+    <AndroidAsset Include="Assets\TyperShark\Predators\0633848c1555eef5e53af5fbcf8066c9.xnb" />
+    <AndroidAsset Include="Assets\TyperShark\Predators\06f0aa0e88a5b5ebb0817c0e8fd0fae5.xnb" />
+    <AndroidAsset Include="Assets\TyperShark\Predators\07c8285e149cdc8873ae47427facf9cc.xnb" />
+    <AndroidAsset Include="Assets\TyperShark\Predators\07e1439b1c37e1650ac53268453c136d.xnb" />
+    <AndroidAsset Include="Assets\TyperShark\Predators\09afd47e9bbef653c119adac8c9bdc61.xnb" />
+    <AndroidAsset Include="Assets\TyperShark\Predators\0b2b47bddaca63c9008d4e077bd83b75.xnb" />
+    <AndroidAsset Include="Assets\TyperShark\Predators\0e05cab8df391095e89dd40d0622bba1.xnb" />
+    <AndroidAsset Include="Assets\TyperShark\Predators\0e3050c3a21a28c5ad1aa0c57d7ae20f.xnb" />
+    <AndroidAsset Include="Assets\TyperShark\Predators\0e67c03ddb636f017cac451dc6f8d4e3.xnb" />
+    <AndroidAsset Include="Assets\TyperShark\Predators\0ed67af276d032dd9b37926617a608e5.xnb" />
+    <AndroidAsset Include="Assets\TyperShark\Predators\1186c6df675d0c100b0a3c81e868bb2a.xnb" />
+    <AndroidAsset Include="Assets\TyperShark\Predators\14d874fadd799e2646d518f2d28d679f.xnb" />
+    <AndroidAsset Include="Assets\TyperShark\Predators\15ac4beb29868aeb72387a36341ac3e4.xnb" />
+    <AndroidAsset Include="Assets\TyperShark\Predators\17bb0b8f4033a061eb8ec0d4b361e162.xnb" />
+    <AndroidAsset Include="Assets\TyperShark\Predators\1d0494f8d3c9186e7ae5ada37cca4301.xnb" />
+    <AndroidAsset Include="Assets\TyperShark\Predators\1dbcb2a2b876ae349ba24bdd406ea390.xnb" />
+    <AndroidAsset Include="Assets\TyperShark\Predators\219955c04301cc689c00143b3f185adb.xnb" />
+    <AndroidAsset Include="Assets\TyperShark\Predators\24aa15474835274e5745c1ae064283aa.xnb" />
+    <AndroidAsset Include="Assets\TyperShark\Predators\2c6d3b007dd962dd9866326bff42e98a.xnb" />
+    <AndroidAsset Include="Assets\TyperShark\Predators\2f079f9293df63fb12e0f1bdfd3d432e.xnb" />
+    <AndroidAsset Include="Assets\TyperShark\Predators\30ef6391d42da7a8e4793f92ed21c72d.xnb" />
+    <AndroidAsset Include="Assets\TyperShark\Predators\31c35be99112b66e4d8abbcb7427d1be.xnb" />
+    <AndroidAsset Include="Assets\TyperShark\Predators\31ca8561c2752a87533cb19873f76b52.xnb" />
+    <AndroidAsset Include="Assets\TyperShark\Predators\3386db0683abdfde9e781acc23a2862a.xnb" />
+    <AndroidAsset Include="Assets\TyperShark\Predators\33c705c3e3011f39de506e29f46df16c.xnb" />
+    <AndroidAsset Include="Assets\TyperShark\Predators\356bc4689bea158c31f5cea1432cb0e7.xnb" />
+    <AndroidAsset Include="Assets\TyperShark\Predators\390bcf9c891465757bf6230dcd2a5f9b.xnb" />
+    <AndroidAsset Include="Assets\TyperShark\Predators\413fd83780b0342818c2f567ca0f30f6.xnb" />
+    <AndroidAsset Include="Assets\TyperShark\Predators\44d3c3f4d92edc2f3514bb4a8bd02129.xnb" />
+    <AndroidAsset Include="Assets\TyperShark\Predators\45da1c252f1d6ab801deee550e121716.xnb" />
+    <AndroidAsset Include="Assets\TyperShark\Predators\4746747547bd8bdda5f4d90d027ccdf9.xnb" />
+    <AndroidAsset Include="Assets\TyperShark\Predators\4825908a33fcb5f281ed5c08da8888b8.xnb" />
+    <AndroidAsset Include="Assets\TyperShark\Predators\491db830c712322b93c3f8206e34f6f6.xnb" />
+    <AndroidAsset Include="Assets\TyperShark\Predators\49b03f567bc0e920430fd3dde6c96c15.xnb" />
+    <AndroidAsset Include="Assets\TyperShark\Predators\4bd4435763536f9cf28d60613cb65422.xnb" />
+    <AndroidAsset Include="Assets\TyperShark\Predators\4ce76124a04d78bc2bd50b9359b5d1c5.xnb" />
+    <AndroidAsset Include="Assets\TyperShark\Predators\4d110d2f4cc2a7dcb6dbd4ee52d70705.xnb" />
+    <AndroidAsset Include="Assets\TyperShark\Predators\4fa8c0159263f087dbed7a96fbdf29c6.xnb" />
+    <AndroidAsset Include="Assets\TyperShark\Predators\505d9032602efcee68f54b69197139c0.xnb" />
+    <AndroidAsset Include="Assets\TyperShark\Predators\510226a7b2bd01a7d0e7d6a36b82f4d6.xnb" />
+    <AndroidAsset Include="Assets\TyperShark\Predators\54312c6927254dd85c3a77aa19c4f624.xnb" />
+    <AndroidAsset Include="Assets\TyperShark\Predators\5467576e2ebabd0b855b50409235a481.xnb" />
+    <AndroidAsset Include="Assets\TyperShark\Predators\56d026948b0575c8e60bb316c05eb294.xnb" />
+    <AndroidAsset Include="Assets\TyperShark\Predators\58d38f3c0c527ce3b6713d341e83100b.xnb" />
+    <AndroidAsset Include="Assets\TyperShark\Predators\58f7b78c14e2c2aebffb020cd3291dd6.xnb" />
+    <AndroidAsset Include="Assets\TyperShark\Predators\5959fe16c8f63963adcf96b12df25b2d.xnb" />
+    <AndroidAsset Include="Assets\TyperShark\Predators\5fa1f30fcc47e5216dbefeec7ad2a111.xnb" />
+    <AndroidAsset Include="Assets\TyperShark\Predators\5fa71116732d55990f8ca3b9206d2202.xnb" />
+    <AndroidAsset Include="Assets\TyperShark\Predators\5fc0fef1f61a492a558d9c244e6a7922.xnb" />
+    <AndroidAsset Include="Assets\TyperShark\Predators\610884cf667a3d74f9b227a56ba6b75a.xnb" />
+    <AndroidAsset Include="Assets\TyperShark\Predators\625e4ca1320c80d84ec5b9ec567e8956.xnb" />
+    <AndroidAsset Include="Assets\TyperShark\Predators\668b03e64e69df4716bcee593a9de86c.xnb" />
+    <AndroidAsset Include="Assets\TyperShark\Predators\67a5106fbd056e30ff9bae1048f602ab.xnb" />
+    <AndroidAsset Include="Assets\TyperShark\Predators\6830241f0278074849a075f9612b2776.xnb" />
+    <AndroidAsset Include="Assets\TyperShark\Predators\6b0d9ed4bfb2168f60357a42360db45a.xnb" />
+    <AndroidAsset Include="Assets\TyperShark\Predators\6b941708f89e75bfa39e5922d5b527b0.xnb" />
+    <AndroidAsset Include="Assets\TyperShark\Predators\70c2df30ca1803ecebbedf6272ce891c.xnb" />
+    <AndroidAsset Include="Assets\TyperShark\Predators\712c6427abffe16465f69239628a72eb.xnb" />
+    <AndroidAsset Include="Assets\TyperShark\Predators\71e572d6b873e46e0711c52187156587.xnb" />
+    <AndroidAsset Include="Assets\TyperShark\Predators\72d2fd13baeb01798952773aee4001f5.xnb" />
+    <AndroidAsset Include="Assets\TyperShark\Predators\72f38377c5381fd1a0e1d66c3d25808a.xnb" />
+    <AndroidAsset Include="Assets\TyperShark\Predators\7adf4a2702ccc73208fd5a98b50928a3.xnb" />
+    <AndroidAsset Include="Assets\TyperShark\Predators\7be61a5105da4a768bd802918615a28f.xnb" />
+    <AndroidAsset Include="Assets\TyperShark\Predators\7e4270670e1a620c1de546bad051bb60.xnb" />
+    <AndroidAsset Include="Assets\TyperShark\Predators\7f6691c38df47ca4d7571ff625f228d6.xnb" />
+    <AndroidAsset Include="Assets\TyperShark\Predators\80e484afadd8575bc7e5889429f8cba2.xnb" />
+    <AndroidAsset Include="Assets\TyperShark\Predators\831360b9b7a434f1b4929fdf00d380d8.xnb" />
+    <AndroidAsset Include="Assets\TyperShark\Predators\8710e1929658fda76e527f8f1818f826.xnb" />
+    <AndroidAsset Include="Assets\TyperShark\Predators\8b327efef968195224421c26546353c7.xnb" />
+    <AndroidAsset Include="Assets\TyperShark\Predators\8cb780116b0184dec970e844c70ddaef.xnb" />
+    <AndroidAsset Include="Assets\TyperShark\Predators\94d8d862f969fe8df2fc86bde0e9059c.xnb" />
+    <AndroidAsset Include="Assets\TyperShark\Predators\958df7ad1938060bd05c5307eb62b867.xnb" />
+    <AndroidAsset Include="Assets\TyperShark\Predators\9641792fac271112f539a8796b025fb8.xnb" />
+    <AndroidAsset Include="Assets\TyperShark\Predators\98080a2762ea1c94a6161f093556bd67.xnb" />
+    <AndroidAsset Include="Assets\TyperShark\Predators\9a9538f5c9ffab6fb86bf1079ca31036.xnb" />
+    <AndroidAsset Include="Assets\TyperShark\Predators\9ba4462f6ae804b96c5df73bf391a934.xnb" />
+    <AndroidAsset Include="Assets\TyperShark\Predators\9d2008b53dfbc9f6229c4d1aaa7d6160.xnb" />
+    <AndroidAsset Include="Assets\TyperShark\Predators\9e9b358a2195d2286d0900725e4913ae.xnb" />
+    <AndroidAsset Include="Assets\TyperShark\Predators\9eded678bad70d7510c327538744b6b3.xnb" />
+    <AndroidAsset Include="Assets\TyperShark\Predators\9f2fd0947894bec98e98016cee475546.xnb" />
+    <AndroidAsset Include="Assets\TyperShark\Predators\a0b4365d9b1cea4052c2283381b852e4.xnb" />
+    <AndroidAsset Include="Assets\TyperShark\Predators\a45f95ac4732ef00914c271623279b81.xnb" />
+    <AndroidAsset Include="Assets\TyperShark\Predators\a7eac6f4109306c7032f705ead220cdf.xnb" />
+    <AndroidAsset Include="Assets\TyperShark\Predators\a85fe23b88cc4f4ac3d2459975dc8834.xnb" />
+    <AndroidAsset Include="Assets\TyperShark\Predators\a860d9c10d588700d71d7414ac62bf24.xnb" />
+    <AndroidAsset Include="Assets\TyperShark\Predators\a95b8b8cd1519a59131c2b5f7ad7ead4.xnb" />
+    <AndroidAsset Include="Assets\TyperShark\Predators\ae0dae412baedd5e2bf725454ce5bc90.xnb" />
+    <AndroidAsset Include="Assets\TyperShark\Predators\b0783b246b18e1bd22c0637dd6f29349.xnb" />
+    <AndroidAsset Include="Assets\TyperShark\Predators\b0dd392f05386e7a254ebc8064387789.xnb" />
+    <AndroidAsset Include="Assets\TyperShark\Predators\b7f58045b5c610b930b746a553946c5b.xnb" />
+    <AndroidAsset Include="Assets\TyperShark\Predators\b834bcc635c863351d5e07742ed70137.xnb" />
+    <AndroidAsset Include="Assets\TyperShark\Predators\b8dd46567cedd2255e9395b9bf00ce56.xnb" />
+    <AndroidAsset Include="Assets\TyperShark\Predators\b8eb790f79a2be1b1fe955e76f62a9fe.xnb" />
+    <AndroidAsset Include="Assets\TyperShark\Predators\b8fe2d4d82cabeae086473e6fe602728.xnb" />
+    <AndroidAsset Include="Assets\TyperShark\Predators\b909f391ed16d2445d06279740825af7.xnb" />
+    <AndroidAsset Include="Assets\TyperShark\Predators\b9e85740cdb147eeefdccdd1dd309a2c.xnb" />
+    <AndroidAsset Include="Assets\TyperShark\Predators\baff4d7d757e366538926036c395bfad.xnb" />
+    <AndroidAsset Include="Assets\TyperShark\Predators\bcc8500a00440737d6d8babdd4bcac03.xnb" />
+    <AndroidAsset Include="Assets\TyperShark\Predators\be57e6bad8e649da06bf02fef0cc7f71.xnb" />
+    <AndroidAsset Include="Assets\TyperShark\Predators\c09f82f33ba1ca2be037f88729fd3e0c.xnb" />
+    <AndroidAsset Include="Assets\TyperShark\Predators\c35870599d32f6e374d0c10cd35208e6.xnb" />
+    <AndroidAsset Include="Assets\TyperShark\Predators\c54b9af82745ecba0e12b06072906b75.xnb" />
+    <AndroidAsset Include="Assets\TyperShark\Predators\c595161aead122cac4236aa31688db22.xnb" />
+    <AndroidAsset Include="Assets\TyperShark\Predators\c72cd3f12536c439c46e542a577da580.xnb" />
+    <AndroidAsset Include="Assets\TyperShark\Predators\c834fe0b6812a01180d75ee5522a8713.xnb" />
+    <AndroidAsset Include="Assets\TyperShark\Predators\cc2ea85058993d611ecddcd1546586c6.xnb" />
+    <AndroidAsset Include="Assets\TyperShark\Predators\d21344d9660def013d14c77f435e8082.xnb" />
+    <AndroidAsset Include="Assets\TyperShark\Predators\d4a11ff43b668d0d93b8afc4d8202272.xnb" />
+    <AndroidAsset Include="Assets\TyperShark\Predators\d4ab556dfb824b6cc0753cea5ce81ce4.xnb" />
+    <AndroidAsset Include="Assets\TyperShark\Predators\d54610d969d7fb7270c688b6b22fbe5d.xnb" />
+    <AndroidAsset Include="Assets\TyperShark\Predators\d64527458eaa07d1db59d36e37411827.xnb" />
+    <AndroidAsset Include="Assets\TyperShark\Predators\d81c154b0ca575a3fd6fd076ebbcaea1.xnb" />
+    <AndroidAsset Include="Assets\TyperShark\Predators\d86d1229cfa51f616f220fe72bc60093.xnb" />
+    <AndroidAsset Include="Assets\TyperShark\Predators\d8ce00647e648d19055754ec1983cf73.xnb" />
+    <AndroidAsset Include="Assets\TyperShark\Predators\da2f2d951eada24fdd83666fd481a7d3.xnb" />
+    <AndroidAsset Include="Assets\TyperShark\Predators\db69654c572aa6ce7ec6d4b555b574a0.xnb" />
+    <AndroidAsset Include="Assets\TyperShark\Predators\dcb529cd6c97d11d7391e22cb866e286.xnb" />
+    <AndroidAsset Include="Assets\TyperShark\Predators\e42be41d6dcd05685796aaff9b4f235d.xnb" />
+    <AndroidAsset Include="Assets\TyperShark\Predators\e6535adf7910fb28e36f69d63ca6c6ce.xnb" />
+    <AndroidAsset Include="Assets\TyperShark\Predators\e8092174c049f47d890cb72f9de02f6b.xnb" />
+    <AndroidAsset Include="Assets\TyperShark\Predators\e883dd79dfd54b6d6e733abdbb51bbab.xnb" />
+    <AndroidAsset Include="Assets\TyperShark\Predators\e8ca3a27bcc8a4333ddba0cfe32f424c.xnb" />
+    <AndroidAsset Include="Assets\TyperShark\Predators\ec20b92f1d81304af6beff32b3fe3820.xnb" />
+    <AndroidAsset Include="Assets\TyperShark\Predators\f0b87c8b59244628c2f6188bd5a9ddd2.xnb" />
+    <AndroidAsset Include="Assets\TyperShark\Predators\f2459a228a41bdee3cc6e380dbf2c7eb.xnb" />
+    <AndroidAsset Include="Assets\TyperShark\Predators\f372e42e93392ff5504364bcf94df544.xnb" />
+    <AndroidAsset Include="Assets\TyperShark\Predators\f6a5ad3a3dd0ff5bb15a9ba9a3b3b658.xnb" />
+    <AndroidAsset Include="Assets\TyperShark\Predators\f773f76fbf476a52dd8602972d785777.xnb" />
+    <AndroidAsset Include="Assets\TyperShark\Predators\fa02e57d68f2f654f0541fc349240739.xnb" />
+    <AndroidAsset Include="Assets\TyperShark\Predators\fadaa9e093363231b3802b68559addff.xnb" />
+    <AndroidAsset Include="Assets\TyperShark\Predators\fde5b38efc2bfd4e4402371960584af8.xnb" />
+    <AndroidAsset Include="Assets\TyperShark\Predators\fed81e0f98db0a149ce14edf675fa5b5.xnb" />
+    <AndroidAsset Include="Assets\TyperShark\Predators\ff015d53db37b8bc46ddeff0ed4f0671.xnb" />
+    <AndroidAsset Include="Assets\TyperShark\Predators\ff823993f305575a98657441cca67027.xnb" />
+    <AndroidAsset Include="Assets\TyperShark\Predators\jellyfish_final_death.xnb" />
+    <AndroidAsset Include="Assets\TyperShark\Predators\take_one_for_the_team.xnb" />
+    <AndroidAsset Include="Assets\TyperShark\Predators\toxic_shark_swim_10.xnb" />
+    <AndroidAsset Include="Assets\TyperShark\Predators\toxic_shark_swim_9.xnb" />
+    <AndroidAsset Include="Assets\TrafficRacer\pause_button.xnb" />
+    <AndroidAsset Include="Assets\TrafficRacer\play_button.xnb" />
+    <None Include="app.config" />
+    <AndroidAsset Include="Assets\TrafficRacer\menu.xnb" />
+    <AndroidAsset Include="Assets\FruitArchery\GameFont.xnb" />
+    <AndroidAsset Include="Assets\FruitArchery\pause_button.xnb" />
+    <AndroidAsset Include="Assets\FruitArchery\play_button.xnb" />
+    <AndroidAsset Include="Assets\TrafficRacer\blue_puck.xnb" />
+    <AndroidAsset Include="Assets\Breakout\breakout.xnb" />
+    <AndroidAsset Include="Assets\Breakout\menu1.xnb" />
+    <AndroidAsset Include="Assets\Breakout\menu2.xnb" />
+    <AndroidAsset Include="Assets\Breakout\menu3.xnb" />
+    <AndroidAsset Include="Assets\FruitArchery\menu1.xnb" />
+    <AndroidAsset Include="Assets\FruitArchery\menu2.xnb" />
+    <AndroidAsset Include="Assets\FruitArchery\menu3.xnb" />
+    <AndroidAsset Include="Assets\FruitNinja\menu1.xnb" />
+    <AndroidAsset Include="Assets\FruitNinja\menu2.xnb" />
+    <AndroidAsset Include="Assets\FruitNinja\menu3.xnb" />
+    <AndroidAsset Include="Assets\SpaceRunner\menu1.xnb" />
+    <AndroidAsset Include="Assets\SpaceRunner\menu2.xnb" />
+    <AndroidAsset Include="Assets\SpaceRunner\menu3.xnb" />
+    <AndroidAsset Include="Assets\TrafficRacer\menu1.xnb" />
+    <AndroidAsset Include="Assets\TrafficRacer\menu2.xnb" />
+    <AndroidAsset Include="Assets\TrafficRacer\menu3.xnb" />
+    <AndroidAsset Include="Assets\TyperShark\menu1.xnb" />
+    <AndroidAsset Include="Assets\TyperShark\menu2.xnb" />
+    <AndroidAsset Include="Assets\TyperShark\menu3.xnb" />
+    <AndroidAsset Include="Assets\Replay-5b4318531d17.json" />
+    <AndroidAsset Include="Assets\Breakout\pcm_connected.xnb" />
+    <AndroidAsset Include="Assets\Breakout\pcm_disconnected.xnb" />
+    <AndroidAsset Include="Assets\FruitArchery\pcm_connected.xnb" />
+    <AndroidAsset Include="Assets\FruitArchery\pcm_disconnected.xnb" />
+    <AndroidAsset Include="Assets\FruitNinja\pcm_connected.xnb" />
+    <AndroidAsset Include="Assets\FruitNinja\pcm_disconnected.xnb" />
+    <AndroidAsset Include="Assets\SpaceRunner\pcm_connected.xnb" />
+    <AndroidAsset Include="Assets\SpaceRunner\pcm_disconnected.xnb" />
+    <AndroidAsset Include="Assets\TrafficRacer\pcm_connected.xnb" />
+    <AndroidAsset Include="Assets\TrafficRacer\pcm_disconnected.xnb" />
+    <AndroidAsset Include="Assets\TyperShark\pcm_connected.xnb" />
+    <AndroidAsset Include="Assets\TyperShark\pcm_disconnected.xnb" />
+    <AndroidAsset Include="Assets\Breakout\DiagnosticsFont.xnb" />
+    <AndroidAsset Include="Assets\FruitNinja\DiagnosticsFont.xnb" />
+    <AndroidAsset Include="Assets\SpaceRunner\DiagnosticsFont.xnb" />
+    <AndroidAsset Include="Assets\TyperShark\DiagnosticsFont.xnb" />
+    <AndroidAsset Include="Assets\games.json" />
+    <AndroidAsset Include="Assets\Breakout\stim_symbol.xnb" />
+    <AndroidAsset Include="Assets\FruitArchery\stim_symbol.xnb" />
+    <AndroidAsset Include="Assets\FruitNinja\stim_symbol.xnb" />
+    <AndroidAsset Include="Assets\SpaceRunner\stim_symbol.xnb" />
+    <AndroidAsset Include="Assets\TrafficRacer\stim_symbol.xnb" />
+    <AndroidAsset Include="Assets\TyperShark\stim_symbol.xnb" />
+    <AndroidAsset Include="Assets\Breakout\stim_symbol_nostim.xnb" />
+    <AndroidAsset Include="Assets\FruitArchery\stim_symbol_nostim.xnb" />
+    <AndroidAsset Include="Assets\FruitNinja\stim_symbol_nostim.xnb" />
+    <AndroidAsset Include="Assets\SpaceRunner\stim_symbol_nostim.xnb" />
+    <AndroidAsset Include="Assets\TrafficRacer\stim_symbol_nostim.xnb" />
+    <AndroidAsset Include="Assets\TyperShark\stim_symbol_nostim.xnb" />
+    <AndroidAsset Include="Assets\Breakout\pcm_connected_nostim.xnb" />
+    <AndroidAsset Include="Assets\FruitArchery\pcm_connected_nostim.xnb" />
+    <AndroidAsset Include="Assets\FruitNinja\pcm_connected_nostim.xnb" />
+    <AndroidAsset Include="Assets\SpaceRunner\pcm_connected_nostim.xnb" />
+    <AndroidAsset Include="Assets\TrafficRacer\pcm_connected_nostim.xnb" />
+    <AndroidAsset Include="Assets\TyperShark\pcm_connected_nostim.xnb" />
+    <None Include="Resources\AboutResources.txt" />
+    <None Include="Properties\AndroidManifest.xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\drawable\typingleft0.png">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:UpdateGeneratedFiles</Generator>
+    </AndroidResource>
+    <AndroidResource Include="Resources\drawable\typingright0.png">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:UpdateGeneratedFiles</Generator>
+    </AndroidResource>
+    <AndroidResource Include="Resources\layout\Main.axml" />
+    <AndroidResource Include="Resources\values\Strings.xml" />
+    <AndroidResource Include="Resources\mipmap-hdpi\Icon.png" />
+    <AndroidResource Include="Resources\mipmap-mdpi\Icon.png" />
+    <AndroidResource Include="Resources\mipmap-xhdpi\Icon.png" />
+    <AndroidResource Include="Resources\mipmap-xxhdpi\Icon.png" />
+    <AndroidResource Include="Resources\mipmap-xxxhdpi\Icon.png" />
+    <AndroidResource Include="Resources\drawable\Splash.png" />
+    <AndroidResource Include="Resources\drawable\Icon.png" />
+    <AndroidResource Include="Resources\values\Styles.xml" />
+    <AndroidResource Include="Resources\drawable\plus.png" />
+    <AndroidResource Include="Resources\drawable\FitMi.png" />
+    <AndroidResource Include="Resources\drawable\HOME.png" />
+    <AndroidResource Include="Resources\drawable\replay_logo.jpg" />
+    <AndroidResource Include="Resources\drawable\rectangle2copy.png" />
+    <AndroidResource Include="Resources\drawable\rectangle2.png" />
+    <AndroidResource Include="Resources\layout\Navigation.axml" />
+    <AndroidResource Include="Resources\drawable\HOME.png" />
+    <AndroidResource Include="Resources\drawable\pcmConnected.png" />
+    <AndroidResource Include="Resources\drawable\games.png" />
+    <AndroidResource Include="Resources\drawable\settings.png" />
+    <AndroidResource Include="Resources\drawable\pcmDisconnected.png" />
+    <AndroidResource Include="Resources\drawable\add_photo.png" />
+    <AndroidResource Include="Resources\drawable\back.png" />
+    <AndroidResource Include="Resources\drawable\cancel.png" />
+    <AndroidResource Include="Resources\drawable\curls.jpg" />
+    <AndroidResource Include="Resources\drawable\green_bar.png" />
+    <AndroidResource Include="Resources\drawable\nate.png" />
+    <AndroidResource Include="Resources\drawable\next.png" />
+    <AndroidResource Include="Resources\drawable\no.png" />
+    <AndroidResource Include="Resources\drawable\pause_gray.png" />
+    <AndroidResource Include="Resources\drawable\pause_green.png" />
+    <AndroidResource Include="Resources\drawable\pause_red.png" />
+    <AndroidResource Include="Resources\drawable\pcm_connected.png" />
+    <AndroidResource Include="Resources\drawable\pcm_disconnected.png" />
+    <AndroidResource Include="Resources\drawable\pcm.png" />
+    <AndroidResource Include="Resources\drawable\play_gray.png" />
+    <AndroidResource Include="Resources\drawable\play_green.png" />
+    <AndroidResource Include="Resources\drawable\play_white.png" />
+    <AndroidResource Include="Resources\drawable\reach_across.png" />
+    <AndroidResource Include="Resources\drawable\save.png" />
+    <AndroidResource Include="Resources\drawable\settings.png" />
+    <AndroidResource Include="Resources\drawable\Rectangle_2_Copy.png" />
+    <AndroidResource Include="Resources\drawable\Rectangle_2.png" />
+    <AndroidResource Include="Resources\drawable\RePlay_Logo.jpg" />
+    <AndroidResource Include="Resources\drawable\save.png" />
+    <AndroidResource Include="Resources\drawable\stop_gray.png" />
+    <AndroidResource Include="Resources\drawable\supination.jpg" />
+    <AndroidResource Include="Resources\drawable\txbdc_text.png" />
+    <AndroidResource Include="Resources\drawable\yes.png" />
+    <AndroidResource Include="Resources\layout\Prompt.axml" />
+    <AndroidResource Include="Resources\drawable\wrist_flexion_1.png" />
+    <AndroidResource Include="Resources\layout\GameCard.axml" />
+    <AndroidResource Include="Resources\layout\GameList.axml" />
+    <AndroidResource Include="Resources\drawable\keyboard_arrow_left.png" />
+    <AndroidResource Include="Resources\drawable\keyboard_arrow_right.png" />
+    <AndroidResource Include="Resources\drawable\wrist_flexion.jpg" />
+    <AndroidResource Include="Resources\drawable\yes.png" />
+    <AndroidResource Include="Resources\layout\SettingsLogin.axml" />
+    <AndroidResource Include="Resources\drawable\breakout_screenshot.png" />
+    <AndroidResource Include="Resources\layout\Footer.axml" />
+    <AndroidResource Include="Resources\drawable\EditTextBorder.xml" />
+    <AndroidResource Include="Resources\drawable\fitmi_dialog.png" />
+    <AndroidResource Include="Resources\drawable\wrist_flexion_dialog.png" />
+    <AndroidResource Include="Resources\drawable\CustomSpinner.xml" />
+    <AndroidResource Include="Resources\drawable\spinner_arrow.png" />
+    <AndroidResource Include="Resources\layout\Settings.axml" />
+    <AndroidResource Include="Resources\layout\AssignedPrescriptionItemCard.axml" />
+    <AndroidResource Include="Resources\drawable\delete_24px.png" />
+    <AndroidResource Include="Resources\drawable\cancel_24px.png" />
+    <AndroidResource Include="Resources\drawable\mode_24px.png" />
+    <AndroidResource Include="Resources\drawable\check_box_24px.png" />
+    <AndroidResource Include="Resources\drawable\curls_2.jpg" />
+    <AndroidResource Include="Resources\layout\SavedPrescriptionCard.axml" />
+    <AndroidResource Include="Resources\drawable\EditTextBorderRed.xml" />
+    <AndroidResource Include="Resources\drawable\CircularImage.xml" />
+    <AndroidResource Include="Resources\layout\PatientFragment.axml" />
+    <AndroidResource Include="Resources\drawable\EditTextBorderBlack.xml" />
+    <AndroidResource Include="Resources\values\Colors.xml" />
+    <AndroidResource Include="Resources\drawable\logo.png" />
+    <AndroidResource Include="Resources\drawable\trracer.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\AboutAssets.txt" />
+    <AndroidAsset Include="Assets\DummyGame\temoc.xnb" />
+    <AndroidAsset Include="Assets\exercise_images.json" />
+    <AndroidAsset Include="Assets\defaultProfile.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\layout\PrescriptionDone.axml">
+      <SubType>Designer</SubType>
+    </AndroidResource>
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\drawable\clapping0.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\drawable\curls0.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\drawable\fingertap0.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\drawable\fingertwists0.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\drawable\flipping0.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\drawable\flyout0.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\drawable\grip0.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\drawable\keypinch0.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\drawable\reachacross0.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\drawable\reachdiagonal0.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\drawable\reachout0.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\drawable\rolling0.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\drawable\rotate0.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\drawable\shoulderabd0.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\drawable\shoulderext0.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\drawable\supination0.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\drawable\thumbopp0.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\drawable\touches0.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\drawable\wristdev0.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\drawable\wristflex0.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\drawable\wristFlexion.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\drawable\BorderSlim.xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\drawable\game1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\drawable\game2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\drawable\game3.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\drawable\game4.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\drawable\game5.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\drawable\game6.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\drawable\game7.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\drawable\game8.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\drawable\play_green_inverted.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\drawable\txbdc_button_background_selector.xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\drawable\txbdc_button_foreground_selector.xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\drawable\keyboard_arrow_left_disabled.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\drawable\keyboard_arrow_right_disabled.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\values-xhdpi\dimens.xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\values-xlarge-mdpi\dimens.xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\RePlay_Activity_Breakout\RePlay_Activity_Breakout.csproj">
+      <Project>{a1cb186c-68e1-486c-93c4-d3754dc331d8}</Project>
+      <Name>RePlay_Activity_Breakout</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\RePlay_Activity_FruitArchery\RePlay_Activity_FruitArchery.csproj">
+      <Project>{c2d01046-0e1a-458c-b83a-96c6a713104a}</Project>
+      <Name>RePlay_Activity_FruitArchery</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\RePlay_Activity_FruitNinja\RePlay_Activity_FruitNinja.csproj">
+      <Project>{7faa59df-40b8-42aa-a2e2-40fa8a9835b2}</Project>
+      <Name>RePlay_Activity_FruitNinja</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\RePlay_Activity_RepetitionsMode\RePlay_Activity_RepetitionsMode.csproj">
+      <Project>{2b9f051b-dab5-4d41-8949-640328f2c1a1}</Project>
+      <Name>RePlay_Activity_RepetitionsMode</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\RePlay_Activity_SpaceRunner\RePlay_Activity_SpaceRunner.csproj">
+      <Project>{ce1baf2a-977d-48d4-9546-25f7ab67b383}</Project>
+      <Name>RePlay_Activity_SpaceRunner</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\RePlay_Activity_TherapistManualMode\RePlay_Activity_TherapistManualMode.csproj">
+      <Project>{7013dd5c-f046-4760-930f-d07dcedaa3ad}</Project>
+      <Name>RePlay_Activity_TherapistManualMode</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\RePlay_Activity_TrafficRacer\RePlay_Activity_TrafficRacer.csproj">
+      <Project>{5d15ab7d-b372-45fb-be2d-2e094fbabee1}</Project>
+      <Name>RePlay_Activity_TrafficRacer</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\RePlay_Activity_TyperShark\RePlay_Activity_TyperShark.csproj">
+      <Project>{1bb2ca3e-e6b1-4e5f-9cf5-610bc073b235}</Project>
+      <Name>RePlay_Activity_TyperShark</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\RePlay_Common\RePlay_Common.csproj">
+      <Project>{3FED4926-5CC2-4E0E-B946-0BBB43B2AD71}</Project>
+      <Name>RePlay_Common</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\RePlay_DeviceCommunications\RePlay_DeviceCommunications.csproj">
+      <Project>{8D4BDBBC-0754-4CB4-A645-E6E59241D9EA}</Project>
+      <Name>RePlay_DeviceCommunications</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\RePlay_Exercises\RePlay_Exercises.csproj">
+      <Project>{4B977E85-5FFD-468D-85BD-1D1D7ACE040B}</Project>
+      <Name>RePlay_Exercises</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\RePlay_GoogleCommunications\RePlay_GoogleCommunications.csproj">
+      <Project>{97b6cf0d-b771-4fc9-811d-6b62c41fd98d}</Project>
+      <Name>RePlay_GoogleCommunications</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\RePlay_VNS_Triggering\RePlay_VNS_Triggering.csproj">
+      <Project>{CE68E8F9-DA73-4FF7-ADA2-7430D8CC1F2C}</Project>
+      <Name>RePlay_VNS_Triggering</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\drawable\isohandle0.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\drawable\isoknob0.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\drawable\isopinch0.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\drawable\isowrist0.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\drawable\rangehandle0.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\drawable\rangeknob0.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\drawable\rangewrist0.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\drawable\game9.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\drawable\replay.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\xml\usb_device_filter.xml">
+      <Generator>MSBuild:UpdateGeneratedFiles</Generator>
+      <SubType>Designer</SubType>
+    </AndroidResource>
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\fruit_polygons.xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\layout\VideoTutorialFragment.axml">
+      <SubType>Designer</SubType>
+    </AndroidResource>
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\raw\touches.mp4" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\raw\clapping.mp4" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\raw\curls.mp4" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\raw\fingertap.m4v" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\raw\fingertwists.m4v" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\raw\flipping.m4v" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\raw\flyout.m4v" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\raw\grip.m4v" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\raw\keypinch.m4v" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\raw\reachacross.m4v" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\raw\reachdiagonal.m4v" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\raw\reachout.m4v" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\raw\rolling.m4v" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\raw\shoulderabd.m4v" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\raw\shoulderext.m4v" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\raw\supination.m4v" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\raw\thumbopp.m4v" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\raw\wristdev.m4v" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\raw\wristflex.m4v" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\layout\AddFromSaved.axml">
+      <SubType>Designer</SubType>
+    </AndroidResource>
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\drawable\touchscreen.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\drawable\touch0.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\drawable\game10.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\drawable\keyboard.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\drawable\typing0.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\layout\AddNewPrescriptionItem.axml">
+      <SubType>Designer</SubType>
+    </AndroidResource>
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\typershark_dictionary_sentences.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\typershark_dictionary.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\drawable\tablet_settings.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\layout\SelectRetrieveSetIds.axml">
+      <SubType>Designer</SubType>
+    </AndroidResource>
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\drawable\box.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Assets\TyperShark\Jellyfish\" />
+    <Folder Include="Assets\TyperShark\Predators_Highlighted\" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\BuildDate.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\raw\rotate.mp4" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\typershark_dictionary_left.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\typershark_dictionary_right.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\layout\SettingsMenuPage.xml">
+      <SubType>Designer</SubType>
+    </AndroidResource>
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\layout\SettingsSelectionPage.xml">
+      <SubType>Designer</SubType>
+    </AndroidResource>
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\ProjectIDs.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\layout\InitializationPage.xml">
+      <SubType>Designer</SubType>
+    </AndroidResource>
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\values-xxhdpi\dimens.xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\drawable\retrieve_length_easy.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\drawable\retrieve_length_hard.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\drawable\retrieve_length_medium.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\drawable\retrieve_polygons_easy.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\drawable\retrieve_polygons_hard.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\drawable\retrieve_polygons_medium.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\drawable\retrieve_shape_easy.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\drawable\retrieve_shape_hard.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\drawable\retrieve_shape_medium.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\drawable\retrieve_texture_easy.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\drawable\retrieve_texture_hard.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\drawable\retrieve_texture_medium.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\drawable\retrieve_weight_easy.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\drawable\retrieve_weight_hard.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\drawable\retrieve_weight_medium.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\drawable\gameunknown.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <PackageReference Include="Google.Apis.Drive.v3">
+      <Version>1.49.0.2093</Version>
+    </PackageReference>
+    <PackageReference Include="Google.Apis.Sheets.v4">
+      <Version>1.49.0.2098</Version>
+    </PackageReference>
+    <PackageReference Include="Karamunting.Android.Linsea.UniversalVideoView">
+      <Version>1.1.0.2</Version>
+    </PackageReference>
+    <PackageReference Include="Microcharts">
+      <Version>0.7.1</Version>
+    </PackageReference>
+    <PackageReference Include="Microsoft.AppCenter.Analytics">
+      <Version>3.4.3</Version>
+    </PackageReference>
+    <PackageReference Include="Microsoft.AppCenter.Crashes">
+      <Version>3.4.3</Version>
+    </PackageReference>
+    <PackageReference Include="MonoGame.Framework.Android">
+      <Version>3.8.0.1641</Version>
+    </PackageReference>
+    <PackageReference Include="Refractored.Controls.CircleImageView">
+      <Version>1.0.1</Version>
+    </PackageReference>
+    <PackageReference Include="Refractored.GifImageView">
+      <Version>2.0.0</Version>
+    </PackageReference>
+    <PackageReference Include="SkiaSharp.Views">
+      <Version>2.80.2</Version>
+    </PackageReference>
+    <PackageReference Include="System.Memory">
+      <Version>4.5.4</Version>
+    </PackageReference>
+    <PackageReference Include="System.Numerics.Vectors">
+      <Version>4.5.0</Version>
+    </PackageReference>
+    <PackageReference Include="System.Runtime.CompilerServices.Unsafe">
+      <Version>4.7.1</Version>
+    </PackageReference>
+    <PackageReference Include="Xamarin.Android.Support.CustomTabs">
+      <Version>28.0.0.3</Version>
+    </PackageReference>
+    <PackageReference Include="Xamarin.Android.Support.Design">
+      <Version>28.0.0.3</Version>
+    </PackageReference>
+    <PackageReference Include="Xamarin.Android.Support.v4">
+      <Version>28.0.0.3</Version>
+    </PackageReference>
+    <PackageReference Include="Xamarin.Android.Support.v7.MediaRouter">
+      <Version>28.0.0.3</Version>
+    </PackageReference>
+    <PackageReference Include="Xamarin.AndroidX.Browser">
+      <Version>1.3.0.4</Version>
+    </PackageReference>
+    <PackageReference Include="Xamarin.AndroidX.MediaRouter">
+      <Version>1.2.0.1</Version>
+    </PackageReference>
+    <PackageReference Include="Xamarin.Essentials">
+      <Version>1.5.3.2</Version>
+    </PackageReference>
+    <PackageReference Include="Xamarin.GooglePlayServices.Location">
+      <Version>117.0.0</Version>
+    </PackageReference>
+    <PackageReference Include="Xamarin.AndroidX.Lifecycle.LiveData" Version="2.1.0" />
+    <PackageReference Include="Xamarin.Google.Android.Material" Version="1.0.0" />
+    <PackageReference Include="Xamarin.AndroidX.AppCompat.AppCompatResources" Version="1.2.0.5" />
+    <PackageReference Include="Xamarin.AndroidX.Legacy.Support.V4" Version="1.0.0.5" />
+    <PackageReference Include="Xamarin.AndroidX.Palette" Version="1.0.0.5" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\_RePlay_Avatars\avatar_001_animal_horse.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\_RePlay_Avatars\avatar_002_animal_cow.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\_RePlay_Avatars\avatar_003_animal_chicken.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\_RePlay_Avatars\avatar_004_animal_sheep.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\_RePlay_Avatars\avatar_005_animal_rabbit.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\_RePlay_Avatars\avatar_006_animal_dog.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\_RePlay_Avatars\avatar_007_animal_chick.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\_RePlay_Avatars\avatar_008_animal_mouse.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\_RePlay_Avatars\avatar_009_animal_cat.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\_RePlay_Avatars\avatar_010_animal_pig.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\_RePlay_Avatars\avatar_011_animal_elephant.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\_RePlay_Avatars\avatar_012_animal_lion.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\_RePlay_Avatars\avatar_013_animal_tiger.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\_RePlay_Avatars\avatar_014_animal_gorilla.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\_RePlay_Avatars\avatar_015_animal_zebra.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\_RePlay_Avatars\avatar_016_animal_camel.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\_RePlay_Avatars\avatar_017_animal_bear.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\drawable-xxhdpi\game1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\drawable-xxhdpi\game10.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\drawable-xxhdpi\game11.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\drawable-xxhdpi\game2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\drawable-xxhdpi\game3.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\drawable-xxhdpi\game4.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\drawable-xxhdpi\game5.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\drawable-xxhdpi\game6.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\drawable-xxhdpi\game7.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\drawable-xxhdpi\game8.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\drawable-xxhdpi\game9.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\drawable-xxhdpi\Splash.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\drawable\retrieve_generic.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\drawable\retrieve_intro_find.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\drawable\retrieve_texture2_easy.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\drawable\retrieve_texture2_hard.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\drawable\retrieve_texture2_medium.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\drawable\retrieve_intro_discriminate.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\drawable\pcmConnected_nostim.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\drawable\retrieve_length_single.png">
+      <Generator>MSBuild:UpdateGeneratedFiles</Generator>
+    </AndroidResource>
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\drawable\retrieve_polygons_single.png">
+      <Generator>MSBuild:UpdateGeneratedFiles</Generator>
+    </AndroidResource>
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\drawable\retrieve_shape_single.png">
+      <Generator>MSBuild:UpdateGeneratedFiles</Generator>
+    </AndroidResource>
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\drawable\retrieve_texture_single.png">
+      <Generator>MSBuild:UpdateGeneratedFiles</Generator>
+    </AndroidResource>
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\drawable\retrieve_texture2_single.png">
+      <Generator>MSBuild:UpdateGeneratedFiles</Generator>
+    </AndroidResource>
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\drawable\retrieve_weight_single.png">
+      <Generator>MSBuild:UpdateGeneratedFiles</Generator>
+    </AndroidResource>
+  </ItemGroup>
+  <Import Project="$(MSBuildExtensionsPath)\Xamarin\Android\Xamarin.Android.CSharp.targets" />
+  <Choose>
+    <When Condition="$(TargetFrameworkIdentifier) == 'MonoAndroid' And $(TargetFrameworkVersion) == 'v7.1'" />
+  </Choose>
+  <Choose>
+    <When Condition="$(TargetFrameworkIdentifier) == 'MonoAndroid' And $(TargetFrameworkVersion) == 'v7.1'">
+      <ItemGroup>
+        <Reference Include="MonoGame.Framework">
+          <HintPath>..\packages\MonoGame.Framework.Android\lib\MonoAndroid\MonoGame.Framework.dll</HintPath>
+          <Private>True</Private>
+          <Paket>True</Paket>
+        </Reference>
+      </ItemGroup>
+    </When>
+  </Choose>
+  <Import Project="..\packages\MonoGame.Framework.Android\build\MonoGame.Framework.Android.targets" Condition="Exists('..\packages\MonoGame.Framework.Android\build\MonoGame.Framework.Android.targets')" Label="Paket" />
+  <PropertyGroup>
+    <PreBuildEvent>echo %25date%25 %25time%25 &gt; "$(ProjectDir)/Assets/BuildDate.txt"</PreBuildEvent>
+  </PropertyGroup>
+</Project>

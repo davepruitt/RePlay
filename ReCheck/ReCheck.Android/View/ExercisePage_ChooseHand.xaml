@@ -1,0 +1,63 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             mc:Ignorable="d"
+             x:Class="ReCheck.Droid.View.ExercisePage_ChooseHand">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="65" />
+            <RowDefinition Height="*" />
+        </Grid.RowDefinitions>
+
+        <Grid Grid.Row="0" BackgroundColor="{StaticResource Key=txbdc_offwhite}">
+            <Image Source="recheck.png" 
+                   HorizontalOptions="Start"
+                   Margin="10"
+                   />
+            <Button x:Name="BackButton"
+                        Text="Go back"
+                        Style="{StaticResource Key=TxBDC_Button_Style}"
+                        HorizontalOptions="End"
+                        WidthRequest="150"
+                        Margin="10"
+                        FontSize="18"
+                        Clicked="BackButton_Clicked"
+                        />
+            <BoxView Color="{StaticResource Key=txbdc_lightgrey}"
+                     VerticalOptions="End"
+                     HorizontalOptions="FillAndExpand"
+                     HeightRequest="2"
+                     />
+        </Grid>
+
+        <Grid Grid.Row="1">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="*" />
+                <ColumnDefinition Width="*" />
+            </Grid.ColumnDefinitions>
+
+            <Grid Grid.Column="0">
+                <Button 
+                    x:Name="LeftHandButton"
+                    Text="LEFT HAND"
+                    Margin="50,100"
+                    FontSize="48"
+                    Style="{StaticResource Key=TxBDC_Button_Style}"
+                    Clicked="LeftHandButton_Clicked"
+                    />
+            </Grid>
+            <Grid Grid.Column="1">
+                <Button 
+                    x:Name="RightHandButton"
+                    Text="RIGHT HAND" 
+                    Margin="50,100"
+                    FontSize="48"
+                    Style="{StaticResource Key=TxBDC_Button_Style}"
+                    Clicked="RightHandButton_Clicked"
+                    />
+            </Grid>
+        </Grid>
+    </Grid>
+</ContentPage>

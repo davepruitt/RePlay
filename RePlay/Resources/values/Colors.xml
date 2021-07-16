@@ -1,0 +1,11 @@
+﻿<?xml version="1.0" encoding="UTF-8" ?>
+<resources>
+    <color name="txbdc_white">#ffffff</color>
+    <color name="txbdc_green">#69be28</color>
+    <color name="txbdc_light_green">#E4F7D2</color>
+    <color name="txbdc_dark_green">#2D8709</color>
+    <color name="txbdc_black">#000000</color>
+    <color name="txbdc_offwhite">#f6f6f6</color>
+    <color name="txbdc_lightgrey">#8690a0</color>
+    <color name="txbdc_grey">#474747</color>
+</resources>

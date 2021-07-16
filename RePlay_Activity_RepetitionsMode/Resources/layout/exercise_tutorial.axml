@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+	android:layout_height="match_parent"
+	android:background="@color/txbdc_white"
+	android:gravity="center_horizontal"
+    >
+
+	<RelativeLayout 
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content">
+
+		<ImageView
+			android:id="@+id/reps_banner"
+			android:layout_width="fill_parent"
+			android:layout_height="80dp"
+			android:src="@drawable/green_bar_lg"
+			android:scaleType="fitXY"
+			android:layout_alignParentTop="true"/>
+	
+		<TextView 
+			android:id="@+id/exercise_name"
+			android:layout_width="wrap_content"
+			android:layout_height="80dp"
+			android:gravity="center"
+			android:text="Rep it out!"
+			android:textColor="@color/txbdc_white"
+			android:textSize="48sp"
+			android:layout_alignBottom="@id/reps_banner"
+			android:layout_marginLeft="20dp"/>
+
+	</RelativeLayout>
+
+	
+
+	<LinearLayout 
+		android:orientation="horizontal" 
+		android:layout_width="fill_parent" 
+		android:layout_height="wrap_content"
+		android:layout_marginTop="10dp"
+		android:gravity="center"
+		android:padding="15dp"
+		android:id="@+id/exercise_layout"
+		android:layout_below="@id/reps_banner" >
+
+		<TextView
+			android:id="@+id/exercise_description"
+			android:textSize="42sp"
+			android:padding="5dp"
+			android:textColor="@color/txbdc_black"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:layout_marginTop="10dp"
+			android:text="Exercise:" />
+
+		<TextView
+			android:id="@+id/exercise_description_name"
+			android:textSize="42sp"
+			android:padding="5dp"
+			android:textColor="@color/txbdc_green"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:layout_marginTop="10dp"
+			android:layout_toRightOf="@id/exercise_description"
+			android:text="Clapping" />
+
+    </LinearLayout>
+
+	<Button
+		android:id="@+id/watch_tutorial_button"
+		android:layout_width="900dp"
+		android:layout_height="150dp"
+		android:layout_marginTop="25dp"
+		android:layout_marginRight="10dp"
+		android:scaleType="centerInside"
+		android:adjustViewBounds="true"
+		android:text="WATCH A TUTORIAL ON THIS EXERCISE"
+		android:textSize="42sp"
+		android:layout_alignRight="@id/reps_banner"
+		android:textColor="@drawable/repsmode_txbdc_button_foreground_selector"
+		android:background="@drawable/repsmode_txbdc_button_background_selector"
+	    />
+
+	<Button
+		android:id="@+id/skip_tutorial"
+		android:layout_width="900dp"
+		android:layout_height="150dp"
+		android:layout_marginTop="25dp"
+		android:layout_marginRight="10dp"
+		android:scaleType="centerInside"
+		android:adjustViewBounds="true"
+		android:text="TAKE ME STRAIGHT TO THE EXERCISE"
+		android:textSize="42sp"
+		android:layout_alignRight="@id/reps_banner"
+		android:textColor="@drawable/repsmode_txbdc_button_foreground_selector"
+		android:background="@drawable/repsmode_txbdc_button_background_selector"
+	    />
+
+</LinearLayout>

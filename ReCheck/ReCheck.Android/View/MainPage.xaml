@@ -1,0 +1,138 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:local="clr-namespace:ReCheck.Droid.View"
+             x:Class="ReCheck.Droid.View.MainPage"
+             BackgroundColor="White"
+             >
+
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="65" />
+            <RowDefinition Height="*" />
+        </Grid.RowDefinitions>
+
+        <Grid Grid.Row="0" BackgroundColor="{StaticResource Key=txbdc_offwhite}">
+            <Image Source="recheck.png" 
+                   HorizontalOptions="Start"
+                   Margin="10"
+                   />
+            <BoxView Color="{StaticResource Key=txbdc_lightgrey}"
+                     VerticalOptions="End"
+                     HorizontalOptions="FillAndExpand"
+                     HeightRequest="2"
+                     />
+
+
+            <StackLayout Orientation="Horizontal" HorizontalOptions="End">
+                <Grid RowDefinitions="*, *" ColumnDefinitions="Auto, Auto"
+                      IsVisible="{Binding Path=IsRecheckPCMConnectionVisible, FallbackValue=True}">
+                    <Label Grid.Row="0" Grid.Column="0" Text="IPG: " HorizontalOptions="End" VerticalOptions="End" />
+                    <Label Grid.Row="1" Grid.Column="0" Text="PCM: " HorizontalOptions="End" VerticalOptions="Start" />
+                    <Label Grid.Row="0" Grid.Column="1" Text="{Binding Path=IPG_ID, FallbackValue=Unknown}" HorizontalOptions="Start" VerticalOptions="End" />
+                    <Label Grid.Row="1" Grid.Column="1" Text="{Binding Path=PCM_ID, FallbackValue=Unknown}" HorizontalOptions="Start" VerticalOptions="Start" />
+                </Grid>
+                <ImageButton Source="{Binding Path=PCM_Connection_Image, FallbackValue=pcm_connected.png}"
+                             Margin="10"
+                             x:Name="RecheckPCMConnectionImageButton"
+                             Pressed="RecheckImageButton_Pressed"
+                             Released="RecheckImageButton_Released"
+                             Clicked="RecheckPCMConnectionImageButton_Clicked"
+                             IsVisible="{Binding Path=IsRecheckPCMConnectionVisible, FallbackValue=True}"
+                             />
+                <ImageButton Source="tablet_settings.png"
+                             Margin="10"
+                             x:Name="RecheckSettingsImageButton"
+                             Pressed="RecheckImageButton_Pressed"
+                             Released="RecheckImageButton_Released"
+                             Clicked="RecheckSettingsImageButton_Clicked"
+                             />
+            </StackLayout>
+            
+        </Grid>
+
+        <Grid Grid.Row="1">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="*" />
+                <ColumnDefinition Width="*" />
+            </Grid.ColumnDefinitions>
+
+            <Grid Grid.Column="0" HorizontalOptions="Start" VerticalOptions="Start" Margin="10,0,0,0">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="Auto" />
+                    <ColumnDefinition Width="Auto" />
+                </Grid.ColumnDefinitions>
+
+                <StackLayout Orientation="Vertical" Grid.Column="0">
+                    <Label Text="ReCheck Version:" HorizontalOptions="End" FontAttributes="Bold" />
+                    <Label Text="Build Date:" HorizontalOptions="End" FontAttributes="Bold" />
+                    <Label Text="Tablet ID:" HorizontalOptions="End" FontAttributes="Bold" />
+                </StackLayout>
+
+                <StackLayout Orientation="Vertical" Grid.Column="1">
+                    <Label Text="{Binding Path=ReCheckVersion, FallbackValue=UNKNOWN}" HorizontalOptions="Start" />
+                    <Label Text="{Binding Path=BuildDate, FallbackValue=UNKNOWN}" HorizontalOptions="Start" />
+                    <Label Text="{Binding Path=TabletID, FallbackValue=UNKNOWN}" HorizontalOptions="Start" />
+                </StackLayout>
+
+            </Grid>
+            
+            <Grid Grid.Column="1" HorizontalOptions="End" VerticalOptions="Start" Margin="0,0,10,0">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="Auto" />
+                    <ColumnDefinition Width="Auto" />
+                </Grid.ColumnDefinitions>
+
+                <StackLayout Orientation="Vertical" Grid.Column="0">
+                    <Label Text="Project:" HorizontalOptions="End" FontAttributes="Bold" />
+                    <Label Text="Site:" HorizontalOptions="End" FontAttributes="Bold" />
+                </StackLayout>
+
+                <StackLayout Orientation="Vertical" Grid.Column="1">
+                    <Label Text="{Binding Path=ProjectID, FallbackValue=UNKNOWN}" HorizontalOptions="Start" />
+                    <Label Text="{Binding Path=SiteID, FallbackValue=UNKNOWN}" HorizontalOptions="Start" />
+                </StackLayout>
+                
+            </Grid>
+
+            <StackLayout Orientation="Vertical" Grid.Column="0" Grid.ColumnSpan="2" 
+                         HorizontalOptions="Center" VerticalOptions="Center">
+
+                <Button 
+                    x:Name="ExerciseButton"
+                    Text="EXERCISE"
+                    Margin="10"
+                    FontSize="48"
+                    Style="{StaticResource Key=TxBDC_Button_Style}"
+                    Clicked="ExerciseButton_Clicked"
+                    WidthRequest="500"
+                    HeightRequest="150"
+                    />
+
+                <Button 
+                    x:Name="AssessmentButton"
+                    Text="ASSESSMENT" 
+                    Margin="10"
+                    FontSize="48"
+                    Style="{StaticResource Key=TxBDC_Button_Style}"
+                    Clicked="AssessmentButton_Clicked"
+                    WidthRequest="500"
+                    HeightRequest="150"
+                    />
+
+                <Button
+                    x:Name="QuitButton"
+                    Text="QUIT"
+                    Margin="10"
+                    FontSize="48"
+                    Style="{StaticResource Key=TxBDC_Button_Style}"
+                    WidthRequest="500"
+                    HeightRequest="150"
+                    Clicked="QuitButton_Clicked"
+                    />
+
+            </StackLayout>
+        </Grid>
+    </Grid>
+    
+</ContentPage>

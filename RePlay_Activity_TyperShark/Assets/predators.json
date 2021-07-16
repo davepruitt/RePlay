@@ -1,0 +1,1261 @@
+{
+  "name": "Predators",
+  "currentCostume": 0,
+  "costumes": [
+    {
+      "assetId": "7adf4a2702ccc73208fd5a98b50928a3",
+      "name": "jellyfish swim-1",
+      "bitmapResolution": 2,
+      "md5ext": "7adf4a2702ccc73208fd5a98b50928a3.png",
+      "dataFormat": "png",
+      "rotationCenterX": 46,
+      "rotationCenterY": 32
+    },
+    {
+      "assetId": "390bcf9c891465757bf6230dcd2a5f9b",
+      "name": "jellyfish swim-2",
+      "bitmapResolution": 2,
+      "md5ext": "390bcf9c891465757bf6230dcd2a5f9b.png",
+      "dataFormat": "png",
+      "rotationCenterX": 42,
+      "rotationCenterY": 30
+    },
+    {
+      "assetId": "07e1439b1c37e1650ac53268453c136d",
+      "name": "jellyfish swim-3",
+      "bitmapResolution": 2,
+      "md5ext": "07e1439b1c37e1650ac53268453c136d.png",
+      "dataFormat": "png",
+      "rotationCenterX": 42,
+      "rotationCenterY": 30
+    },
+    {
+      "assetId": "1d0494f8d3c9186e7ae5ada37cca4301",
+      "name": "jellyfish swim-4",
+      "bitmapResolution": 2,
+      "md5ext": "1d0494f8d3c9186e7ae5ada37cca4301.png",
+      "dataFormat": "png",
+      "rotationCenterX": 44,
+      "rotationCenterY": 30
+    },
+    {
+      "assetId": "5467576e2ebabd0b855b50409235a481",
+      "name": "jellyfish swim-5",
+      "bitmapResolution": 2,
+      "md5ext": "5467576e2ebabd0b855b50409235a481.png",
+      "dataFormat": "png",
+      "rotationCenterX": 48,
+      "rotationCenterY": 30
+    },
+    {
+      "assetId": "f773f76fbf476a52dd8602972d785777",
+      "name": "jellyfish swim-6",
+      "bitmapResolution": 2,
+      "md5ext": "f773f76fbf476a52dd8602972d785777.png",
+      "dataFormat": "png",
+      "rotationCenterX": 48,
+      "rotationCenterY": 28
+    },
+    {
+      "assetId": "fa02e57d68f2f654f0541fc349240739",
+      "name": "jellyfish swim-7",
+      "bitmapResolution": 2,
+      "md5ext": "fa02e57d68f2f654f0541fc349240739.png",
+      "dataFormat": "png",
+      "rotationCenterX": 48,
+      "rotationCenterY": 30
+    },
+    {
+      "assetId": "58d38f3c0c527ce3b6713d341e83100b",
+      "name": "jellyfish swim-8",
+      "bitmapResolution": 2,
+      "md5ext": "58d38f3c0c527ce3b6713d341e83100b.png",
+      "dataFormat": "png",
+      "rotationCenterX": 44,
+      "rotationCenterY": 28
+    },
+    {
+      "assetId": "e8ca3a27bcc8a4333ddba0cfe32f424c",
+      "name": "jellyfish swim-9",
+      "bitmapResolution": 2,
+      "md5ext": "e8ca3a27bcc8a4333ddba0cfe32f424c.png",
+      "dataFormat": "png",
+      "rotationCenterX": 46,
+      "rotationCenterY": 28
+    },
+    {
+      "assetId": "49b03f567bc0e920430fd3dde6c96c15",
+      "name": "jellyfish swim-10",
+      "bitmapResolution": 2,
+      "md5ext": "49b03f567bc0e920430fd3dde6c96c15.png",
+      "dataFormat": "png",
+      "rotationCenterX": 46,
+      "rotationCenterY": 28
+    },
+    {
+      "assetId": "09afd47e9bbef653c119adac8c9bdc61",
+      "name": "jellyfish death-1",
+      "bitmapResolution": 2,
+      "md5ext": "09afd47e9bbef653c119adac8c9bdc61.png",
+      "dataFormat": "png",
+      "rotationCenterX": 90,
+      "rotationCenterY": 104
+    },
+    {
+      "assetId": "ae0dae412baedd5e2bf725454ce5bc90",
+      "name": "jellyfish death-2",
+      "bitmapResolution": 2,
+      "md5ext": "ae0dae412baedd5e2bf725454ce5bc90.png",
+      "dataFormat": "png",
+      "rotationCenterX": 91,
+      "rotationCenterY": 105
+    },
+    {
+      "assetId": "06f0aa0e88a5b5ebb0817c0e8fd0fae5",
+      "name": "jellyfish death-3",
+      "bitmapResolution": 2,
+      "md5ext": "06f0aa0e88a5b5ebb0817c0e8fd0fae5.png",
+      "dataFormat": "png",
+      "rotationCenterX": 91,
+      "rotationCenterY": 102
+    },
+    {
+      "assetId": "e883dd79dfd54b6d6e733abdbb51bbab",
+      "name": "jellyfish death-4",
+      "bitmapResolution": 2,
+      "md5ext": "e883dd79dfd54b6d6e733abdbb51bbab.png",
+      "dataFormat": "png",
+      "rotationCenterX": 85,
+      "rotationCenterY": 101
+    },
+    {
+      "assetId": "e6535adf7910fb28e36f69d63ca6c6ce",
+      "name": "jellyfish death-5",
+      "bitmapResolution": 2,
+      "md5ext": "e6535adf7910fb28e36f69d63ca6c6ce.png",
+      "dataFormat": "png",
+      "rotationCenterX": 82,
+      "rotationCenterY": 114
+    },
+    {
+      "assetId": "jellyfish_final_death",
+      "name": "jellyfish death-6",
+      "bitmapResolution": 2,
+      "md5ext": "jellyfish_final_death.png",
+      "dataFormat": "png",
+      "rotationCenterX": 82,
+      "rotationCenterY": 114
+    },
+    {
+      "assetId": "0063cd9f7368453fe17e8df47436843d",
+      "name": "piranha1 death-1",
+      "bitmapResolution": 2,
+      "md5ext": "0063cd9f7368453fe17e8df47436843d.png",
+      "dataFormat": "png",
+      "rotationCenterX": 46,
+      "rotationCenterY": 59
+    },
+    {
+      "assetId": "94d8d862f969fe8df2fc86bde0e9059c",
+      "name": "piranha1 death-2",
+      "bitmapResolution": 2,
+      "md5ext": "94d8d862f969fe8df2fc86bde0e9059c.png",
+      "dataFormat": "png",
+      "rotationCenterX": 44,
+      "rotationCenterY": 56
+    },
+    {
+      "assetId": "0e05cab8df391095e89dd40d0622bba1",
+      "name": "piranha1 death-3",
+      "bitmapResolution": 2,
+      "md5ext": "0e05cab8df391095e89dd40d0622bba1.png",
+      "dataFormat": "png",
+      "rotationCenterX": 44,
+      "rotationCenterY": 47
+    },
+    {
+      "assetId": "67a5106fbd056e30ff9bae1048f602ab",
+      "name": "piranha1 death-4",
+      "bitmapResolution": 2,
+      "md5ext": "67a5106fbd056e30ff9bae1048f602ab.png",
+      "dataFormat": "png",
+      "rotationCenterX": 44,
+      "rotationCenterY": 28
+    },
+    {
+      "assetId": "625e4ca1320c80d84ec5b9ec567e8956",
+      "name": "piranha1 death-5",
+      "bitmapResolution": 2,
+      "md5ext": "625e4ca1320c80d84ec5b9ec567e8956.png",
+      "dataFormat": "png",
+      "rotationCenterX": 44,
+      "rotationCenterY": 36
+    },
+    {
+      "assetId": "1dbcb2a2b876ae349ba24bdd406ea390",
+      "name": "piranha1 death-6",
+      "bitmapResolution": 2,
+      "md5ext": "1dbcb2a2b876ae349ba24bdd406ea390.png",
+      "dataFormat": "png",
+      "rotationCenterX": 44,
+      "rotationCenterY": 42
+    },
+    {
+      "assetId": "c834fe0b6812a01180d75ee5522a8713",
+      "name": "piranha1 death-7",
+      "bitmapResolution": 2,
+      "md5ext": "c834fe0b6812a01180d75ee5522a8713.png",
+      "dataFormat": "png",
+      "rotationCenterX": 44,
+      "rotationCenterY": 46
+    },
+    {
+      "assetId": "72d2fd13baeb01798952773aee4001f5",
+      "name": "piranha1 death-8",
+      "bitmapResolution": 2,
+      "md5ext": "72d2fd13baeb01798952773aee4001f5.png",
+      "dataFormat": "png",
+      "rotationCenterX": 47,
+      "rotationCenterY": 51
+    },
+    {
+      "assetId": "9a9538f5c9ffab6fb86bf1079ca31036",
+      "name": "piranha1 death-9",
+      "bitmapResolution": 2,
+      "md5ext": "9a9538f5c9ffab6fb86bf1079ca31036.png",
+      "dataFormat": "png",
+      "rotationCenterX": 49,
+      "rotationCenterY": 51
+    },
+    {
+      "assetId": "71e572d6b873e46e0711c52187156587",
+      "name": "piranha1 swim-1",
+      "bitmapResolution": 2,
+      "md5ext": "71e572d6b873e46e0711c52187156587.png",
+      "dataFormat": "png",
+      "rotationCenterX": 47,
+      "rotationCenterY": 60
+    },
+    {
+      "assetId": "d8ce00647e648d19055754ec1983cf73",
+      "name": "piranha1 swim-2",
+      "bitmapResolution": 2,
+      "md5ext": "d8ce00647e648d19055754ec1983cf73.png",
+      "dataFormat": "png",
+      "rotationCenterX": 45,
+      "rotationCenterY": 60
+    },
+    {
+      "assetId": "baff4d7d757e366538926036c395bfad",
+      "name": "piranha1 swim-3",
+      "bitmapResolution": 2,
+      "md5ext": "baff4d7d757e366538926036c395bfad.png",
+      "dataFormat": "png",
+      "rotationCenterX": 45,
+      "rotationCenterY": 60
+    },
+    {
+      "assetId": "b0783b246b18e1bd22c0637dd6f29349",
+      "name": "piranha1 swim-4",
+      "bitmapResolution": 2,
+      "md5ext": "b0783b246b18e1bd22c0637dd6f29349.png",
+      "dataFormat": "png",
+      "rotationCenterX": 45,
+      "rotationCenterY": 60
+    },
+    {
+      "assetId": "505d9032602efcee68f54b69197139c0",
+      "name": "piranha1 swim-5",
+      "bitmapResolution": 2,
+      "md5ext": "505d9032602efcee68f54b69197139c0.png",
+      "dataFormat": "png",
+      "rotationCenterX": 45,
+      "rotationCenterY": 60
+    },
+    {
+      "assetId": "0588db333912ea5ed77def9b183969cd",
+      "name": "piranha1 swim-6",
+      "bitmapResolution": 2,
+      "md5ext": "0588db333912ea5ed77def9b183969cd.png",
+      "dataFormat": "png",
+      "rotationCenterX": 45,
+      "rotationCenterY": 60
+    },
+    {
+      "assetId": "a45f95ac4732ef00914c271623279b81",
+      "name": "piranha1 swim-7",
+      "bitmapResolution": 2,
+      "md5ext": "a45f95ac4732ef00914c271623279b81.png",
+      "dataFormat": "png",
+      "rotationCenterX": 45,
+      "rotationCenterY": 60
+    },
+    {
+      "assetId": "219955c04301cc689c00143b3f185adb",
+      "name": "piranha1 swim-8",
+      "bitmapResolution": 2,
+      "md5ext": "219955c04301cc689c00143b3f185adb.png",
+      "dataFormat": "png",
+      "rotationCenterX": 45,
+      "rotationCenterY": 60
+    },
+    {
+      "assetId": "31ca8561c2752a87533cb19873f76b52",
+      "name": "piranha1 swim-9",
+      "bitmapResolution": 2,
+      "md5ext": "31ca8561c2752a87533cb19873f76b52.png",
+      "dataFormat": "png",
+      "rotationCenterX": 45,
+      "rotationCenterY": 60
+    },
+    {
+      "assetId": "4fa8c0159263f087dbed7a96fbdf29c6",
+      "name": "piranha1 swim-10",
+      "bitmapResolution": 2,
+      "md5ext": "4fa8c0159263f087dbed7a96fbdf29c6.png",
+      "dataFormat": "png",
+      "rotationCenterX": 45,
+      "rotationCenterY": 60
+    },
+    {
+      "assetId": "413fd83780b0342818c2f567ca0f30f6",
+      "name": "piranha1 shock",
+      "bitmapResolution": 2,
+      "md5ext": "413fd83780b0342818c2f567ca0f30f6.png",
+      "dataFormat": "png",
+      "rotationCenterX": 53,
+      "rotationCenterY": 79
+    },
+    {
+      "assetId": "a7eac6f4109306c7032f705ead220cdf",
+      "name": "shark1 death-1",
+      "bitmapResolution": 2,
+      "md5ext": "a7eac6f4109306c7032f705ead220cdf.png",
+      "dataFormat": "png",
+      "rotationCenterX": 118,
+      "rotationCenterY": 64
+    },
+    {
+      "assetId": "5fa71116732d55990f8ca3b9206d2202",
+      "name": "shark1 death-2",
+      "bitmapResolution": 2,
+      "md5ext": "5fa71116732d55990f8ca3b9206d2202.png",
+      "dataFormat": "png",
+      "rotationCenterX": 116,
+      "rotationCenterY": 64
+    },
+    {
+      "assetId": "d4ab556dfb824b6cc0753cea5ce81ce4",
+      "name": "shark1 death-3",
+      "bitmapResolution": 2,
+      "md5ext": "d4ab556dfb824b6cc0753cea5ce81ce4.png",
+      "dataFormat": "png",
+      "rotationCenterX": 116,
+      "rotationCenterY": 67
+    },
+    {
+      "assetId": "9d2008b53dfbc9f6229c4d1aaa7d6160",
+      "name": "shark1 death-4",
+      "bitmapResolution": 2,
+      "md5ext": "9d2008b53dfbc9f6229c4d1aaa7d6160.png",
+      "dataFormat": "png",
+      "rotationCenterX": 114,
+      "rotationCenterY": 72
+    },
+    {
+      "assetId": "3386db0683abdfde9e781acc23a2862a",
+      "name": "shark1 death-5",
+      "bitmapResolution": 2,
+      "md5ext": "3386db0683abdfde9e781acc23a2862a.png",
+      "dataFormat": "png",
+      "rotationCenterX": 110,
+      "rotationCenterY": 72
+    },
+    {
+      "assetId": "db69654c572aa6ce7ec6d4b555b574a0",
+      "name": "shark1 death-6",
+      "bitmapResolution": 2,
+      "md5ext": "db69654c572aa6ce7ec6d4b555b574a0.png",
+      "dataFormat": "png",
+      "rotationCenterX": 110,
+      "rotationCenterY": 73
+    },
+    {
+      "assetId": "f372e42e93392ff5504364bcf94df544",
+      "name": "shark1 swim-1",
+      "bitmapResolution": 2,
+      "md5ext": "f372e42e93392ff5504364bcf94df544.png",
+      "dataFormat": "png",
+      "rotationCenterX": 112,
+      "rotationCenterY": 62
+    },
+    {
+      "assetId": "02f86455b77bc9407d9513a504008d29",
+      "name": "shark1 swim-2",
+      "bitmapResolution": 2,
+      "md5ext": "02f86455b77bc9407d9513a504008d29.png",
+      "dataFormat": "png",
+      "rotationCenterX": 114,
+      "rotationCenterY": 62
+    },
+    {
+      "assetId": "a860d9c10d588700d71d7414ac62bf24",
+      "name": "shark1 swim-3",
+      "bitmapResolution": 2,
+      "md5ext": "a860d9c10d588700d71d7414ac62bf24.png",
+      "dataFormat": "png",
+      "rotationCenterX": 119,
+      "rotationCenterY": 62
+    },
+    {
+      "assetId": "e42be41d6dcd05685796aaff9b4f235d",
+      "name": "shark1 swim-4",
+      "bitmapResolution": 2,
+      "md5ext": "e42be41d6dcd05685796aaff9b4f235d.png",
+      "dataFormat": "png",
+      "rotationCenterX": 122,
+      "rotationCenterY": 63
+    },
+    {
+      "assetId": "5fa1f30fcc47e5216dbefeec7ad2a111",
+      "name": "shark1 swim-5",
+      "bitmapResolution": 2,
+      "md5ext": "5fa1f30fcc47e5216dbefeec7ad2a111.png",
+      "dataFormat": "png",
+      "rotationCenterX": 124,
+      "rotationCenterY": 64
+    },
+    {
+      "assetId": "510226a7b2bd01a7d0e7d6a36b82f4d6",
+      "name": "shark1 swim-6",
+      "bitmapResolution": 2,
+      "md5ext": "510226a7b2bd01a7d0e7d6a36b82f4d6.png",
+      "dataFormat": "png",
+      "rotationCenterX": 125,
+      "rotationCenterY": 64
+    },
+    {
+      "assetId": "fadaa9e093363231b3802b68559addff",
+      "name": "shark1 swim-7",
+      "bitmapResolution": 2,
+      "md5ext": "fadaa9e093363231b3802b68559addff.png",
+      "dataFormat": "png",
+      "rotationCenterX": 124,
+      "rotationCenterY": 64
+    },
+    {
+      "assetId": "70c2df30ca1803ecebbedf6272ce891c",
+      "name": "shark1 swim-8",
+      "bitmapResolution": 2,
+      "md5ext": "70c2df30ca1803ecebbedf6272ce891c.png",
+      "dataFormat": "png",
+      "rotationCenterX": 122,
+      "rotationCenterY": 64
+    },
+    {
+      "assetId": "c35870599d32f6e374d0c10cd35208e6",
+      "name": "shark1 swim-9",
+      "bitmapResolution": 2,
+      "md5ext": "c35870599d32f6e374d0c10cd35208e6.png",
+      "dataFormat": "png",
+      "rotationCenterX": 118,
+      "rotationCenterY": 64
+    },
+    {
+      "assetId": "9ba4462f6ae804b96c5df73bf391a934",
+      "name": "shark1 swim-10",
+      "bitmapResolution": 2,
+      "md5ext": "9ba4462f6ae804b96c5df73bf391a934.png",
+      "dataFormat": "png",
+      "rotationCenterX": 114,
+      "rotationCenterY": 64
+    },
+    {
+      "assetId": "da2f2d951eada24fdd83666fd481a7d3",
+      "name": "shark1 shock",
+      "bitmapResolution": 2,
+      "md5ext": "da2f2d951eada24fdd83666fd481a7d3.png",
+      "dataFormat": "png",
+      "rotationCenterX": 124,
+      "rotationCenterY": 67
+    },
+    {
+      "assetId": "8cb780116b0184dec970e844c70ddaef",
+      "name": "hammerhead death-1",
+      "bitmapResolution": 2,
+      "md5ext": "8cb780116b0184dec970e844c70ddaef.png",
+      "dataFormat": "png",
+      "rotationCenterX": 104,
+      "rotationCenterY": 58
+    },
+    {
+      "assetId": "f2459a228a41bdee3cc6e380dbf2c7eb",
+      "name": "hammerhead death-2",
+      "bitmapResolution": 2,
+      "md5ext": "f2459a228a41bdee3cc6e380dbf2c7eb.png",
+      "dataFormat": "png",
+      "rotationCenterX": 104,
+      "rotationCenterY": 60
+    },
+    {
+      "assetId": "4d110d2f4cc2a7dcb6dbd4ee52d70705",
+      "name": "hammerhead death-3",
+      "bitmapResolution": 2,
+      "md5ext": "4d110d2f4cc2a7dcb6dbd4ee52d70705.png",
+      "dataFormat": "png",
+      "rotationCenterX": 100,
+      "rotationCenterY": 64
+    },
+    {
+      "assetId": "4ce76124a04d78bc2bd50b9359b5d1c5",
+      "name": "hammerhead death-4",
+      "bitmapResolution": 2,
+      "md5ext": "4ce76124a04d78bc2bd50b9359b5d1c5.png",
+      "dataFormat": "png",
+      "rotationCenterX": 98,
+      "rotationCenterY": 64
+    },
+    {
+      "assetId": "03823140e3e951ddafc6bbc9f7061153",
+      "name": "hammerhead death-5",
+      "bitmapResolution": 2,
+      "md5ext": "03823140e3e951ddafc6bbc9f7061153.png",
+      "dataFormat": "png",
+      "rotationCenterX": 94,
+      "rotationCenterY": 66
+    },
+    {
+      "assetId": "56d026948b0575c8e60bb316c05eb294",
+      "name": "hammerhead death-6",
+      "bitmapResolution": 2,
+      "md5ext": "56d026948b0575c8e60bb316c05eb294.png",
+      "dataFormat": "png",
+      "rotationCenterX": 92,
+      "rotationCenterY": 68
+    },
+    {
+      "assetId": "be57e6bad8e649da06bf02fef0cc7f71",
+      "name": "hammerhead swim-1",
+      "bitmapResolution": 2,
+      "md5ext": "be57e6bad8e649da06bf02fef0cc7f71.png",
+      "dataFormat": "png",
+      "rotationCenterX": 94,
+      "rotationCenterY": 58
+    },
+    {
+      "assetId": "ec20b92f1d81304af6beff32b3fe3820",
+      "name": "hammerhead swim-2",
+      "bitmapResolution": 2,
+      "md5ext": "ec20b92f1d81304af6beff32b3fe3820.png",
+      "dataFormat": "png",
+      "rotationCenterX": 96,
+      "rotationCenterY": 58
+    },
+    {
+      "assetId": "052dc44e6bfd6596b5e8504e15c3df05",
+      "name": "hammerhead swim-3",
+      "bitmapResolution": 2,
+      "md5ext": "052dc44e6bfd6596b5e8504e15c3df05.png",
+      "dataFormat": "png",
+      "rotationCenterX": 102,
+      "rotationCenterY": 58
+    },
+    {
+      "assetId": "8710e1929658fda76e527f8f1818f826",
+      "name": "hammerhead swim-4",
+      "bitmapResolution": 2,
+      "md5ext": "8710e1929658fda76e527f8f1818f826.png",
+      "dataFormat": "png",
+      "rotationCenterX": 106,
+      "rotationCenterY": 58
+    },
+    {
+      "assetId": "c72cd3f12536c439c46e542a577da580",
+      "name": "hammerhead swim-5",
+      "bitmapResolution": 2,
+      "md5ext": "c72cd3f12536c439c46e542a577da580.png",
+      "dataFormat": "png",
+      "rotationCenterX": 108,
+      "rotationCenterY": 58
+    },
+    {
+      "assetId": "6b941708f89e75bfa39e5922d5b527b0",
+      "name": "hammerhead swim-6",
+      "bitmapResolution": 2,
+      "md5ext": "6b941708f89e75bfa39e5922d5b527b0.png",
+      "dataFormat": "png",
+      "rotationCenterX": 106,
+      "rotationCenterY": 58
+    },
+    {
+      "assetId": "dcb529cd6c97d11d7391e22cb866e286",
+      "name": "hammerhead swim-7",
+      "bitmapResolution": 2,
+      "md5ext": "dcb529cd6c97d11d7391e22cb866e286.png",
+      "dataFormat": "png",
+      "rotationCenterX": 108,
+      "rotationCenterY": 58
+    },
+    {
+      "assetId": "5959fe16c8f63963adcf96b12df25b2d",
+      "name": "hammerhead swim-8",
+      "bitmapResolution": 2,
+      "md5ext": "5959fe16c8f63963adcf96b12df25b2d.png",
+      "dataFormat": "png",
+      "rotationCenterX": 106,
+      "rotationCenterY": 58
+    },
+    {
+      "assetId": "b9e85740cdb147eeefdccdd1dd309a2c",
+      "name": "hammerhead swim-9",
+      "bitmapResolution": 2,
+      "md5ext": "b9e85740cdb147eeefdccdd1dd309a2c.png",
+      "dataFormat": "png",
+      "rotationCenterX": 102,
+      "rotationCenterY": 58
+    },
+    {
+      "assetId": "0e3050c3a21a28c5ad1aa0c57d7ae20f",
+      "name": "hammerhead swim-10",
+      "bitmapResolution": 2,
+      "md5ext": "0e3050c3a21a28c5ad1aa0c57d7ae20f.png",
+      "dataFormat": "png",
+      "rotationCenterX": 96,
+      "rotationCenterY": 58
+    },
+    {
+      "assetId": "b8eb790f79a2be1b1fe955e76f62a9fe",
+      "name": "hammerhead shock",
+      "bitmapResolution": 2,
+      "md5ext": "b8eb790f79a2be1b1fe955e76f62a9fe.png",
+      "dataFormat": "png",
+      "rotationCenterX": 111,
+      "rotationCenterY": 69
+    },
+    {
+      "assetId": "30ef6391d42da7a8e4793f92ed21c72d",
+      "name": "tiger shark death-1",
+      "bitmapResolution": 2,
+      "md5ext": "30ef6391d42da7a8e4793f92ed21c72d.png",
+      "dataFormat": "png",
+      "rotationCenterX": 118,
+      "rotationCenterY": 60
+    },
+    {
+      "assetId": "4825908a33fcb5f281ed5c08da8888b8",
+      "name": "tiger shark death-2",
+      "bitmapResolution": 2,
+      "md5ext": "4825908a33fcb5f281ed5c08da8888b8.png",
+      "dataFormat": "png",
+      "rotationCenterX": 116,
+      "rotationCenterY": 60
+    },
+    {
+      "assetId": "6b0d9ed4bfb2168f60357a42360db45a",
+      "name": "tiger shark death-3",
+      "bitmapResolution": 2,
+      "md5ext": "6b0d9ed4bfb2168f60357a42360db45a.png",
+      "dataFormat": "png",
+      "rotationCenterX": 114,
+      "rotationCenterY": 64
+    },
+    {
+      "assetId": "4746747547bd8bdda5f4d90d027ccdf9",
+      "name": "tiger shark death-4",
+      "bitmapResolution": 2,
+      "md5ext": "4746747547bd8bdda5f4d90d027ccdf9.png",
+      "dataFormat": "png",
+      "rotationCenterX": 108,
+      "rotationCenterY": 66
+    },
+    {
+      "assetId": "80e484afadd8575bc7e5889429f8cba2",
+      "name": "tiger shark death-5",
+      "bitmapResolution": 2,
+      "md5ext": "80e484afadd8575bc7e5889429f8cba2.png",
+      "dataFormat": "png",
+      "rotationCenterX": 102,
+      "rotationCenterY": 66
+    },
+    {
+      "assetId": "7f6691c38df47ca4d7571ff625f228d6",
+      "name": "tiger shark death-6",
+      "bitmapResolution": 2,
+      "md5ext": "7f6691c38df47ca4d7571ff625f228d6.png",
+      "dataFormat": "png",
+      "rotationCenterX": 100,
+      "rotationCenterY": 68
+    },
+    {
+      "assetId": "9e9b358a2195d2286d0900725e4913ae",
+      "name": "tiger shark swim-1",
+      "bitmapResolution": 2,
+      "md5ext": "9e9b358a2195d2286d0900725e4913ae.png",
+      "dataFormat": "png",
+      "rotationCenterX": 106,
+      "rotationCenterY": 56
+    },
+    {
+      "assetId": "b909f391ed16d2445d06279740825af7",
+      "name": "tiger shark swim-2",
+      "bitmapResolution": 2,
+      "md5ext": "b909f391ed16d2445d06279740825af7.png",
+      "dataFormat": "png",
+      "rotationCenterX": 110,
+      "rotationCenterY": 56
+    },
+    {
+      "assetId": "712c6427abffe16465f69239628a72eb",
+      "name": "tiger shark swim-3",
+      "bitmapResolution": 2,
+      "md5ext": "712c6427abffe16465f69239628a72eb.png",
+      "dataFormat": "png",
+      "rotationCenterX": 116,
+      "rotationCenterY": 58
+    },
+    {
+      "assetId": "b834bcc635c863351d5e07742ed70137",
+      "name": "tiger shark swim-4",
+      "bitmapResolution": 2,
+      "md5ext": "b834bcc635c863351d5e07742ed70137.png",
+      "dataFormat": "png",
+      "rotationCenterX": 124,
+      "rotationCenterY": 58
+    },
+    {
+      "assetId": "0b2b47bddaca63c9008d4e077bd83b75",
+      "name": "tiger shark swim-5",
+      "bitmapResolution": 2,
+      "md5ext": "0b2b47bddaca63c9008d4e077bd83b75.png",
+      "dataFormat": "png",
+      "rotationCenterX": 128,
+      "rotationCenterY": 58
+    },
+    {
+      "assetId": "d86d1229cfa51f616f220fe72bc60093",
+      "name": "tiger shark swim-6",
+      "bitmapResolution": 2,
+      "md5ext": "d86d1229cfa51f616f220fe72bc60093.png",
+      "dataFormat": "png",
+      "rotationCenterX": 130,
+      "rotationCenterY": 58
+    },
+    {
+      "assetId": "33c705c3e3011f39de506e29f46df16c",
+      "name": "tiger shark swim-7",
+      "bitmapResolution": 2,
+      "md5ext": "33c705c3e3011f39de506e29f46df16c.png",
+      "dataFormat": "png",
+      "rotationCenterX": 128,
+      "rotationCenterY": 58
+    },
+    {
+      "assetId": "fed81e0f98db0a149ce14edf675fa5b5",
+      "name": "tiger shark swim-8",
+      "bitmapResolution": 2,
+      "md5ext": "fed81e0f98db0a149ce14edf675fa5b5.png",
+      "dataFormat": "png",
+      "rotationCenterX": 124,
+      "rotationCenterY": 58
+    },
+    {
+      "assetId": "d4a11ff43b668d0d93b8afc4d8202272",
+      "name": "tiger shark swim-9",
+      "bitmapResolution": 2,
+      "md5ext": "d4a11ff43b668d0d93b8afc4d8202272.png",
+      "dataFormat": "png",
+      "rotationCenterX": 116,
+      "rotationCenterY": 58
+    },
+    {
+      "assetId": "ff015d53db37b8bc46ddeff0ed4f0671",
+      "name": "tiger shark swim-10",
+      "bitmapResolution": 2,
+      "md5ext": "ff015d53db37b8bc46ddeff0ed4f0671.png",
+      "dataFormat": "png",
+      "rotationCenterX": 110,
+      "rotationCenterY": 58
+    },
+    {
+      "assetId": "d21344d9660def013d14c77f435e8082",
+      "name": "tiger shark shock",
+      "bitmapResolution": 2,
+      "md5ext": "d21344d9660def013d14c77f435e8082.png",
+      "dataFormat": "png",
+      "rotationCenterX": 134,
+      "rotationCenterY": 68
+    },
+    {
+      "assetId": "d64527458eaa07d1db59d36e37411827",
+      "name": "piranha2 death-1",
+      "bitmapResolution": 2,
+      "md5ext": "d64527458eaa07d1db59d36e37411827.png",
+      "dataFormat": "png",
+      "rotationCenterX": 44,
+      "rotationCenterY": 59
+    },
+    {
+      "assetId": "1186c6df675d0c100b0a3c81e868bb2a",
+      "name": "piranha2 death-2",
+      "bitmapResolution": 2,
+      "md5ext": "1186c6df675d0c100b0a3c81e868bb2a.png",
+      "dataFormat": "png",
+      "rotationCenterX": 44,
+      "rotationCenterY": 55
+    },
+    {
+      "assetId": "b0dd392f05386e7a254ebc8064387789",
+      "name": "piranha2 death-3",
+      "bitmapResolution": 2,
+      "md5ext": "b0dd392f05386e7a254ebc8064387789.png",
+      "dataFormat": "png",
+      "rotationCenterX": 44,
+      "rotationCenterY": 45
+    },
+    {
+      "assetId": "54312c6927254dd85c3a77aa19c4f624",
+      "name": "piranha2 death-4",
+      "bitmapResolution": 2,
+      "md5ext": "54312c6927254dd85c3a77aa19c4f624.png",
+      "dataFormat": "png",
+      "rotationCenterX": 44,
+      "rotationCenterY": 27
+    },
+    {
+      "assetId": "45da1c252f1d6ab801deee550e121716",
+      "name": "piranha2 death-5",
+      "bitmapResolution": 2,
+      "md5ext": "45da1c252f1d6ab801deee550e121716.png",
+      "dataFormat": "png",
+      "rotationCenterX": 44,
+      "rotationCenterY": 35
+    },
+    {
+      "assetId": "f6a5ad3a3dd0ff5bb15a9ba9a3b3b658",
+      "name": "piranha2 death-6",
+      "bitmapResolution": 2,
+      "md5ext": "f6a5ad3a3dd0ff5bb15a9ba9a3b3b658.png",
+      "dataFormat": "png",
+      "rotationCenterX": 44,
+      "rotationCenterY": 42
+    },
+    {
+      "assetId": "2f079f9293df63fb12e0f1bdfd3d432e",
+      "name": "piranha2 death-7",
+      "bitmapResolution": 2,
+      "md5ext": "2f079f9293df63fb12e0f1bdfd3d432e.png",
+      "dataFormat": "png",
+      "rotationCenterX": 44,
+      "rotationCenterY": 44
+    },
+    {
+      "assetId": "831360b9b7a434f1b4929fdf00d380d8",
+      "name": "piranha2 death-8",
+      "bitmapResolution": 2,
+      "md5ext": "831360b9b7a434f1b4929fdf00d380d8.png",
+      "dataFormat": "png",
+      "rotationCenterX": 44,
+      "rotationCenterY": 46
+    },
+    {
+      "assetId": "9eded678bad70d7510c327538744b6b3",
+      "name": "piranha2 death-9",
+      "bitmapResolution": 2,
+      "md5ext": "9eded678bad70d7510c327538744b6b3.png",
+      "dataFormat": "png",
+      "rotationCenterX": 46,
+      "rotationCenterY": 46
+    },
+    {
+      "assetId": "c09f82f33ba1ca2be037f88729fd3e0c",
+      "name": "piranha2 swim-1",
+      "bitmapResolution": 2,
+      "md5ext": "c09f82f33ba1ca2be037f88729fd3e0c.png",
+      "dataFormat": "png",
+      "rotationCenterX": 47,
+      "rotationCenterY": 60
+    },
+    {
+      "assetId": "610884cf667a3d74f9b227a56ba6b75a",
+      "name": "piranha2 swim-2",
+      "bitmapResolution": 2,
+      "md5ext": "610884cf667a3d74f9b227a56ba6b75a.png",
+      "dataFormat": "png",
+      "rotationCenterX": 45,
+      "rotationCenterY": 60
+    },
+    {
+      "assetId": "07c8285e149cdc8873ae47427facf9cc",
+      "name": "piranha2 swim-3",
+      "bitmapResolution": 2,
+      "md5ext": "07c8285e149cdc8873ae47427facf9cc.png",
+      "dataFormat": "png",
+      "rotationCenterX": 45,
+      "rotationCenterY": 60
+    },
+    {
+      "assetId": "24aa15474835274e5745c1ae064283aa",
+      "name": "piranha2 swim-4",
+      "bitmapResolution": 2,
+      "md5ext": "24aa15474835274e5745c1ae064283aa.png",
+      "dataFormat": "png",
+      "rotationCenterX": 45,
+      "rotationCenterY": 60
+    },
+    {
+      "assetId": "4bd4435763536f9cf28d60613cb65422",
+      "name": "piranha2 swim-5",
+      "bitmapResolution": 2,
+      "md5ext": "4bd4435763536f9cf28d60613cb65422.png",
+      "dataFormat": "png",
+      "rotationCenterX": 43,
+      "rotationCenterY": 60
+    },
+    {
+      "assetId": "bcc8500a00440737d6d8babdd4bcac03",
+      "name": "piranha2 swim-6",
+      "bitmapResolution": 2,
+      "md5ext": "bcc8500a00440737d6d8babdd4bcac03.png",
+      "dataFormat": "png",
+      "rotationCenterX": 45,
+      "rotationCenterY": 60
+    },
+    {
+      "assetId": "0e67c03ddb636f017cac451dc6f8d4e3",
+      "name": "piranha2 swim-7",
+      "bitmapResolution": 2,
+      "md5ext": "0e67c03ddb636f017cac451dc6f8d4e3.png",
+      "dataFormat": "png",
+      "rotationCenterX": 43,
+      "rotationCenterY": 60
+    },
+    {
+      "assetId": "0ed67af276d032dd9b37926617a608e5",
+      "name": "piranha2 swim-8",
+      "bitmapResolution": 2,
+      "md5ext": "0ed67af276d032dd9b37926617a608e5.png",
+      "dataFormat": "png",
+      "rotationCenterX": 45,
+      "rotationCenterY": 60
+    },
+    {
+      "assetId": "98080a2762ea1c94a6161f093556bd67",
+      "name": "piranha2 swim-9",
+      "bitmapResolution": 2,
+      "md5ext": "98080a2762ea1c94a6161f093556bd67.png",
+      "dataFormat": "png",
+      "rotationCenterX": 45,
+      "rotationCenterY": 60
+    },
+    {
+      "assetId": "d54610d969d7fb7270c688b6b22fbe5d",
+      "name": "piranha2 swim-10",
+      "bitmapResolution": 2,
+      "md5ext": "d54610d969d7fb7270c688b6b22fbe5d.png",
+      "dataFormat": "png",
+      "rotationCenterX": 45,
+      "rotationCenterY": 60
+    },
+    {
+      "assetId": "c595161aead122cac4236aa31688db22",
+      "name": "ghost shark death-1",
+      "bitmapResolution": 2,
+      "md5ext": "c595161aead122cac4236aa31688db22.png",
+      "dataFormat": "png",
+      "rotationCenterX": 118,
+      "rotationCenterY": 62
+    },
+    {
+      "assetId": "9f2fd0947894bec98e98016cee475546",
+      "name": "ghost shark death-2",
+      "bitmapResolution": 2,
+      "md5ext": "9f2fd0947894bec98e98016cee475546.png",
+      "dataFormat": "png",
+      "rotationCenterX": 118,
+      "rotationCenterY": 62
+    },
+    {
+      "assetId": "cc2ea85058993d611ecddcd1546586c6",
+      "name": "ghost shark death-3",
+      "bitmapResolution": 2,
+      "md5ext": "cc2ea85058993d611ecddcd1546586c6.png",
+      "dataFormat": "png",
+      "rotationCenterX": 114,
+      "rotationCenterY": 68
+    },
+    {
+      "assetId": "b8fe2d4d82cabeae086473e6fe602728",
+      "name": "ghost shark death-4",
+      "bitmapResolution": 2,
+      "md5ext": "b8fe2d4d82cabeae086473e6fe602728.png",
+      "dataFormat": "png",
+      "rotationCenterX": 114,
+      "rotationCenterY": 72
+    },
+    {
+      "assetId": "14d874fadd799e2646d518f2d28d679f",
+      "name": "ghost shark death-5",
+      "bitmapResolution": 2,
+      "md5ext": "14d874fadd799e2646d518f2d28d679f.png",
+      "dataFormat": "png",
+      "rotationCenterX": 112,
+      "rotationCenterY": 72
+    },
+    {
+      "assetId": "0633848c1555eef5e53af5fbcf8066c9",
+      "name": "ghost shark death-6",
+      "bitmapResolution": 2,
+      "md5ext": "0633848c1555eef5e53af5fbcf8066c9.png",
+      "dataFormat": "png",
+      "rotationCenterX": 111,
+      "rotationCenterY": 74
+    },
+    {
+      "assetId": "f0b87c8b59244628c2f6188bd5a9ddd2",
+      "name": "ghost shark swim-1",
+      "bitmapResolution": 2,
+      "md5ext": "f0b87c8b59244628c2f6188bd5a9ddd2.png",
+      "dataFormat": "png",
+      "rotationCenterX": 112,
+      "rotationCenterY": 60
+    },
+    {
+      "assetId": "491db830c712322b93c3f8206e34f6f6",
+      "name": "ghost shark swim-2",
+      "bitmapResolution": 2,
+      "md5ext": "491db830c712322b93c3f8206e34f6f6.png",
+      "dataFormat": "png",
+      "rotationCenterX": 114,
+      "rotationCenterY": 60
+    },
+    {
+      "assetId": "958df7ad1938060bd05c5307eb62b867",
+      "name": "ghost shark swim-3",
+      "bitmapResolution": 2,
+      "md5ext": "958df7ad1938060bd05c5307eb62b867.png",
+      "dataFormat": "png",
+      "rotationCenterX": 116,
+      "rotationCenterY": 60
+    },
+    {
+      "assetId": "e8092174c049f47d890cb72f9de02f6b",
+      "name": "ghost shark swim-4",
+      "bitmapResolution": 2,
+      "md5ext": "e8092174c049f47d890cb72f9de02f6b.png",
+      "dataFormat": "png",
+      "rotationCenterX": 122,
+      "rotationCenterY": 60
+    },
+    {
+      "assetId": "17bb0b8f4033a061eb8ec0d4b361e162",
+      "name": "ghost shark swim-5",
+      "bitmapResolution": 2,
+      "md5ext": "17bb0b8f4033a061eb8ec0d4b361e162.png",
+      "dataFormat": "png",
+      "rotationCenterX": 124,
+      "rotationCenterY": 60
+    },
+    {
+      "assetId": "356bc4689bea158c31f5cea1432cb0e7",
+      "name": "ghost shark swim-6",
+      "bitmapResolution": 2,
+      "md5ext": "356bc4689bea158c31f5cea1432cb0e7.png",
+      "dataFormat": "png",
+      "rotationCenterX": 125,
+      "rotationCenterY": 60
+    },
+    {
+      "assetId": "ff823993f305575a98657441cca67027",
+      "name": "ghost shark swim-7",
+      "bitmapResolution": 2,
+      "md5ext": "ff823993f305575a98657441cca67027.png",
+      "dataFormat": "png",
+      "rotationCenterX": 124,
+      "rotationCenterY": 60
+    },
+    {
+      "assetId": "2c6d3b007dd962dd9866326bff42e98a",
+      "name": "ghost shark swim-8",
+      "bitmapResolution": 2,
+      "md5ext": "2c6d3b007dd962dd9866326bff42e98a.png",
+      "dataFormat": "png",
+      "rotationCenterX": 124,
+      "rotationCenterY": 60
+    },
+    {
+      "assetId": "7e4270670e1a620c1de546bad051bb60",
+      "name": "ghost shark swim-9",
+      "bitmapResolution": 2,
+      "md5ext": "7e4270670e1a620c1de546bad051bb60.png",
+      "dataFormat": "png",
+      "rotationCenterX": 118,
+      "rotationCenterY": 60
+    },
+    {
+      "assetId": "15ac4beb29868aeb72387a36341ac3e4",
+      "name": "ghost shark swim-10",
+      "bitmapResolution": 2,
+      "md5ext": "15ac4beb29868aeb72387a36341ac3e4.png",
+      "dataFormat": "png",
+      "rotationCenterX": 116,
+      "rotationCenterY": 60
+    },
+    {
+      "assetId": "72f38377c5381fd1a0e1d66c3d25808a",
+      "name": "toxic shark death-1",
+      "bitmapResolution": 2,
+      "md5ext": "72f38377c5381fd1a0e1d66c3d25808a.png",
+      "dataFormat": "png",
+      "rotationCenterX": 118,
+      "rotationCenterY": 60
+    },
+    {
+      "assetId": "a95b8b8cd1519a59131c2b5f7ad7ead4",
+      "name": "toxic shark death-2",
+      "bitmapResolution": 2,
+      "md5ext": "a95b8b8cd1519a59131c2b5f7ad7ead4.png",
+      "dataFormat": "png",
+      "rotationCenterX": 118,
+      "rotationCenterY": 62
+    },
+    {
+      "assetId": "44d3c3f4d92edc2f3514bb4a8bd02129",
+      "name": "toxic shark death-3",
+      "bitmapResolution": 2,
+      "md5ext": "44d3c3f4d92edc2f3514bb4a8bd02129.png",
+      "dataFormat": "png",
+      "rotationCenterX": 116,
+      "rotationCenterY": 66
+    },
+    {
+      "assetId": "a85fe23b88cc4f4ac3d2459975dc8834",
+      "name": "toxic shark death-4",
+      "bitmapResolution": 2,
+      "md5ext": "a85fe23b88cc4f4ac3d2459975dc8834.png",
+      "dataFormat": "png",
+      "rotationCenterX": 112,
+      "rotationCenterY": 68
+    },
+    {
+      "assetId": "a0b4365d9b1cea4052c2283381b852e4",
+      "name": "toxic shark death-5",
+      "bitmapResolution": 2,
+      "md5ext": "a0b4365d9b1cea4052c2283381b852e4.png",
+      "dataFormat": "png",
+      "rotationCenterX": 106,
+      "rotationCenterY": 70
+    },
+    {
+      "assetId": "d81c154b0ca575a3fd6fd076ebbcaea1",
+      "name": "toxic shark death-6",
+      "bitmapResolution": 2,
+      "md5ext": "d81c154b0ca575a3fd6fd076ebbcaea1.png",
+      "dataFormat": "png",
+      "rotationCenterX": 104,
+      "rotationCenterY": 72
+    },
+    {
+      "assetId": "fde5b38efc2bfd4e4402371960584af8",
+      "name": "toxic shark swim-1",
+      "bitmapResolution": 2,
+      "md5ext": "fde5b38efc2bfd4e4402371960584af8.png",
+      "dataFormat": "png",
+      "rotationCenterX": 106,
+      "rotationCenterY": 56
+    },
+    {
+      "assetId": "b8dd46567cedd2255e9395b9bf00ce56",
+      "name": "toxic shark swim-2",
+      "bitmapResolution": 2,
+      "md5ext": "b8dd46567cedd2255e9395b9bf00ce56.png",
+      "dataFormat": "png",
+      "rotationCenterX": 110,
+      "rotationCenterY": 56
+    },
+    {
+      "assetId": "7be61a5105da4a768bd802918615a28f",
+      "name": "toxic shark swim-3",
+      "bitmapResolution": 2,
+      "md5ext": "7be61a5105da4a768bd802918615a28f.png",
+      "dataFormat": "png",
+      "rotationCenterX": 116,
+      "rotationCenterY": 58
+    },
+    {
+      "assetId": "5fc0fef1f61a492a558d9c244e6a7922",
+      "name": "toxic shark swim-4",
+      "bitmapResolution": 2,
+      "md5ext": "5fc0fef1f61a492a558d9c244e6a7922.png",
+      "dataFormat": "png",
+      "rotationCenterX": 124,
+      "rotationCenterY": 58
+    },
+    {
+      "assetId": "8b327efef968195224421c26546353c7",
+      "name": "toxic shark swim-5",
+      "bitmapResolution": 2,
+      "md5ext": "8b327efef968195224421c26546353c7.png",
+      "dataFormat": "png",
+      "rotationCenterX": 128,
+      "rotationCenterY": 58
+    },
+    {
+      "assetId": "c54b9af82745ecba0e12b06072906b75",
+      "name": "toxic shark swim-6",
+      "bitmapResolution": 2,
+      "md5ext": "c54b9af82745ecba0e12b06072906b75.png",
+      "dataFormat": "png",
+      "rotationCenterX": 130,
+      "rotationCenterY": 58
+    },
+    {
+      "assetId": "6830241f0278074849a075f9612b2776",
+      "name": "toxic shark swim-7",
+      "bitmapResolution": 2,
+      "md5ext": "6830241f0278074849a075f9612b2776.png",
+      "dataFormat": "png",
+      "rotationCenterX": 128,
+      "rotationCenterY": 58
+    },
+    {
+      "assetId": "9641792fac271112f539a8796b025fb8",
+      "name": "toxic shark swim-8",
+      "bitmapResolution": 2,
+      "md5ext": "9641792fac271112f539a8796b025fb8.png",
+      "dataFormat": "png",
+      "rotationCenterX": 124,
+      "rotationCenterY": 58
+    },
+    {
+        "assetId": "toxic_shark_swim_9",
+        "name": "toxic shark swim-9",
+        "bitmapResolution": 2,
+        "md5ext": "toxic_shark_swim_9.png",
+        "dataFormat": "png",
+        "rotationCenterX": 116,
+        "rotationCenterY": 58
+    },
+    {
+        "assetId": "toxic_shark_swim_10",
+        "name": "toxic shark swim-10",
+        "bitmapResolution": 2,
+        "md5ext": "toxic_shark_swim_10.png",
+        "dataFormat": "png",
+        "rotationCenterX": 110,
+        "rotationCenterY": 56
+    },
+    {
+        "assetId": "take_one_for_the_team",
+        "name": "unknown unknown-1",
+        "bitmapResolution": 2,
+        "md5ext": "take_one_for_the_team.png",
+        "dataFormat": "png",
+        "rotationCenterX": 110,
+        "rotationCenterY": 56
+    }
+  ],
+  "x": 277,
+  "y": 0,
+  "size": 85,
+  "direction": 90
+}

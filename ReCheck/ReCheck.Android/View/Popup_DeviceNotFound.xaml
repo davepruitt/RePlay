@@ -1,0 +1,78 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<pages:PopupPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             xmlns:pages="clr-namespace:Rg.Plugins.Popup.Pages;assembly=Rg.Plugins.Popup"
+             xmlns:animations="clr-namespace:Rg.Plugins.Popup.Animations;assembly=Rg.Plugins.Popup"
+             mc:Ignorable="d"
+             x:Class="ReCheck.Droid.View.Popup_DeviceNotFound">
+    <pages:PopupPage.Animation>
+        <animations:ScaleAnimation
+            PositionIn="Center"
+            PositionOut="Center"
+            ScaleIn="1.2"
+            ScaleOut="0.8"
+            EasingIn="SinOut"
+            EasingOut="SinIn"
+            DurationIn="400"
+            DurationOut="300"
+            HasBackgroundAnimation="True"
+            />
+    </pages:PopupPage.Animation>
+    <Grid Padding="100" VerticalOptions="Center" HorizontalOptions="FillAndExpand">
+
+        <Grid HorizontalOptions="Center" VerticalOptions="Center" BackgroundColor="#BCBCBC" WidthRequest="600" HeightRequest="325" Padding="1">
+            <Grid BackgroundColor="#FAFAFA">
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="Auto" />
+                    <RowDefinition Height="*" />
+                </Grid.RowDefinitions>
+
+                <Grid Grid.Row="0">
+                    <Image Source="green_bar_lg.png" />
+                    <Label Text="Device not found!"
+                                   FontSize="32"
+                                   TextColor="White"
+                                   Margin="30,0"
+                                   VerticalOptions="Center"
+                                   HorizontalOptions="Start"
+                                   />
+                </Grid>
+                <Grid Grid.Row="1">
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="*" />
+                        <RowDefinition Height="100" />
+                    </Grid.RowDefinitions>
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="*" />
+                        <ColumnDefinition Width="*" />
+                    </Grid.ColumnDefinitions>
+
+                    <Label TextColor="Black"
+                                   Text="Please connect the device before continuing."
+                                   FontSize="28"
+                                   Grid.Row="0"
+                                   Grid.Column="0"
+                                   Grid.ColumnSpan="2"
+                                   HorizontalOptions="Start"
+                                   VerticalOptions="Start"
+                                   Margin="75,25,0,0"
+                                   />
+
+                    <Button Grid.Row="1" Grid.Column="1"
+                                    Style="{StaticResource Key=TxBDC_Button_Style}"
+                                    Text="OK"
+                                    HorizontalOptions="End"
+                                    VerticalOptions="Center"
+                                    WidthRequest="100"
+                                    Margin="0,0,40,0"
+                                    x:Name="Popup_OK_Button"
+                                    Clicked="Popup_OK_Button_Clicked"
+                                    />
+                </Grid>
+            </Grid>
+        </Grid>
+
+    </Grid>
+</pages:PopupPage>

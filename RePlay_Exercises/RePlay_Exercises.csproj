@@ -1,0 +1,141 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{4B977E85-5FFD-468D-85BD-1D1D7ACE040B}</ProjectGuid>
+    <ProjectTypeGuids>{EFBA0AD7-5A72-4C68-AF49-83D382785DCF};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
+    <TemplateGuid>{9ef11e43-1701-4396-8835-8392d57abb70}</TemplateGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>RePlay_Exercises</RootNamespace>
+    <AssemblyName>RePlay_Exercises</AssemblyName>
+    <FileAlignment>512</FileAlignment>
+    <AndroidResgenFile>Resources\Resource.Designer.cs</AndroidResgenFile>
+    <GenerateSerializationAssemblies>Off</GenerateSerializationAssemblies>
+    <AndroidUseLatestPlatformSdk>false</AndroidUseLatestPlatformSdk>
+    <TargetFrameworkVersion>v8.1</TargetFrameworkVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>portable</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="Mono.Android" />
+    <Reference Include="mscorlib" />
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="DefaultNoiseFloorAttribute.cs" />
+    <Compile Include="ExerciseBase.cs" />
+    <Compile Include="ExerciseDeviceType.cs" />
+    <Compile Include="ExerciseDeviceTypeConverter.cs" />
+    <Compile Include="ExerciseTypeConverter.cs" />
+    <Compile Include="FitMi\FitMiExerciseBase.cs" />
+    <Compile Include="ExerciseType.cs" />
+    <Compile Include="FitMi\FitMiExerciseBase_FlipStyle.cs" />
+    <Compile Include="FitMi\FitMiExercise_Lift.cs" />
+    <Compile Include="FitMi\FitMiExerciseBase_LoadcellAlternating.cs" />
+    <Compile Include="FitMi\FitMiExerciseBase_Loadcell.cs" />
+    <Compile Include="FitMi\FitMiExerciseBase_Twist.cs" />
+    <Compile Include="FitMi\FitMiExercise_Clapping.cs" />
+    <Compile Include="FitMi\FitMiExercise_Curls.cs" />
+    <Compile Include="FitMi\FitMiExercise_FingerTap.cs" />
+    <Compile Include="FitMi\FitMiExercise_FingerTwists.cs" />
+    <Compile Include="FitMi\FitMiExercise_Flipping.cs" />
+    <Compile Include="FitMi\FitMiExercise_Flyout.cs" />
+    <Compile Include="FitMi\FitMiExercise_Grip.cs" />
+    <Compile Include="FitMi\FitMiExercise_KeyPinch.cs" />
+    <Compile Include="FitMi\FitMiExerciseBase_Movement.cs" />
+    <Compile Include="FitMi\FitMiExercise_MovementBidirectional.cs" />
+    <Compile Include="FitMi\FitMiExercise_PuckRoll.cs" />
+    <Compile Include="FitMi\FitMiExercise_PuckTouch.cs" />
+    <Compile Include="FitMi\FitMiExerciseBase_Arm.cs" />
+    <Compile Include="FitMi\FitMiExercise_ReachAcross.cs" />
+    <Compile Include="FitMi\FitMiExercise_ReachDiagonal.cs" />
+    <Compile Include="FitMi\FitMiExercise_ReachOut.cs" />
+    <Compile Include="FitMi\FitMiExercise_Rotate.cs" />
+    <Compile Include="FitMi\FitMiExercise_ShoulderAbduction.cs" />
+    <Compile Include="FitMi\FitMiExercise_ShoulderExtension.cs" />
+    <Compile Include="FitMi\FitMiExercise_Supination.cs" />
+    <Compile Include="FitMi\FitMiExercise_ThumbOpposition.cs" />
+    <Compile Include="FitMi\FitMiExercise_Unknown.cs" />
+    <Compile Include="FitMi\FitMiExercise_WristDeviation.cs" />
+    <Compile Include="FitMi\FitMiExercise_WristFlexion.cs" />
+    <Compile Include="Exercise_SaveData.cs" />
+    <Compile Include="GameLaunchParameters.cs" />
+    <Compile Include="IRepetitionsModeExercise.cs" />
+    <Compile Include="RePlay\RePlayExerciseBase.cs" />
+    <Compile Include="RePlay\RePlayExercise_Isometric.cs" />
+    <Compile Include="RePlay\RePlayExercise_IsometricHandle.cs" />
+    <Compile Include="RePlay\RePlayExercise_IsometricKnob.cs" />
+    <Compile Include="RePlay\RePlayExercise_IsometricPinchLeft.cs" />
+    <Compile Include="RePlay\RePlayExercise_IsometricPinch.cs" />
+    <Compile Include="RePlay\RePlayExercise_IsometricPinchLeft_Extension.cs" />
+    <Compile Include="RePlay\RePlayExercise_IsometricPinchLeft_Flexion.cs" />
+    <Compile Include="RePlay\RePlayExercise_IsometricPinch_Extension.cs" />
+    <Compile Include="RePlay\RePlayExercise_IsometricPinch_Flexion.cs" />
+    <Compile Include="RePlay\RePlayExercise_IsometricWrist.cs" />
+    <Compile Include="RePlay\RePlayExercise_RangeOfMotion.cs" />
+    <Compile Include="RePlay\RePlayExercise_RangeOfMotion_Handle.cs" />
+    <Compile Include="RePlay\RePlayExercise_RangeOfMotion_Knob.cs" />
+    <Compile Include="RePlay\RePlayExercise_RangeOfMotion_Wrist.cs" />
+    <Compile Include="Resources\Resource.Designer.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\AboutResources.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\values\strings.xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Resources\drawable\" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\FitMiAndroid\FitMiAndroid.csproj">
+      <Project>{55a50d1a-c766-4eff-9cf2-61e77c661a0b}</Project>
+      <Name>FitMiAndroid</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\RePlay_Common\RePlay_Common.csproj">
+      <Project>{3fed4926-5cc2-4e0e-b946-0bbb43b2ad71}</Project>
+      <Name>RePlay_Common</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\RePlay_DeviceCommunications\RePlay_DeviceCommunications.csproj">
+      <Project>{8d4bdbbc-0754-4cb4-a645-e6e59241d9ea}</Project>
+      <Name>RePlay_DeviceCommunications</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\RePlay_VNS_Triggering\RePlay_VNS_Triggering.csproj">
+      <Project>{ce68e8f9-da73-4ff7-ada2-7430d8cc1f2c}</Project>
+      <Name>RePlay_VNS_Triggering</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildExtensionsPath)\Xamarin\Android\Xamarin.Android.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

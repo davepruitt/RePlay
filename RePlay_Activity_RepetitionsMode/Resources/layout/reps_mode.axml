@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+	android:background="@color/txbdc_white"
+    android:layout_height="match_parent">
+
+	<ImageView
+		android:id="@+id/reps_banner"
+		android:layout_width="fill_parent"
+		android:layout_height="80dp"
+		android:src="@drawable/green_bar_lg"
+		android:scaleType="fitXY"
+		android:layout_alignParentTop="true"/>
+
+	<TextView 
+		android:id="@+id/exercise_name"
+		android:layout_width="wrap_content"
+		android:layout_height="80dp"
+		android:gravity="center"
+		android:text="Rep it Out!"
+		android:textColor="@color/txbdc_white"
+		android:textSize="48sp"
+		android:layout_alignBottom="@id/reps_banner"
+		android:layout_marginLeft="20dp"/>
+
+	<ImageView
+        android:layout_width="50dp"
+        android:layout_height="50dp" 
+		android:layout_marginTop="15dp"
+		android:layout_marginRight="10dp"
+		android:id="@+id/reps_mode_pcm_connection_status_icon"
+		android:src="@drawable/repsmode_pcm_connected"
+		android:layout_toLeftOf="@id/stop_exercise"
+	/>
+
+	<ImageView
+        android:layout_width="50dp"
+        android:layout_height="50dp" 
+		android:layout_marginTop="15dp"
+		android:layout_marginRight="10dp"
+		android:id="@+id/reps_mode_stimulation_request_icon"
+		android:src="@drawable/repsmode_stim_symbol"
+		android:layout_toLeftOf="@id/reps_mode_pcm_connection_status_icon"
+		android:visibility="invisible"
+	/>
+
+	<Button
+		android:id="@+id/stop_exercise"
+		android:layout_width="250dp"
+		android:layout_height="50dp"
+		android:layout_marginTop="15dp"
+		android:layout_marginRight="10dp"
+		android:scaleType="centerInside"
+		android:adjustViewBounds="true"
+		android:text="STOP EXERCISE"
+		android:layout_alignRight="@id/reps_banner"
+		android:textColor="@drawable/repsmode_txbdc_button_foreground_selector"
+		android:background="@drawable/repsmode_txbdc_button_background_selector"/>
+
+	<TextView
+		android:id="@+id/exercise_description"
+		android:textSize="42sp"
+		android:textColor="@color/txbdc_green"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:layout_marginTop="10dp"
+		android:text="Get ready to begin."
+		android:layout_centerHorizontal="true"
+		android:layout_below="@id/reps_banner"/>
+
+	<LinearLayout
+		android:id="@+id/reps_layout"
+		android:background="@android:color/white"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_weight="8"
+		android:layout_below="@id/exercise_description"
+		android:layout_above="@+id/rms_line_chart_layout"
+		android:layout_marginLeft="100dp"
+		android:layout_marginRight="100dp"
+        android:orientation="horizontal">
+
+		<LinearLayout
+			android:id="@+id/currentTrialChartWrapper"
+			android:background="@android:color/white"
+			android:layout_width="0dp"
+			android:layout_height="fill_parent"
+			android:layout_weight="1"
+			android:orientation="vertical">
+			
+				<microcharts.droid.ChartView 
+				android:id="@+id/currentTrialChartView" 
+				android:layout_height="0dp"
+				android:layout_weight="1"
+				android:layout_width="fill_parent"
+				/>
+
+		</LinearLayout>
+
+		<!-- Column 2 of Row 0, this shows the progress gauge -->
+        <LinearLayout 
+			android:orientation="vertical"
+            android:background="@android:color/white"
+            android:id="@+id/progress_messages_region"
+            android:layout_weight="1"
+            android:layout_height="match_parent"
+            android:layout_width="0dp">
+
+            <LinearLayout 
+				android:orientation="horizontal"
+                android:gravity="center_horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                android:background="@android:color/white">
+
+                <TextView android:id="@+id/current_trial_text_view"
+                          android:textSize="80sp"
+                          android:textColor="@android:color/black"
+                          android:layout_width="wrap_content"
+                          android:layout_height="wrap_content" />
+                <TextView android:id="@+id/intermediate_text_view"
+                          android:textSize="80sp"
+                          android:textColor="@android:color/black"
+                          android:layout_width="wrap_content"
+                          android:layout_height="wrap_content" />
+                <TextView android:id="@+id/max_trials_text_view"
+                          android:textSize="80sp"
+                          android:textColor="@android:color/black"
+                          android:layout_width="wrap_content"
+                          android:layout_height="wrap_content" />
+
+            </LinearLayout>
+
+            <microcharts.droid.ChartView
+                android:id="@+id/progressChartView"
+                android:layout_width="match_parent"
+                android:layout_height="fill_parent"
+				android:padding="5dp"
+				android:visibility="visible"
+                />
+
+			<TextView
+				android:id="@+id/repsmode_debugging_properties_textview"
+                android:layout_width="match_parent"
+                android:layout_height="fill_parent"
+				android:padding="5dp"
+				android:visibility="gone"
+				android:textSize="18sp"
+				/>
+        
+        </LinearLayout>
+	
+	</LinearLayout>
+
+</RelativeLayout>

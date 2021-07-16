@@ -1,0 +1,111 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <fragment
+        android:name="RePlay.Fragments.NavigationFragment"
+        android:id="@+id/navigation_fragment"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/navigation_height"
+        android:layout_alignParentTop="true" />
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_below="@id/navigation_fragment"
+        android:layout_above="@+id/footer_fragment"
+        android:background="@color/txbdc_white">
+
+		<TextView android:id="@+id/build_information_text_view_settings_login_page" 
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:textColor="@color/txbdc_black"
+			android:textSize="22sp"
+			android:layout_alignParentRight="true"
+			android:text="build information"
+			android:fontFamily="sans-serif-light"
+			android:layout_marginRight="10dp"
+			android:layout_marginTop="5dp"
+		/>
+
+        <TextView
+            android:id="@+id/accessTextView"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:textColor="@color/txbdc_black"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="To access settings enter your password"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="100dp"
+            android:textStyle="bold" 
+            android:textSize="@dimen/text_size_normal"
+            />
+
+		<TextView
+            android:id="@+id/enter_password"
+            android:textColor="@color/txbdc_green"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/accessTextView"
+            android:text="Enter your password"
+            android:layout_marginTop="50dp"
+            android:textAppearance="@android:style/TextAppearance.Material.Caption"
+			android:layout_centerInParent="true"
+            android:textStyle="bold" />
+
+        <EditText
+            android:id="@+id/password"
+            android:inputType="textPassword"
+            android:background="@drawable/edittextborder"
+            android:password="true"
+            android:layout_width="@dimen/settings_login_editext"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/enter_password"
+            android:layout_centerInParent="true"
+            android:hint="Password"
+            android:layout_marginTop="5dp"
+            android:textColor="@color/txbdc_black"
+            android:textColorHint="@color/txbdc_lightgrey"
+            android:textSize="@dimen/text_size_normal"
+            android:fontFamily="sans-serif-light" />
+
+
+        <Button android:id="@+id/settings_back"
+            android:layout_width="@dimen/settings_login_button"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/password"
+            android:layout_alignLeft="@id/password"
+            android:scaleType="centerInside"
+            android:adjustViewBounds="true"
+            android:layout_marginTop="35dp"
+            android:text="BACK"
+            android:textColor="@drawable/txbdc_button_foreground_selector"
+            android:background="@drawable/txbdc_button_background_selector"
+            android:textSize="@dimen/text_size_normal"
+        />
+
+        <Button
+            android:id="@+id/settings_next"
+            android:layout_width="@dimen/settings_login_button"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/password"
+            android:scaleType="centerInside"
+            android:adjustViewBounds="true"
+            android:layout_alignRight="@id/password"
+            android:layout_marginTop="35dp" 
+            android:text="NEXT"
+            android:textColor="@drawable/txbdc_button_foreground_selector"
+            android:background="@drawable/txbdc_button_background_selector"
+            android:textSize="@dimen/text_size_normal"
+        />
+    </RelativeLayout>
+    <fragment
+        android:name="RePlay.Fragments.FooterFragment"
+        android:id="@+id/footer_fragment"
+        android:layout_width="match_parent"
+        android:layout_alignParentBottom="true"
+        android:layout_height="@dimen/footer_height" />
+    
+</RelativeLayout>

@@ -1,0 +1,96 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:background="@color/txbdc_white"
+    android:orientation="vertical"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:minWidth="100dp"
+    android:minHeight="150dp"
+    android:paddingBottom="25dp">
+    <ImageView
+        android:id="@+id/green_banner_frag"
+        android:layout_width="600dp"
+        android:layout_height="90dp"
+        android:scaleType="center"
+        android:src="@drawable/green_bar" 
+        />
+    <TextView
+        android:id="@+id/patient_information"
+        android:text="Participant Information"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/txbdc_white"
+        android:textStyle="bold"
+        android:textSize="20dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="10dp" />
+
+    <TextView
+        android:id="@+id/participant_id_message_txt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/txbdc_black"
+        android:textStyle="bold"
+        android:textSize="16dp"
+        android:layout_below="@+id/green_banner_frag"
+        android:text="Please enter the participant ID below. Participant IDs beginning with TEST are reserved for TxBDC internal testing."
+        android:layout_margin="10dp"
+        android:textAlignment="center"
+        />
+    
+    <EditText
+        android:id="@+id/patient_subjectid"
+        android:layout_width="200dp"
+        android:layout_height="40dp"
+        android:layout_below="@+id/participant_id_message_txt"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/edittextborder"
+        android:textColor="@color/txbdc_black"
+        android:textSize="15dp"
+        android:layout_marginTop="10dp"
+        android:hint="Participant ID"
+        android:fontFamily="sans-serif-light"
+		android:inputType="textCapSentences"/>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_below="@+id/patient_subjectid"
+        android:layout_centerHorizontal="true">
+
+        <Button
+            android:id="@+id/patient_cancel"
+		    android:textSize="34dp"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:paddingVertical="10dp"
+            android:scaleType="centerInside"
+            android:adjustViewBounds="true"
+		    android:text="CANCEL"
+            android:layout_marginTop="60dp"
+            android:layout_toLeftOf="@+id/patient_save"
+            android:layout_marginRight="40dp"
+		    android:textColor="@drawable/txbdc_button_foreground_selector"
+		    android:background="@drawable/txbdc_button_background_selector"/>
+
+        <Button
+            android:id="@id/patient_save"
+		    android:text="SAVE"
+		    android:textSize="34dp"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:paddingVertical="10dp"
+            android:scaleType="centerInside"
+            android:adjustViewBounds="true"
+            android:layout_marginTop="60dp"
+		    android:textColor="@drawable/txbdc_button_foreground_selector"
+		    android:background="@drawable/txbdc_button_background_selector"
+            />
+
+
+    </LinearLayout>
+
+  
+</RelativeLayout>

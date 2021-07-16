@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+	android:gravity="center_horizontal"
+	android:padding="30dp">
+
+	<TextView
+		android:id="@+id/label"
+		android:text="Please provide a name for this prescription:"
+		android:textAppearance="?android:attr/textAppearanceLarge"
+        android:layout_width="wrap_content"
+		android:layout_height="50dp"
+		android:gravity="center"
+        android:textColor="@color/txbdc_green"
+		android:layout_marginTop="15dp"
+        android:layout_marginBottom="20dp" />
+	/>
+
+	<EditText
+		android:id="@+id/save_prescription_name_edit_text"
+		android:layout_width="@dimen/settings_login_editext"
+        android:layout_height="40dp"
+        android:background="@drawable/edittextborder"
+        android:textSize="15dp"
+        android:layout_marginTop="10dp"
+        android:hint="Severe"
+        android:textColor="@color/txbdc_black"
+		android:fontFamily="sans-serif-light"
+		android:textColorHint="@color/txbdc_lightgrey"
+		android:inputType="textCapSentences"/>
+
+	<Button
+        android:layout_width="@dimen/add_prescription_button_width"
+        android:layout_height="wrap_content"
+        android:id="@+id/addButton"
+        android:text="SAVE"
+        android:textSize="@dimen/button_text_size"
+		android:padding="5dp"
+        android:layout_marginTop="50dp"
+		android:textColor="@drawable/txbdc_button_foreground_selector"
+		android:background="@drawable/txbdc_button_background_selector"/>
+
+</LinearLayout>

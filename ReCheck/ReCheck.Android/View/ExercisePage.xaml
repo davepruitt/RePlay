@@ -1,0 +1,144 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:microcharts="clr-namespace:Microcharts.Forms;assembly=Microcharts.Forms"
+             xmlns:oxyplot="clr-namespace:OxyPlot.Xamarin.Forms;assembly=OxyPlot.Xamarin.Forms"
+             xmlns:local="clr-namespace:ReCheck.Droid"
+             x:Class="ReCheck.Droid.View.ExercisePage">
+    
+    <ContentPage.Content>
+
+        <Grid x:Name="PrimaryGrid" BackgroundColor="White">
+
+            <Grid.RowDefinitions>
+                <RowDefinition Height="65" />
+                <RowDefinition Height="*" />
+                <RowDefinition Height="200" />
+            </Grid.RowDefinitions>
+
+            <Grid Grid.Row="0" BackgroundColor="{StaticResource Key=txbdc_offwhite}">
+                <Image Source="recheck.png" 
+                       HorizontalOptions="Start"
+                       Margin="10"
+                       />
+                <BoxView Color="{StaticResource Key=txbdc_lightgrey}"
+                         VerticalOptions="End"
+                         HorizontalOptions="FillAndExpand"
+                         HeightRequest="2"
+                         />
+
+                <StackLayout Orientation="Horizontal" HorizontalOptions="End" VerticalOptions="Center">
+                    <Grid RowDefinitions="*, *" ColumnDefinitions="Auto, Auto" IsVisible="{Binding Path=IsRecheckPCMConnectionVisible, FallbackValue=True}">
+                        <Label Grid.Row="0" Grid.Column="0" Text="IPG: " HorizontalOptions="End" VerticalOptions="End" />
+                        <Label Grid.Row="1" Grid.Column="0" Text="PCM: " HorizontalOptions="End" VerticalOptions="Start" />
+                        <Label Grid.Row="0" Grid.Column="1" Text="{Binding Path=IPG_ID, FallbackValue=Unknown}" HorizontalOptions="Start" VerticalOptions="End" />
+                        <Label Grid.Row="1" Grid.Column="1" Text="{Binding Path=PCM_ID, FallbackValue=Unknown}" HorizontalOptions="Start" VerticalOptions="Start" />
+                    </Grid>
+                    <ImageButton Source="{Binding Path=PCM_Connection_Image, FallbackValue=pcm_connected.png}"
+                                 Margin="10"
+                                 x:Name="RecheckPCMConnectionImageButton"
+                                 IsVisible="{Binding Path=IsRecheckPCMConnectionVisible, FallbackValue=True}"
+                                 Pressed="RecheckPCMConnectionImageButton_Pressed"
+                                 Released="RecheckPCMConnectionImageButton_Released"
+                                 Clicked="RecheckPCMConnectionImageButton_Clicked"
+                                 />
+                    <Label Text="{Binding Path=AssessmentOrExerciseText, FallbackValue=Exercises}"
+                           VerticalOptions="Center"
+                           VerticalTextAlignment="Center"
+                           FontSize="28"
+                           Margin="20,0"
+                           TextColor="{StaticResource Key=txbdc_green}"
+                           />
+                </StackLayout>
+
+            </Grid>
+
+            <Grid Grid.Row="1">
+
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="3*" />
+                    <ColumnDefinition Width="300" />
+                    <ColumnDefinition Width="*" />
+                </Grid.ColumnDefinitions>
+
+                <Grid Grid.Column="0">
+
+                    <oxyplot:PlotView Model="{Binding Path=Model}"
+                                      x:Name="line_plot_view"
+                                      />
+
+                </Grid>
+
+                <Grid Grid.Column="1">
+
+                    <StackLayout Orientation="Vertical" VerticalOptions="Center">
+
+                        <Label Text="{Binding Path=StimulationCount, FallbackValue=0}" 
+                               HorizontalOptions="End"
+                               FontSize="144" 
+                               FontAttributes="Bold" 
+                               TextColor="{StaticResource Key=txbdc_green}"
+                               Margin="0,0,0,-30"
+                               />
+                        <Label Text="stims"
+                               HorizontalOptions="End"
+                               FontSize="18"
+                               TextColor="{StaticResource Key=txbdc_green}"
+                               VerticalTextAlignment="Start"
+                               />
+                        <Label Text="{Binding Path=RepetitionsCount, FallbackValue=0}" 
+                               FontSize="28" 
+                               HorizontalOptions="End" 
+                               VerticalTextAlignment="Center" 
+                               TextColor="{StaticResource Key=txbdc_green}" 
+                               Margin="0,10,0,-10"
+                               />
+                        <Label Text="reps" 
+                               FontSize="18" 
+                               HorizontalOptions="End" 
+                               VerticalTextAlignment="Start" 
+                               TextColor="{StaticResource Key=txbdc_green}" 
+                               />
+                        
+
+                    </StackLayout>
+
+
+                    
+                </Grid>
+                
+
+                <Grid Grid.Column="2">
+                    <Image Source="{Binding Path=ModuleImage, FallbackValue=left_handle_rom.png}" 
+                           />
+                </Grid>
+                
+            </Grid>
+
+            <Grid Grid.Row="2">
+                <Button Style="{StaticResource Key=TxBDC_Button_Style}"
+                        x:Name="StopExercisesButton"
+                        Margin="50,10"
+                        Text="{Binding Path=StopAssessmentText, FallbackValue=STOP ASSESSMENT}"
+                        FontSize="72"
+                        Clicked="StopExercisesButton_Clicked"
+                        />
+            </Grid>
+
+            <Grid Grid.Row="0" Grid.RowSpan="3" 
+                  BackgroundColor="#444444AA"
+                  IsVisible="False"
+                  x:Name="CenteringOverlay">
+
+                <Label Text="Centering"
+                       FontSize="72"
+                       HorizontalOptions="Center"
+                       VerticalOptions="Center"
+                       TextColor="White"
+                       />
+            </Grid>
+            
+        </Grid>
+        
+    </ContentPage.Content>
+</ContentPage>

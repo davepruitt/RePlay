@@ -1,0 +1,136 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             mc:Ignorable="d"
+             x:Class="ReCheck.Droid.View.Assessment_LoginPage">
+    <ContentPage.Content>
+        <Grid BackgroundColor="White">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="65" />
+                <RowDefinition Height="*" />
+            </Grid.RowDefinitions>
+
+            <Grid Grid.Row="0" BackgroundColor="{StaticResource Key=txbdc_offwhite}">
+                <Image Source="recheck.png" 
+                   HorizontalOptions="Start"
+                   Margin="10"
+                   />
+
+                <Label HorizontalOptions="End"
+                       VerticalOptions="Center"
+                       Text="Assessment"
+                       FontSize="28"
+                       Margin="20,0"
+                       TextColor="{StaticResource Key=txbdc_green}"
+                       />
+
+                <BoxView Color="{StaticResource Key=txbdc_lightgrey}"
+                     VerticalOptions="End"
+                     HorizontalOptions="FillAndExpand"
+                     HeightRequest="2"
+                     />
+            </Grid>
+
+            <Grid Grid.Row="1" BackgroundColor="White">
+
+
+                <StackLayout Orientation="Vertical" Margin="25">
+
+                    <Grid HorizontalOptions="Center" VerticalOptions="Center" BackgroundColor="#BCBCBC" WidthRequest="600" HeightRequest="325" Padding="1">
+                        <Grid BackgroundColor="#FAFAFA">
+                            <Grid.RowDefinitions>
+                                <RowDefinition Height="Auto" />
+                                <RowDefinition Height="*" />
+                            </Grid.RowDefinitions>
+
+                            <Grid Grid.Row="0">
+                                <Image Source="green_bar_lg.png" />
+                                <Label Text="Enter Password: "
+                                   FontSize="32"
+                                   TextColor="White"
+                                   Margin="30,0"
+                                   VerticalOptions="Center"
+                                   HorizontalOptions="Start"
+                                   />
+                            </Grid>
+                            <Grid Grid.Row="1">
+                                <Grid.RowDefinitions>
+                                    <RowDefinition Height="*" />
+                                    <RowDefinition Height="100" />
+                                </Grid.RowDefinitions>
+                                <Grid.ColumnDefinitions>
+                                    <ColumnDefinition Width="*" />
+                                    <ColumnDefinition Width="*" />
+                                </Grid.ColumnDefinitions>
+
+                                <Grid Grid.Row="0" Grid.Column="0" Grid.ColumnSpan="2" BackgroundColor="#BCBCBC" 
+                                  Padding="1" WidthRequest="450" HeightRequest="50"
+                                  HorizontalOptions="Center" VerticalOptions="Start" 
+                                  Margin="0,25,0,0">
+                                    <Grid BackgroundColor="White">
+                                        <Entry Placeholder="" 
+                                           IsPassword="True"
+                                           FontSize="24"
+                                           ReturnType="Go"
+                                           x:Name="PasswordEntryBox"
+                                           Completed="PasswordEntryBox_Completed"
+                                           />
+                                    </Grid>
+                                </Grid>
+                                <Label TextColor="Red"
+                                   Text="Sorry, the password was not recognized."
+                                   Grid.Row="0"
+                                   Grid.Column="0"
+                                   Grid.ColumnSpan="2"
+                                   HorizontalOptions="Start"
+                                   VerticalOptions="Start"
+                                   Margin="75,90,0,0"
+                                   IsVisible="{Binding Path=IsErrorMessageVisible, FallbackValue=True}"
+                                   />
+
+                                <Button Grid.Row="1" Grid.Column="1"
+                                    Style="{StaticResource Key=TxBDC_Button_Style}"
+                                    Text="NEXT"
+                                    HorizontalOptions="End"
+                                    VerticalOptions="Center"
+                                    WidthRequest="100"
+                                    Margin="0,0,40,0"
+                                    x:Name="PasswordEntryButton"
+                                    Clicked="PasswordEntryButton_Clicked"
+                                    />
+                            </Grid>
+                        </Grid>
+                    </Grid>
+
+                    <Label HorizontalOptions="Center" VerticalOptions="Center"
+                       TextColor="{StaticResource Key=txbdc_green}"
+                       Text="OR"
+                       FontSize="36"
+                       Margin="10"
+                       />
+
+                    <Button HorizontalOptions="Center" VerticalOptions="End"
+                        Style="{StaticResource Key=TxBDC_Button_Style}"
+                        Text="GO BACK"
+                        FontSize="48"
+                        WidthRequest="600"
+                        HeightRequest="100"
+                        x:Name="BackButton"
+                        Clicked="BackButton_Clicked"
+                        />
+
+                </StackLayout>
+                
+                
+
+
+
+
+
+            </Grid>
+            
+        </Grid>
+    </ContentPage.Content>
+</ContentPage>

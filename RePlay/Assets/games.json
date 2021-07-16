@@ -1,0 +1,312 @@
+[
+    {
+        "InternalName": "Repetitions",
+        "ExternalName": "Rep it out",
+        "ImageAssetName": "game1",
+        "IsAvailable": true,
+        "AssemblyQualifiedName": "RePlay_Activity_RepetitionsMode.ExerciseTutorial, RePlay_Activity_RepetitionsMode",
+        "UsesDifficulty": false,
+        "UsesGain": true,
+        "IsExternalApplication": false,
+        "IsMonoGameActivity": false,
+        "GameDescription": "Get in your exercise by doing as many reps as you can!",
+        "SupportedDevices": [ "FitMi", "ReCheck" ],
+        "SupportedExercises": [
+            "Range of Motion Handle",
+            "Range of Motion Knob",
+            "Range of Motion Wrist",
+            "Isometric Handle",
+            "Isometric Knob",
+            "Isometric Wrist",
+            "Isometric Pinch",
+            "Isometric Pinch Flexion",
+            "Isometric Pinch Extension",
+            "Isometric Pinch Left",
+            "Isometric Pinch Left Flexion",
+            "Isometric Pinch Left Extension",
+            "Clapping",
+            "Bicep Curls",
+            "Finger Tap",
+            "Finger Twists",
+            "Flipping",
+            "Flyout",
+            "Grip",
+            "Key Pinch",
+            "Reach Across",
+            "Reach Diagonal",
+            "Reach Out",
+            "Rolling",
+            "Rotate",
+            "Shoulder Abduction",
+            "Shoulder Extension",
+            "Supination",
+            "Touches",
+            "Thumb Press",
+            "Wrist Deviation",
+            "Wrist Flexion",
+            "Lift",
+            "Generic movement",
+            "Generic bidirectional movement"
+        ]
+    },
+    {
+        "InternalName": "TrafficRacer",
+        "ExternalName": "Traffic Racer",
+        "ImageAssetName": "game2",
+        "IsAvailable": true,
+        "AssemblyQualifiedName": "RePlay_Activity_TrafficRacer.Activity1, RePlay_Activity_TrafficRacer",
+        "UsesDifficulty": true,
+        "UsesGain": true,
+        "IsExternalApplication": false,
+        "IsMonoGameActivity": true,
+        "GameDescription": "Take control of the road! Try your best to stay in the highlighted lane!",
+        "SupportedDevices": [ "FitMi", "ReCheck" ],
+        "SupportedExercises": [
+            "Range of Motion Handle",
+            "Range of Motion Knob",
+            "Range of Motion Wrist",
+            "Isometric Handle",
+            "Isometric Knob",
+            "Isometric Wrist",
+            "Isometric Pinch",
+            "Isometric Pinch Left",
+            "Rotate",
+            "Rolling",
+            "Reach Across",
+            "Reach Diagonal",
+            "Reach Out",
+            "Generic bidirectional movement"
+        ],
+        "DifficultyLevels": [ 1, 2, 3, 4, 5, 6, 7, 8, 9, 10 ]
+    },
+    {
+        "InternalName": "Breakout",
+        "ExternalName": "Breakout",
+        "ImageAssetName": "game3",
+        "IsAvailable": true,
+        "AssemblyQualifiedName": "RePlay_Activity_Breakout.Activity1, RePlay_Activity_Breakout",
+        "UsesDifficulty": true,
+        "UsesGain": true,
+        "IsExternalApplication": false,
+        "IsMonoGameActivity": true,
+        "GameDescription": "Eliminate all the bricks to move on to the next level!",
+        "SupportedDevices": [ "FitMi", "ReCheck" ],
+        "SupportedExercises": [
+            "Range of Motion Handle",
+            "Range of Motion Knob",
+            "Range of Motion Wrist",
+            "Isometric Handle",
+            "Isometric Knob",
+            "Isometric Wrist",
+            "Isometric Pinch",
+            "Isometric Pinch Left",
+            "Reach Across",
+            "Reach Diagonal",
+            "Reach Out",
+            "Rolling",
+            "Rotate",
+            "Generic bidirectional movement"
+        ],
+        "DifficultyLevels": [ 1, 2, 3, 4, 5, 6, 7, 8, 9, 10 ]
+    },
+    {
+        "InternalName": "TyperShark",
+        "ExternalName": "Typer Shark",
+        "ImageAssetName": "game7",
+        "IsAvailable": true,
+        "AssemblyQualifiedName": "RePlay_Activity_TyperShark.Activity1, RePlay_Activity_TyperShark",
+        "UsesDifficulty": true,
+        "UsesGain": false,
+        "IsExternalApplication": false,
+        "IsMonoGameActivity": true,
+        "GameDescription": "Type the letters that appear on each shark before they escape!",
+        "SupportedDevices": [ "Keyboard" ],
+        "SupportedExercises": [
+            "Typing",
+            "Typing (left handed words)",
+            "Typing (right handed words)"
+        ],
+        "DifficultyLevels": [ 1, 2, 3, 4, 5, 6, 7, 8, 9, 10 ]
+    },
+    {
+        "InternalName": "FruitArchery",
+        "ExternalName": "Fruit Archery",
+        "ImageAssetName": "game5",
+        "IsAvailable": true,
+        "AssemblyQualifiedName": "RePlay_Activity_FruitArchery.Activity1, RePlay_Activity_FruitArchery",
+        "UsesDifficulty": false,
+        "UsesGain": true,
+        "IsExternalApplication": false,
+        "IsMonoGameActivity": true,
+        "GameDescription": "Test your abilities with a bow and arrow by shooting the fruit! Supinate to aim, and grip the puck to shoot!",
+        "SupportedDevices": [ "FitMi", "Touchscreen" ],
+        "SupportedExercises": [ "Grip", "Supination" ],
+        "GameSpecificInformation": {
+            "CustomExerciseDescription": "Supinate and grip",
+            "CustomExerciseImage" : "supination0"
+        }
+    },
+    {
+        "InternalName": "FruitNinja",
+        "ExternalName": "Fruit Ninja",
+        "ImageAssetName": "game6",
+        "IsAvailable": true,
+        "AssemblyQualifiedName": "RePlay_Activity_FruitNinja.Activity1, RePlay_Activity_FruitNinja",
+        "UsesDifficulty": false,
+        "UsesGain": false,
+        "IsExternalApplication": false,
+        "IsMonoGameActivity": true,
+        "GameDescription": "Swipe the screen to cut pieces of fruit in this classic game!",
+        "SupportedDevices": [ "Touchscreen" ],
+        "SupportedExercises": [],
+        "GameSpecificInformation": {
+            "CustomExerciseDescription": "Swipe the screen",
+            "CustomExerciseImage": "touch0"
+        }
+    },
+    {
+        "InternalName": "SpaceRunner",
+        "ExternalName": "Space Runner",
+        "ImageAssetName": "game4",
+        "IsAvailable": true,
+        "AssemblyQualifiedName": "RePlay_Activity_SpaceRunner.Activity1, RePlay_Activity_SpaceRunner",
+        "UsesDifficulty": false,
+        "UsesGain": true,
+        "IsExternalApplication": false,
+        "IsMonoGameActivity": true,
+        "GameDescription": "Navigate the astronaut through a dangerous field of obstacles!",
+        "SupportedDevices": [ "FitMi", "ReCheck", "Touchscreen" ],
+        "SupportedExercises": [
+            "Grip",
+            "Clapping",
+            "Finger Tap",
+            "Key Pinch",
+            "Touches",
+            "Thumb Press",
+            "Touch",
+            "Isometric Handle",
+            "Isometric Knob",
+            "Isometric Wrist",
+            "Isometric Pinch",
+            "Isometric Pinch Flexion",
+            "Isometric Pinch Extension",
+            "Isometric Pinch Left",
+            "Isometric Pinch Left Flexion",
+            "Isometric Pinch Left Extension"
+        ]
+    },
+    {
+        "InternalName": "Retrieve",
+        "ExternalName": "ReTrieve",
+        "ImageAssetName": "game9",
+        "IsAvailable": true,
+        "AssemblyQualifiedName": "txbdc.retrieve.debug",
+        "UsesDifficulty": true,
+        "UsesGain": false,
+        "IsExternalApplication": true,
+        "DifficultyLevels": [
+            0,
+            1,
+            2,
+            3
+        ],
+        "IsMonoGameActivity": false,
+        "GameDescription": "Search the box to find objects!",
+        "SupportedDevices": [ "Box" ],
+        "SupportedExercises": [],
+        "GameSpecificInformation": {
+            "CustomExerciseDescription": "Find objects in the box",
+            "CustomExerciseImage": "retrieve_generic",
+            "Sets": [
+                {
+                    "Name": "Intro: Find",
+                    "Id": 10,
+                    "Difficulty": [
+                        1
+                    ]
+                },
+                {
+                    "Name": "Intro: Discriminate",
+                    "Id": 12,
+                    "Difficulty": [
+                        2
+                    ]
+                },
+                {
+                    "Name": "Shape",
+                    "Id": 1,
+                    "Difficulty": [
+                        0,
+                        1,
+                        2,
+                        3
+                    ]
+                },
+                {
+                    "Name": "Weight",
+                    "Id": 4,
+                    "Difficulty": [
+                        0,
+                        1,
+                        2,
+                        3
+                    ]
+                },
+                {
+                    "Name": "Length",
+                    "Id": 8,
+                    "Difficulty": [
+                        0,
+                        1,
+                        2,
+                        3
+                    ]
+                },
+                {
+                    "Name": "Texture",
+                    "Id": 7,
+                    "Difficulty": [
+                        0,
+                        1,
+                        2,
+                        3
+                    ]
+                },
+                {
+                    "Name": "Texture 2",
+                    "Id": 15,
+                    "Difficulty": [
+                        0,
+                        1,
+                        2,
+                        3
+                    ]
+                },
+                {
+                    "Name": "Polygon",
+                    "Id": 13,
+                    "Difficulty": [
+                        0,
+                        1,
+                        2,
+                        3
+                    ]
+                }
+            ]
+        }
+    },
+    {
+        "InternalName": "TherapistManualMode",
+        "ExternalName": "Manual Stimulation Mode",
+        "ImageAssetName": "game8",
+        "IsAvailable": true,
+        "AssemblyQualifiedName": "RePlay_Activity_TherapistManualMode.MainActivity, RePlay_Activity_TherapistManualMode",
+        "UsesDifficulty": false,
+        "UsesGain": false,
+        "IsExternalApplication": false,
+        "IsMonoGameActivity": false,
+        "GameDescription": "Trigger manual stimulation by pressing on the blue FitMi puck",
+        "SupportedDevices": [ "FitMi" ],
+        "SupportedExercises": [ "Touches" ]
+    }
+]

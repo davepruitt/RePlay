@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <fragment
+        android:name="RePlay.Fragments.NavigationFragment"
+        android:id="@+id/navigation_fragment"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/navigation_height"
+        android:layout_alignParentTop="true" />
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_below="@id/navigation_fragment"
+        android:layout_above="@+id/footer_fragment"
+        android:background="@color/txbdc_white">
+        <TextView
+            android:id="@+id/accessTextView"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:textColor="@color/txbdc_black"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+			android:textSize="50sp"
+            android:text="Congratulations! You have finished your assigned exercises."
+			android:layout_centerHorizontal="true"
+            android:layout_marginTop="200dp"
+			android:gravity="center"
+            android:textStyle="bold" />
+        <Button
+            android:id="@+id/games_next"
+            android:layout_width="@dimen/button_width"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/accessTextView"
+			android:layout_centerHorizontal="true"
+            android:scaleType="centerInside"
+            android:adjustViewBounds="true"
+            android:layout_marginTop="70dp"
+			android:text="NEXT"
+			android:textColor="@drawable/txbdc_button_foreground_selector"
+			android:background="@drawable/txbdc_button_background_selector"
+		/>
+    </RelativeLayout>
+    <fragment
+        android:name="RePlay.Fragments.FooterFragment"
+        android:id="@+id/footer_fragment"
+        android:layout_width="match_parent"
+        android:layout_alignParentBottom="true"
+        android:layout_height="@dimen/footer_height" />
+    
+</RelativeLayout>

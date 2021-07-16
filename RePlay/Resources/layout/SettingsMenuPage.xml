@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center">
+
+    <fragment
+        android:name="RePlay.Fragments.NavigationFragment"
+        android:id="@+id/navigation_fragment"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/navigation_height"
+        android:layout_alignParentTop="true" />
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_below="@id/navigation_fragment"
+        android:layout_above="@id/footer_fragment"  
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:orientation="vertical"
+        >
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            >
+        
+            <Button
+                android:layout_width="500dp"
+                android:layout_height="96dp"
+                android:textColor="@drawable/txbdc_button_foreground_selector"
+		        android:background="@drawable/txbdc_button_background_selector"
+                android:text="Set Participant ID"
+                android:layout_margin="20dp"
+                android:textSize="32sp"
+                android:layout_gravity="center"
+                android:id="@+id/settings_set_participant_id_button"
+            />
+
+            <Button
+                android:layout_width="500dp"
+                android:layout_height="96dp"
+                android:layout_gravity="center"
+                android:textColor="@drawable/txbdc_button_foreground_selector"
+		        android:background="@drawable/txbdc_button_background_selector"
+                android:text="Edit Application Settings"
+                android:layout_margin="20dp"
+                android:textSize="32sp"
+                android:id="@+id/settings_edit_button"
+            />
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            >
+
+            <Button
+                android:layout_width="500dp"
+                android:layout_height="96dp"
+                android:textColor="@drawable/txbdc_button_foreground_selector"
+		        android:background="@drawable/txbdc_button_background_selector"
+                android:text="Edit Participant Assignment"
+                android:layout_margin="20dp"
+                android:textSize="32sp"
+                android:id="@+id/settings_edit_assignment_button"
+            />
+
+            <Button
+                android:layout_width="500dp"
+                android:layout_height="96dp"
+                android:textColor="@drawable/txbdc_button_foreground_selector"
+		        android:background="@drawable/txbdc_button_background_selector"
+                android:text="Access Manual Stim Mode"
+                android:layout_margin="20dp"
+                android:textSize="32sp"
+                android:id="@+id/access_manual_stim_button"
+            />
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+
+
+    <fragment
+        android:name="RePlay.Fragments.FooterFragment"
+        android:id="@+id/footer_fragment"
+        android:layout_width="match_parent"
+        android:layout_alignParentBottom="true"
+        android:layout_height="@dimen/footer_height" />
+
+</RelativeLayout>

@@ -1,0 +1,28 @@
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="ReCheck requires access to this tablet's storage. Please press the button below to grant access. Thank you!"
+        android:textSize="32sp"
+        android:layout_margin="50dp"
+        android:textColor="@android:color/black"
+        android:textAlignment="center"
+    />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="GRANT PERMISSION"
+        android:textColor="@android:color/black"
+        android:padding="20dp"
+        android:textSize="48sp"
+        android:id="@+id/grant_permission_button"
+    />
+
+</LinearLayout>

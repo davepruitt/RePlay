@@ -1,0 +1,150 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center">
+
+    <fragment
+        android:name="RePlay.Fragments.NavigationFragment"
+        android:id="@+id/navigation_fragment"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/navigation_height"
+        android:layout_alignParentTop="true" />
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center_horizontal"
+        android:layout_below="@id/navigation_fragment"
+        android:layout_above="@id/footer_fragment"
+        >
+
+        <LinearLayout
+            android:layout_width="500dp"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Project ID:"
+                android:textSize="24sp"
+                android:layout_margin="5dp"
+            />
+
+            <Spinner
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/spinner_height"
+                android:layout_margin="5dp"
+                android:id="@+id/project_id_dropdown_box"
+                android:background="@drawable/customspinner"
+                android:spinnerMode="dropdown"
+                android:padding="5dp"
+            />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Site ID:"
+                android:textSize="24sp"
+                android:layout_margin="5dp"
+            />
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="24sp"
+                android:layout_margin="5dp"
+                android:id="@+id/site_id_text_box"
+                android:singleLine="true"
+            />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Show PCM status in games:"
+                    android:textSize="24sp"
+                    android:layout_margin="5dp"
+                />
+
+                <Switch
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/show_pcm_status_switch"
+                />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Show stimulation requests in games:"
+                    android:textSize="24sp"
+                    android:layout_margin="5dp"
+                />
+
+                <Switch
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/show_stimulation_requests_switch"
+                />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Debug mode:"
+                    android:textSize="24sp"
+                    android:layout_margin="5dp"
+                />
+
+                <Switch
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/debug_mode_switch"
+                />
+
+            </LinearLayout>
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="125dp"
+                android:text="DONE"
+                android:textSize="48sp"
+                android:layout_marginTop="25dp"
+                android:textColor="@drawable/txbdc_button_foreground_selector"
+                android:background="@drawable/txbdc_button_background_selector"
+                android:id="@+id/settings_selection_page_done_button"
+            />
+
+        </LinearLayout>
+
+    
+
+    </LinearLayout>
+
+    <fragment
+        android:name="RePlay.Fragments.FooterFragment"
+        android:id="@+id/footer_fragment"
+        android:layout_width="match_parent"
+        android:layout_alignParentBottom="true"
+        android:layout_height="@dimen/footer_height" />
+
+</RelativeLayout>

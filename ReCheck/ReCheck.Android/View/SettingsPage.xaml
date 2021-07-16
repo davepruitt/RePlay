@@ -1,0 +1,119 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             mc:Ignorable="d"
+             x:Class="ReCheck.Droid.View.SettingsPage">
+    <ContentPage.Content>
+
+
+        <Grid>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="65" />
+                <RowDefinition Height="Auto" />
+                <RowDefinition Height="*" />
+            </Grid.RowDefinitions>
+
+            <Grid Grid.Row="0" BackgroundColor="{StaticResource Key=txbdc_offwhite}">
+                <Image Source="recheck.png" 
+                   HorizontalOptions="Start"
+                   Margin="10"
+                   />
+
+                <Label HorizontalOptions="End"
+                       VerticalOptions="Center"
+                       Text="Settings"
+                       FontSize="28"
+                       Margin="20,0"
+                       TextColor="{StaticResource Key=txbdc_green}"
+                       />
+
+                <BoxView Color="{StaticResource Key=txbdc_lightgrey}"
+                     VerticalOptions="End"
+                     HorizontalOptions="FillAndExpand"
+                     HeightRequest="2"
+                     />
+            </Grid>
+
+            <Grid Grid.Row="1" Margin="50,50,50,0">
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="Auto" />
+                    <RowDefinition Height="Auto" />
+                    <RowDefinition Height="Auto" />
+                    <RowDefinition Height="Auto" />
+                    <RowDefinition Height="*" />
+                </Grid.RowDefinitions>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="*" />
+                    <ColumnDefinition Width="*" />
+                    <ColumnDefinition Width="*" />
+                </Grid.ColumnDefinitions>
+
+                <Label Text="Project ID:" HorizontalOptions="End" Grid.Row="0" Grid.Column="0" VerticalTextAlignment="Center" VerticalOptions="Center" 
+                   FontSize="18" />
+                <Label Text="Site ID:" HorizontalOptions="End" Grid.Row="1" Grid.Column="0" VerticalOptions="Center" VerticalTextAlignment="Center" 
+                   FontSize="18" />
+                <Label Text="Repetition Count Required:" HorizontalOptions="End" Grid.Row="2" Grid.Column="0" VerticalOptions="Center" VerticalTextAlignment="Center" 
+                   FontSize="18" />
+                <Label Text="Enable Automatic Stimulation:" HorizontalOptions="End" Grid.Row="3" Grid.Column="0" VerticalTextAlignment="Center" VerticalOptions="Center"
+                       FontSize="18" />
+
+                <Grid Grid.Row="0" Grid.Column="1" BackgroundColor="#BCBCBC" Padding="1" HeightRequest="50" Margin="0,0,0,0">
+                    <Grid BackgroundColor="White">
+                        <Entry Placeholder="" 
+                                           FontSize="18"
+                                           ReturnType="Done"
+                                           x:Name="ProjectIDTextBox"
+                                           Completed="ProjectIDTextBox_Completed"
+                                           Text="{Binding Path=ProjectID, Mode=TwoWay}"
+                                           />
+                    </Grid>
+                </Grid>
+
+                <Grid Grid.Row="1" Grid.Column="1" BackgroundColor="#BCBCBC" Padding="1" HeightRequest="50" Margin="0,0,0,0">
+                    <Grid BackgroundColor="White">
+                        <Entry Placeholder="" 
+                                           FontSize="18"
+                                           ReturnType="Done"
+                                           x:Name="SiteIDTextBox"
+                                           Completed="SiteIDTextBox_Completed"
+                                           Text="{Binding Path=SiteID, Mode=TwoWay}"
+                                           />
+                    </Grid>
+                </Grid>
+
+                <Grid Grid.Row="2" Grid.Column="1" BackgroundColor="#BCBCBC" Padding="1" HeightRequest="50" Margin="0,0,0,0">
+                    <Grid BackgroundColor="White">
+                        <Entry Placeholder="" 
+                                           FontSize="18"
+                                           ReturnType="Done"
+                                           x:Name="RepCountTextBox"
+                                           Text="{Binding Path=RepetitionsRequiredForTaskCompletion, Mode=TwoWay}"
+                                           />
+                    </Grid>
+                </Grid>
+
+                <Switch IsToggled="{Binding Path=AutomaticStimulationEnabled, Mode=TwoWay, FallbackValue=False}" Grid.Row="3" Grid.Column="1"
+                        HorizontalOptions="Start" VerticalOptions="Center"
+                        />
+
+            </Grid>
+
+            <Grid Grid.Row="2" Margin="0,0,0,50">
+                <Button Text="DONE"
+                        Style="{StaticResource Key=TxBDC_Button_Style}"
+                        HorizontalOptions="Center"
+                        VerticalOptions="End"
+                        WidthRequest="300"
+                        HeightRequest="100"
+                        FontSize="48"
+                        x:Name="SettingsDoneButton"
+                        Clicked="SettingsDoneButton_Clicked"
+                        />
+            </Grid>
+        </Grid>
+        
+
+    </ContentPage.Content>
+</ContentPage>

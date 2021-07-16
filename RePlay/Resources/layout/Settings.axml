@@ -1,0 +1,216 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout 
+    xmlns:android="http://schemas.android.com/apk/res/android" 
+    android:orientation="vertical" 
+    android:layout_width="match_parent" 
+    android:layout_height="match_parent">
+    
+    <fragment
+        android:name="RePlay.Fragments.NavigationFragment"
+        android:id="@+id/navigation_fragment"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/navigation_height"
+        android:layout_alignParentTop="true" />
+        
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_below="@id/navigation_fragment"
+        android:layout_above="@+id/footer_fragment"
+        android:background="@color/txbdc_white">
+        <ImageView
+            android:id="@+id/green_banner"
+            android:layout_alignParentTop="true"
+            android:layout_width="fill_parent"
+            android:layout_height="@dimen/settings_banner"
+            android:scaleType="fitXY"
+            android:adjustViewBounds="true"
+            android:src="@drawable/green_bar" />
+        <refractored.controls.CircleImageView
+            android:id="@+id/settings_picture"
+            android:layout_width="@dimen/settings_img"
+            android:layout_height="@dimen/settings_img"
+            android:src="@drawable/nate"
+            android:layout_alignLeft="@id/green_banner"
+            android:layout_marginTop="8dp"
+            android:layout_marginLeft="40dp" />
+        <TextView
+            android:id="@+id/therapist_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/txbdc_white"
+            android:textSize="22dp"
+            android:layout_toRightOf="@id/settings_picture"
+            android:layout_marginTop="30dp"
+            android:layout_marginLeft="10dp"
+            android:text="Participant ID"
+            android:fontFamily="sans-serif-light" />
+
+		<TextView android:id="@+id/build_information_text_view" 
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:textColor="@color/txbdc_white"
+			android:textSize="14sp"
+			android:layout_alignParentRight="true"
+			android:text="build information"
+			android:fontFamily="sans-serif-light"
+			android:layout_marginRight="10dp"
+			android:layout_marginTop="5dp"
+		/>
+
+        <TextView
+            android:id="@+id/assigned_exercises"
+            android:text="Assigned Items"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/settings_assigned_text_height"
+            android:textColor="@color/txbdc_green"
+            android:textSize="@dimen/settings_text"
+            android:background="@color/txbdc_white"
+            android:gravity="center_vertical"
+            android:layout_alignBottom="@id/green_banner"
+            android:layout_marginLeft="170dp"
+            android:fontFamily="sans-serif-light" />
+        
+		<LinearLayout
+			android:layout_width="fill_parent"
+			android:layout_height="fill_parent"
+			android:layout_below="@id/assigned_exercises"
+			android:orientation="vertical"
+			>
+
+			<RelativeLayout
+				android:layout_weight="1"
+				android:layout_width="fill_parent"
+				android:layout_height="wrap_content"
+				android:id="@+id/assigned_layout"
+				android:background="@color/txbdc_offwhite">
+
+				<LinearLayout
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:id="@+id/add_wrapper"
+					android:layout_alignParentRight="true"
+					android:layout_centerInParent="true"
+					android:layout_marginLeft="50dp"
+					android:layout_marginRight="100dp"
+					android:padding="5dp"
+					android:orientation="vertical"
+					android:gravity="center">
+
+					<ImageButton
+						android:id="@+id/add_prescription_card"
+						android:layout_width="80dp"
+						android:layout_height="80dp"
+						android:src="@drawable/plus"
+						android:background="@color/txbdc_offwhite" />
+
+					<Button
+						android:layout_width="wrap_content"
+						android:layout_height="wrap_content"
+						android:layout_marginTop="25dp"
+						android:id="@+id/addToSavedPrescriptions"
+						android:text="SAVE PRESCRIPTION"
+						android:padding="5dp"
+						android:textSize="@dimen/button_text_size"
+						android:textColor="@drawable/txbdc_button_foreground_selector"
+						android:background="@drawable/txbdc_button_background_selector"/>
+
+					<Button
+						android:layout_width="wrap_content"
+						android:layout_height="wrap_content"
+						android:layout_marginTop="25dp"
+						android:id="@+id/clearCurrentPrescriptionButton"
+						android:text="CLEAR ALL ITEMS"
+						android:padding="5dp"
+						android:textSize="@dimen/button_text_size"
+						android:textColor="@drawable/txbdc_button_foreground_selector"
+						android:background="@drawable/txbdc_button_background_selector"/>
+
+				</LinearLayout>
+
+				<TextView
+					android:id="@+id/empty_assigned_prescriptions"
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:text="No items assigned"
+					android:textSize="18dp"
+					android:textColor="@color/txbdc_black"
+					android:layout_centerInParent="true"/>
+
+				<android.support.v7.widget.RecyclerView
+					android:id="@+id/assigned_prescriptions"
+					android:layout_width="match_parent"
+					android:layout_height="match_parent"
+					android:layout_centerInParent="true"
+					android:gravity="center"
+					android:orientation="horizontal"
+					android:clipToPadding="false"
+					android:padding="6dp"
+					android:scrollbars="horizontal"
+					android:fadeScrollbars="false"
+					android:layout_toLeftOf="@id/add_wrapper"
+					android:layout_marginLeft="120dp">
+
+
+
+				</android.support.v7.widget.RecyclerView>
+
+
+			</RelativeLayout>
+
+			<TextView
+				android:id="@+id/saved_exercises"
+				android:layout_width="fill_parent"
+				android:layout_height="@dimen/settings_saved_text_height"
+				android:text="Saved Assignments"
+				android:textSize="@dimen/settings_text"
+				android:textColor="@color/txbdc_green"
+				android:layout_marginTop="2dp"
+				android:layout_marginLeft="170dp"
+				android:fontFamily="sans-serif-light" />
+
+			<RelativeLayout
+				android:layout_width="fill_parent"
+				android:layout_height="wrap_content"
+				android:layout_weight="1.55"
+				>
+
+				<TextView
+					android:id="@+id/empty_saved_prescriptions"
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:text="No assignments saved"
+					android:textSize="18dp"
+					android:textColor="@color/txbdc_black"
+					android:layout_centerInParent="true"/>
+
+				<android.support.v7.widget.RecyclerView
+					android:id="@+id/saved_prescriptions"
+					android:layout_width="fill_parent"
+					android:layout_height="fill_parent"
+					android:gravity="center"
+					android:orientation="horizontal"
+					android:clipToPadding="false"
+					android:padding="10dp"
+					android:scrollbars="horizontal"
+					android:fadeScrollbars="false"
+					android:layout_marginLeft="170dp"
+					android:layout_marginRight="170dp">
+
+				</android.support.v7.widget.RecyclerView>
+
+			</RelativeLayout>
+
+
+		</LinearLayout>
+    </RelativeLayout>
+    
+    <fragment
+        android:name="RePlay.Fragments.FooterFragment"
+        android:id="@+id/footer_fragment"
+        android:layout_width="match_parent"
+        android:layout_alignParentBottom="true"
+        android:layout_height="@dimen/footer_height" />
+    
+</RelativeLayout>
