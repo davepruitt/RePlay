@@ -124,7 +124,6 @@ hook
 hoop
 hulk
 hull
-hump
 hunh
 hunk
 hymn
@@ -255,7 +254,6 @@ hokku
 hokum
 hollo
 holly
-honky
 hooky
 hooly
 hoppy
@@ -303,12 +301,10 @@ mujik
 mummy
 myopy
 nihil
-ninny
 ninon
 noily
 nomoi
 nonyl
-nooky
 nylon
 nymph
 onion
@@ -320,7 +316,6 @@ pinko
 pinky
 pinny
 pinon
-pinup
 plink
 plonk
 plump
@@ -374,7 +369,6 @@ moujik
 moulin
 mukluk
 muumuu
-nympho
 oilily
 oniony
 phonon
