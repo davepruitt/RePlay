@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentView xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="RePlay.View.Controls.View_NavigationBar">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="*" />
+            <RowDefinition Height="5" />
+        </Grid.RowDefinitions>
+        <Border Grid.Row="0" BackgroundColor="{StaticResource Key=txbdc_offwhite}" StrokeThickness="0">
+            <Grid>
+                <Image Source="replay_logo.png" HorizontalOptions="Start" VerticalOptions="Center" Margin="10" />
+                <StackLayout Orientation="Horizontal" Spacing="25" Margin="10" HorizontalOptions="End" VerticalOptions="Center">
+                    <ImageButton x:Name="NavigationButtonHome" Source="nav_button_home.png" WidthRequest="50" Pressed="NavigationButton_Pressed" Released="NavigationButton_Released" Clicked="NavigationButtonHome_Clicked" />
+                    <ImageButton x:Name="NavigationButtonGames" Source="nav_button_games.png" WidthRequest="50" Pressed="NavigationButton_Pressed" Released="NavigationButton_Released" Clicked="NavigationButtonGames_Clicked" />
+                    <ImageButton x:Name="NavigationButtonPcm" Source="nav_button_pcm_connected.png" WidthRequest="50" Pressed="NavigationButton_Pressed" Released="NavigationButton_Released" Clicked="NavigationButtonPcm_Clicked" />
+                    <ImageButton x:Name="NavigationButtonSettings" Source="nav_button_settings.png" WidthRequest="50" Pressed="NavigationButton_Pressed" Released="NavigationButton_Released" Clicked="NavigationButtonSettings_Clicked" />
+                </StackLayout>
+            </Grid>
+        </Border>
+        <Border Grid.Row="1" StrokeThickness="0">
+            <Border.Background>
+                <LinearGradientBrush StartPoint="0,0" EndPoint="0,1">
+                    <GradientStop Color="{StaticResource Key=txbdc_grey_accent}" Offset="0" />
+                    <GradientStop Color="White" Offset="1" />
+                </LinearGradientBrush>
+            </Border.Background>
+        </Border>
+    </Grid>
+</ContentView>

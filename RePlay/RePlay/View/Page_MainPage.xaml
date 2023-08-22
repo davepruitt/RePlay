@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:local_controls="clr-namespace:RePlay.View.Controls"
+             Shell.NavBarIsVisible="False"
+             x:Class="RePlay.View.Page_MainPage">
+
+    <Grid>
+
+        <Grid.RowDefinitions>
+            <RowDefinition Height="75" />
+            <RowDefinition Height="*" />
+            <RowDefinition Height="30" />
+        </Grid.RowDefinitions>
+
+        <local_controls:View_NavigationBar Grid.Row="0" />
+
+        <Grid Grid.Row="1" VerticalOptions="Center" Margin="25">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="*" />
+                <RowDefinition Height="Auto" />
+            </Grid.RowDefinitions>
+
+            <ImageButton x:Name="PlayButton" Grid.Row="0" Source="{Binding Path=PlayButtonImageSource}" Pressed="PlayButton_Pressed" Released="PlayButton_Released" Clicked="PlayButton_Clicked" WidthRequest="300" />
+            <Label Grid.Row="1" Text="Let's get started!" HorizontalOptions="Center" FontSize="18" FontAttributes="Bold" />
+        </Grid>
+
+        <local_controls:View_Footer Grid.Row="2" />
+
+    </Grid>
+
+
+</ContentPage>
