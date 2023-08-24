@@ -6,4 +6,9 @@ public partial class Page_Settings_Main : ContentPage
 	{
 		InitializeComponent();
 	}
+
+    private void EditApplicationSettingsButton_Clicked(object sender, EventArgs e)
+    {
+		Navigation.PushAsync(new Page_Settings_EditApplicationSettings());
+    }
 }

@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:local_controls="clr-namespace:RePlay.View.Controls"
+             Shell.NavBarIsVisible="False"  
+             x:Class="RePlay.View.Page_Settings_EditApplicationSettings">
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="2*" />
+            <ColumnDefinition Width="3*" />
+            <ColumnDefinition Width="2*" />
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="75" />
+            <RowDefinition Height="*" />
+            <RowDefinition Height="30" />
+        </Grid.RowDefinitions>
+
+        <local_controls:View_NavigationBar Grid.Row="0" Grid.Column="0" Grid.ColumnSpan="3" />
+
+        <ScrollView Grid.Row="1" Grid.Column="1">
+            <VerticalStackLayout Margin="0,20">
+                
+                <Label Text="Project ID:" FontSize="24" />
+                <Picker />
+                
+                <Label Text="Site ID:" FontSize="24" />
+                <Entry FontSize="24" />
+
+                <Grid>
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="Auto" />
+                        <RowDefinition Height="Auto" />
+                        <RowDefinition Height="Auto" />
+                    </Grid.RowDefinitions>
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="*" />
+                        <ColumnDefinition Width="Auto" />
+                    </Grid.ColumnDefinitions>
+
+                    <Label Grid.Row="0" Grid.Column="0" Text="Show PCM status in games:" VerticalOptions="Center" />
+                    <Switch Grid.Row="0" Grid.Column="1" HorizontalOptions="End" />
+
+                    <Label Grid.Row="1" Grid.Column="0" Text="Show stimulation requests in games:" VerticalOptions="Center" />
+                    <Switch Grid.Row="1" Grid.Column="1" HorizontalOptions="End" />
+
+                    <Label Grid.Row="2" Grid.Column="0" Text="Debug mode:" VerticalOptions="Center" />
+                    <Switch Grid.Row="2" Grid.Column="1" HorizontalOptions="End" />
+                </Grid>
+
+                <HorizontalStackLayout>
+
+                </HorizontalStackLayout>
+
+                <HorizontalStackLayout>
+                    
+                </HorizontalStackLayout>
+
+                <Button x:Name="DoneButton" Text="DONE" Margin="0,20,0,0" Clicked="DoneButton_Clicked" />
+            </VerticalStackLayout>
+        </ScrollView>
+
+        <local_controls:View_Footer Grid.Row="2" Grid.Column="0" Grid.ColumnSpan="3" />
+    </Grid>
+</ContentPage>

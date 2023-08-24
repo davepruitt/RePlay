@@ -24,9 +24,9 @@
     <SolidColorBrush x:Key="txbdc_grey_brush" Color="{StaticResource Key=txbdc_grey}" />
     <SolidColorBrush x:Key="txbdc_grey_accent_brush" Color="{StaticResource Key=txbdc_grey_accent}" />
 
-    <Color x:Key="Primary">#512BD4</Color>
+    <Color x:Key="Primary">#69be28</Color>
     <Color x:Key="Secondary">#DFD8F7</Color>
-    <Color x:Key="Tertiary">#2B0B98</Color>
+    <Color x:Key="Tertiary">#2D8709</Color>
     <Color x:Key="White">White</Color>
     <Color x:Key="Black">Black</Color>
     <Color x:Key="Gray100">#E1E1E1</Color>

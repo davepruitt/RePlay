@@ -63,7 +63,13 @@
 	  <MauiXaml Update="View\Controls\View_NavigationBar.xaml">
 	    <Generator>MSBuild:Compile</Generator>
 	  </MauiXaml>
+	  <MauiXaml Update="View\Page_GamesPage.xaml">
+	    <Generator>MSBuild:Compile</Generator>
+	  </MauiXaml>
 	  <MauiXaml Update="View\Page_MainPage.xaml">
+	    <Generator>MSBuild:Compile</Generator>
+	  </MauiXaml>
+	  <MauiXaml Update="View\Page_Settings_EditApplicationSettings.xaml">
 	    <Generator>MSBuild:Compile</Generator>
 	  </MauiXaml>
 	  <MauiXaml Update="View\Page_Settings_EnterPassword.xaml">

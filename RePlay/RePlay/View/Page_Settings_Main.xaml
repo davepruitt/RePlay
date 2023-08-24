@@ -2,9 +2,8 @@
 <ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              xmlns:local_controls="clr-namespace:RePlay.View.Controls"
-             x:Class="RePlay.View.Page_Settings_Main"
-             Shell.NavBarIsVisible="False"   
-             Title="Page_Settings_Main">
+             Shell.NavBarIsVisible="False"
+             x:Class="RePlay.View.Page_Settings_Main">
     <Grid>
         <Grid.RowDefinitions>
             <RowDefinition Height="75" />
@@ -28,7 +27,7 @@
 
             <Button Grid.Row="1" Grid.Column="0" Text="Set Participant ID" FontSize="24" BackgroundColor="{StaticResource Key=txbdc_green}" CornerRadius="0" Margin="40,20,20,20" />
             <Button Grid.Row="2" Grid.Column="0" Text="Edit Participant Assignment" FontSize="24" BackgroundColor="{StaticResource Key=txbdc_green}" CornerRadius="0" Margin="40,20,20,20" />
-            <Button Grid.Row="1" Grid.Column="1" Text="Edit Application Settings" FontSize="24" BackgroundColor="{StaticResource Key=txbdc_green}" CornerRadius="0" Margin="20,20,40,20" />
+            <Button Grid.Row="1" Grid.Column="1" x:Name="EditApplicationSettingsButton" Text="Edit Application Settings" FontSize="24" BackgroundColor="{StaticResource Key=txbdc_green}" CornerRadius="0" Margin="20,20,40,20" Clicked="EditApplicationSettingsButton_Clicked" />
             <Button Grid.Row="2" Grid.Column="1" Text="Access Manual Stim Mode" FontSize="24" BackgroundColor="{StaticResource Key=txbdc_green}" CornerRadius="0" Margin="20,20,40,20" />
         </Grid>
 
